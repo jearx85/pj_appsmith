@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "691f694cc3e3b840f0861998_5f180e42-687f-4e2e-8cae-014814f0ac88",
+  "gitSyncId": "691f694cc3e3b840f0861998_cdb8a5fe-3e0f-497b-b995-187e395d5031",
   "id": "Personas_PersonaHelper.persona",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -7,9 +7,6 @@
     "actionConfiguration": {
       "encodeParamsToggle": true,
       "jsArguments": [
-        {
-          "name": "index"
-        },
         {
           "name": "field"
         }
