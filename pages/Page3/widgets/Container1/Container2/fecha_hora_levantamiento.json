@@ -1,0 +1,88 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "closeOnSelection": true,
+  "dateFormat": "YYYY-MM-DD HH:mm",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{ appsmith.store.modo === \"edicion\"\n   ? (appsmith.store.casoSeleccionado?.fecha_hora_levantamiento ?? \"\")\n   : \"\" }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultDate"
+    },
+    {
+      "key": "maxDate"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    },
+    {
+      "key": "maxDate"
+    },
+    {
+      "key": "onDateSelected"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ],
+  "firstDayOfWeek": 0,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "i4ngp3fdh2",
+  "label": "Fecha y hora del levantamiento",
+  "labelAlignment": "left",
+  "labelPosition": "Auto",
+  "labelTextColor": "{{!fecha_hora_levantamiento.selectedDate ? \"red\" : \"black\"}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDate": "{{moment().add(100, \"years\").format(\"YYYY-MM-DDTHH:mm:ssZ\")}}",
+  "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 11,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onDateSelected": "{{\n  moment(fecha_hora_levantamiento.selectedDate).isAfter(moment(), \"day\")\n    ? showAlert(\"La fecha y hora del levantamiento no puede ser una fecha futura.\", \"error\").then(() => resetWidget(\"fecha_hora_levantamiento\", true))\n    : undefined\n}}",
+  "originalBottomRow": 14,
+  "originalTopRow": 7,
+  "parentColumnSpace": 19.42333984375,
+  "parentId": "33vvz81416",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 28,
+  "shortcuts": false,
+  "shouldScrollContents": true,
+  "timePrecision": "minute",
+  "topRow": 7,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "pa271r978c",
+  "widgetName": "fecha_hora_levantamiento"
+}

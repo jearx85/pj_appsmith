@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "691f694cc3e3b840f0861998_6ff8cb4d-834f-42ba-8cec-bd6d5432efcf",
+  "id": "Casos_ValidateUser",
+  "unpublishedCollection": {
+    "name": "ValidateUser",
+    "pageId": "Casos",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

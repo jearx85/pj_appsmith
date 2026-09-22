@@ -1,0 +1,5 @@
+UPDATE public.personas
+SET 
+  validado_medicina_legal = {{slt_validado.selectedOptionValue}},
+  observaciones_medicina_legal = {{txt_observaciones.text}}
+WHERE id_persona = {{pk_bd.text}}

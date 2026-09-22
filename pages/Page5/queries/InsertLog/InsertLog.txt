@@ -1,0 +1,12 @@
+INSERT INTO public.logs_sistema
+    (usuario, accion, nivel, tabla_afectada, registro_id, mensaje, detalle, pagina)
+VALUES (
+    {{ this.params.usuario  || appsmith.user.email || 'anonimo' }},
+    {{ this.params.accion }},
+    {{ this.params.nivel    || 'INFO' }},
+    {{ this.params.tabla    || null }},
+    {{ this.params.registroId || null }},
+    {{ this.params.mensaje  || null }},
+    {{ this.params.detalle  || null }}::jsonb,
+    {{ this.params.pagina   || null }}
+);

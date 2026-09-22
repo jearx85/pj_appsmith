@@ -1,0 +1,2 @@
+DELETE FROM public."vehiculos"
+  WHERE "id_vehiculo" = {{data_table.triggeredRow.id_vehiculo}};

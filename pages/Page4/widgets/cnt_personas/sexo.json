@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 46,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  PersonaHelper.persona(Number(contador.text) - 1, \"sexo\") ))(sexo.options, sexo.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "cxyuekdos9",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Sexo",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 45,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 26,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 46,
+  "originalTopRow": 39,
+  "parentColumnSpace": 18.6923828125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opción",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"M\",\n    \"code\": \"M\"\n  },\n  {\n    \"name\": \"F\",\n    \"code\": \"F\"\n  }\n]",
+  "topRow": 39,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "mngn4ol1lp",
+  "widgetName": "sexo"
+}

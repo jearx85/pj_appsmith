@@ -1,0 +1,66 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 46,
+  "boxShadow": "none",
+  "closeOnSelection": true,
+  "dateFormat": "YYYY-MM-DD",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{ PersonaHelper.persona(Number(contador.text) - 1, \"fecha_nacimiento\") }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultDate"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "firstDayOfWeek": 0,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "i4ngp3fdh2",
+  "label": "Fecha de nacimiento",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDate": "2121-12-31T18:29:00.000Z",
+  "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 26,
+  "needsErrorInfo": false,
+  "originalBottomRow": 46,
+  "originalTopRow": 39,
+  "parentColumnSpace": 18.6923828125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 31,
+  "shortcuts": false,
+  "timePrecision": "None",
+  "topRow": 39,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "82lbls4tto",
+  "widgetName": "fecha_nacimiento"
+}

@@ -1,0 +1,1 @@
+SELECT * FROM public."caso" WHERE expediente = {{appsmith.store.caso_pg1?.spoa_expediente}}

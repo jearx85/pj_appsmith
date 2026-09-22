@@ -1,0 +1,7 @@
+SELECT * FROM public.caso 
+WHERE "spoa_expediente" ilike '%{{buscar.filterText}}%'
+  AND (
+    '{{ appsmith.store.placaActual }}' = 'admin' 
+    OR coordinador = '{{ appsmith.store.placaActual }}'
+  )
+ORDER BY fecha_hora_hechos DESC

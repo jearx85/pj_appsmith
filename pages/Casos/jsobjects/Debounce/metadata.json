@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "691f694cc3e3b840f0861998_6ecbc477-3449-4c19-9d25-7c4b96c7cc0b",
+  "id": "Casos_Debounce",
+  "unpublishedCollection": {
+    "name": "Debounce",
+    "pageId": "Casos",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "timer",
+        "value": "null"
+      }
+    ]
+  }
+}

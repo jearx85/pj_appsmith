@@ -1,0 +1,68 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 126,
+  "boxShadow": "none",
+  "defaultText": "{{ appsmith.store.modo === \"edicion\" ? (appsmith.store.casoSeleccionado?.motivo_actu ?? \"\")\n   : \"\" }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "MULTI_LINE_TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{appsmith.store.esAutorizado && appsmith.store.modo === \"edicion\"}}",
+  "key": "e3whatcgow",
+  "label": "Motivo por el cual se actualiza el caso",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 119,
+  "mobileLeftColumn": 10,
+  "mobileRightColumn": 30,
+  "mobileTopRow": 112,
+  "needsErrorInfo": false,
+  "originalBottomRow": 126,
+  "originalTopRow": 116,
+  "parentColumnSpace": 27.203125,
+  "parentId": "4qcfomb74l",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 41,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 116,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "rrhju6f9t9",
+  "widgetName": "motivo_actu"
+}

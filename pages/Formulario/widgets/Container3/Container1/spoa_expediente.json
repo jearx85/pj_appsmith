@@ -1,0 +1,88 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "defaultText": "{{ appsmith.store.caso_pg1?.spoa_expediente || appsmith.store.casoSeleccionado?.spoa_expediente || \"\" }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "iconName"
+    },
+    {
+      "key": "labelTextColor"
+    },
+    {
+      "key": "label"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "iconName"
+    },
+    {
+      "key": "labelTextColor"
+    },
+    {
+      "key": "onBlur"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "{{GetKey.data && GetKey.data.length > 0 ? \"warning-sign\" : \"\"}}",
+  "inputType": "TEXT",
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "2zy4mfhfa9",
+  "label": "{{\n  GetKey.data && GetKey.data.length > 0\n    ? (GetKey.data[0].creado_por === \"bot_whatsapp\"\n        ? \"⚠️ Caso creado por el bot de WhatsApp, por favor verifique los campos\"\n        : \"⚠️ Este caso ya está registrado\")\n    : \"* Spoa/Expediente\"\n}}",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextColor": "{{ GetKey.data && GetKey.data.length > 0 || spoa_expediente.text.length === 11 ? \"#ef4444\" : \"black\" }}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 24,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onBlur": "{{ GetKey.run(() => {}, () => {}) }}",
+  "onTextChanged": "",
+  "parentColumnSpace": 17.087631225585938,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 30,
+  "showStepArrows": false,
+  "topRow": 16,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "3bqqz8kb5e",
+  "widgetName": "spoa_expediente"
+}

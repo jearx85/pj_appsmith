@@ -1,0 +1,3 @@
+SELECT *
+FROM public.caso
+WHERE spoa_expediente = {{ buscar.selectedOptionValue }};

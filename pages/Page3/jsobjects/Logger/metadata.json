@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "691f694cc3e3b840f0861998_74d6fcf8-541e-4cca-a10a-57042849e692",
+  "id": "Page3_Logger",
+  "unpublishedCollection": {
+    "name": "Logger",
+    "pageId": "Page3",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "PAGINA_ACTUAL",
+        "value": "\"Page3\""
+      }
+    ]
+  }
+}

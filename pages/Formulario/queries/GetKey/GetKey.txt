@@ -1,0 +1,4 @@
+SELECT creado_por
+FROM public.caso
+WHERE spoa_expediente = {{spoa_expediente.text}}
+LIMIT 1

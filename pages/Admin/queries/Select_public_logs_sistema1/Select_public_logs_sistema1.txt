@@ -1,0 +1,16 @@
+SELECT
+  *
+FROM
+  public.logs_sistema
+WHERE
+  ({{ Select_nivel.selectedOptionValue ? "'" + Select_nivel.selectedOptionValue.replace(/'/g, "''") + "'" : "NULL" }} IS NULL
+       OR "nivel" = {{ Select_nivel.selectedOptionValue ? "'" + Select_nivel.selectedOptionValue.replace(/'/g, "''") + "'" : "NULL" }})
+  AND ({{ Select_usuario.selectedOptionValue ? "'" + Select_usuario.selectedOptionValue.replace(/'/g, "''") + "'" : "NULL" }} IS NULL
+       OR "usuario" = {{ Select_usuario.selectedOptionValue ? "'" + Select_usuario.selectedOptionValue.replace(/'/g, "''") + "'" : "NULL" }})
+ORDER BY
+  "{{ ["fecha_hora","usuario","accion","nivel","tabla_afectada"].includes(logs_table.sortOrder.column) ? logs_table.sortOrder.column : "fecha_hora" }}"
+  {{ !logs_table.sortOrder.column ? "DESC" : (logs_table.sortOrder.order === "desc" ? "DESC" : "") }}
+LIMIT
+  {{logs_table.pageSize}}
+OFFSET
+  {{logs_table.pageOffset}}

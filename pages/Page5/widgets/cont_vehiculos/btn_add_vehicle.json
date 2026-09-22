@@ -1,0 +1,62 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 65,
+  "boxShadow": "none",
+  "buttonColor": "#86efac",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "add",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{ value_clean.text === \"true\" && obser_vehiculo.text  ? false : true }}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "6conw7zl7o",
+  "leftColumn": 10,
+  "minWidth": 120,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 52,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "onClick": "{{\ninsert_vehicle.run(\n  () => {\n    showAlert(\"Vehículo guardado correctamente\", \"success\");\n    load_vehicle.run(() => {\n      LimpiarFormulario.LimpiarFormulario();\n      value_clean.setValue(false);\n    });\n  },\n  async (err) => {\n    await Logger.error(\"INSERT_VEHICULO\", err, {\n      placa: placa.text,\n      expediente: expediente.text\n    });\n    showAlert(\"Error al guardar vehículo: \" + JSON.stringify(err), \"error\");\n    console.error(\"Error insert_vehicle:\", err);\n  }\n);\n}}\n",
+  "originalBottomRow": 65,
+  "originalTopRow": 61,
+  "parentColumnSpace": 13.54705810546875,
+  "parentId": "od7ph1n5fo",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 22,
+  "text": "Agregar vehículo",
+  "topRow": 61,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "ajes4qmop3",
+  "widgetName": "btn_add_vehicle"
+}

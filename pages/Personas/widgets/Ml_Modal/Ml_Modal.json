@@ -1,0 +1,85 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 638,
+  "boxShadow": "none",
+  "canEscapeKeyClose": true,
+  "canOutsideClickClose": true,
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 620,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "u6xn1iyhzl",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 240,
+      "minWidth": 450,
+      "mobileBottomRow": 240,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 299.296875,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "xetdihcx2d",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 299.296875,
+      "shouldScrollContents": false,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "ifotpjdmhx",
+      "widgetName": "Canvas5"
+    }
+  ],
+  "detachFromLayout": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "height": 620,
+  "isCanvas": true,
+  "isLoading": false,
+  "key": "j6pgz6o02k",
+  "leftColumn": 18,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 24,
+  "minHeight": 620,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 12.470703125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 42,
+  "shouldScrollContents": true,
+  "topRow": 18,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "xetdihcx2d",
+  "widgetName": "Ml_Modal",
+  "width": 456
+}

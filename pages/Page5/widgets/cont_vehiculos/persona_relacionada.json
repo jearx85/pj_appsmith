@@ -1,0 +1,72 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 25,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "15dik7adwu",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Número de documento de la persona relacionada al vehículo",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 24,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\npersona_relacionada.selectedOptionValue\n  ? Get_nombre.run()\n  : nombre_persona.setValue(\"\")\n}}\n",
+  "optionLabel": "cedula",
+  "optionValue": "cedula",
+  "originalBottomRow": 25,
+  "originalTopRow": 18,
+  "parentColumnSpace": 23.078125,
+  "parentId": "od7ph1n5fo",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opción",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 24,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n[\n  { cedula: \"Sin documento\", value: null },\n  ...((List_ids.data || [])\n    .filter(item => item.cedula)) // elimina null, undefined y \"\"\n]\n}}\n",
+  "topRow": 18,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "qvda6oyo11",
+  "widgetName": "persona_relacionada"
+}

@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 60,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "lnflk3urrb",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 51,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 47,
+  "needsErrorInfo": false,
+  "originalBottomRow": 61,
+  "originalTopRow": 57,
+  "overflow": "NONE",
+  "parentColumnSpace": 22.04443359375,
+  "parentId": "j175j9n3um",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 27,
+  "shouldTruncate": false,
+  "text": "{{\n[\n  tipo_via_1.selectedOptionValue || \"\",\n  numero_via_1.text || \"\",\n  letra_1.selectedOptionValue || \"\",\n  cardinalidad_1.selectedOptionValue.toLocaleUpperCase() || \"\",\n  nombre_via_1.text.toLocaleUpperCase() || \"\",\n  tipo_via_2.selectedOptionValue || \"\",\n  numero_via_2.text || \"\",\n  letra_2.selectedOptionValue || \"\",\n  cardinalidad_2.selectedOptionValue.toLocaleUpperCase() || \"\",\n  nombre_via_2.text.toLocaleUpperCase() || \"\",\n  puerta.text|| \"\"\n].filter(x => String(x).trim() !== \"\").join(\" \")\n}}\n\n",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 56,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "tm6x52n493",
+  "widgetName": "direccion_completa"
+}

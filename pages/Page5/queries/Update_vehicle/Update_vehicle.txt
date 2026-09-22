@@ -1,0 +1,16 @@
+UPDATE public.vehiculos
+SET
+  expediente = {{ expediente.text || null }},
+  placa = {{ placa.text || null }},
+  num_documento_relacionado = {{ persona_relacionada.selectedOptionValue || null }},
+  clase_vehiculo = {{ clase_vehiculo.selectedOptionValue || null }},
+  servicio = {{ servicio.selectedOptionValue || null }},
+  empresa = {{ empresa.text || null }},
+  modelo = {{ modelo.text || null }},
+	marca = {{ marca.text || null }},
+	color = {{ color.text || null }},
+	linea = {{ linea.text || null }},
+	observaciones ={{obser_vehiculo.text || null}},
+  modificado_por = {{ appsmith.store.usuarioActual || null }},
+  fecha_actualizacion = now() AT TIME ZONE 'America/Bogota'
+WHERE id_vehiculo = {{ Table_vehicles.selectedRow.id_vehiculo }};

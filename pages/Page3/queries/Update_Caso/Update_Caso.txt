@@ -1,0 +1,60 @@
+UPDATE public.caso
+SET
+  codigo_cct = {{ appsmith.store.caso_pg1?.codigo_cct || null }},
+  fecha_hora_hechos = {{ appsmith.store.caso_pg1?.fecha_hora_hechos || null }},
+  oficio = {{ appsmith.store.caso_pg1?.oficio || null }},
+  expediente = {{ appsmith.store.caso_pg1?.expediente || null }},
+	spoa = {{ appsmith.store.caso_pg1?.spoa || null }},
+	spoa_expediente = {{ appsmith.store.caso_pg1?.spoa_expediente || null }},
+  remitido = {{ appsmith.store.caso_pg1?.remitido || null }},
+  choque_con = {{ appsmith.store.caso_pg1?.choque_con || null }},
+  objeto_fijo = {{ appsmith.store.caso_pg1?.objeto_fijo || null }},
+  clase_accidente = {{ appsmith.store.caso_pg1?.clase_accidente || null }},
+  caso_fuga = {{ appsmith.store.caso_pg1?.caso_fuga || null }},
+  otro_clase_accidente = {{ appsmith.store.caso_pg1?.otro_clase_accidente || null }},
+  tipo_fiscal = {{ appsmith.store.caso_pg1?.tipo_fiscal || null }},
+  nombre_fiscal = {{ appsmith.store.caso_pg1?.nombre_fiscal || null }},
+  id_fiscal = {{ appsmith.store.caso_pg1?.id_fiscal || null }},
+  tipo_via_1 = {{ appsmith.store.caso_pg2?.tipo_via_1 || null }},
+  numero_via_1 = {{ appsmith.store.caso_pg2?.numero_via_1 || null }},
+  letra_1 = {{ appsmith.store.caso_pg2?.letra_1 || null }},
+  cardinalidad_1 = {{ appsmith.store.caso_pg2?.cardinalidad_1 || null }},
+  nombre_via_1 = {{ appsmith.store.caso_pg2?.nombre_via_1 || null }},
+  tipo_via_2 = {{ appsmith.store.caso_pg2?.tipo_via_2 || null }},
+  numero_via_2 = {{ appsmith.store.caso_pg2?.numero_via_2 || null }},
+  letra_2 = {{ appsmith.store.caso_pg2?.letra_2 || null }},
+  cardinalidad_2 = {{ appsmith.store.caso_pg2?.cardinalidad_2 || null }},
+  nombre_via_2 = {{ appsmith.store.caso_pg2?.nombre_via_2 || null }},
+  puerta = {{ appsmith.store.caso_pg2?.puerta || null }},
+  comuna = {{ appsmith.store.caso_pg2?.comuna || null }},
+  direccion_completa = {{ appsmith.store.caso_pg2?.direccion_completa || null }},
+  latitud = {{ appsmith.store.caso_pg2?.latitud || null }},
+  longitud = {{ appsmith.store.caso_pg2?.longitud || null }},
+  observaciones_direccion = {{ appsmith.store.caso_pg2?.observ_dir || null }},
+  fecha_hora_levantamiento = {{ appsmith.store.caso_pg3?.fecha_hora_levantamiento || null }},
+  lugar_inspeccion = {{ appsmith.store.caso_pg3?.lugar_inspeccion || null }},
+  otro_lugar_inspeccion = {{ appsmith.store.caso_pg3?.otro_lugar_inspeccion || null }},
+  grupo = {{ appsmith.store.caso_pg3?.grupo || null }},
+  coordinador = {{ appsmith.store.caso_pg3?.coordinador || null }},
+  integrantes = {{ appsmith.store.caso_pg3?.integrantes || null }},
+  agente_conoce_caso = {{ appsmith.store.caso_pg3?.agente_conoce_caso || null }},
+  investigador_asignado = {{ appsmith.store.caso_pg3?.investigador_asignado || null }},
+  fotos = {{ appsmith.store.caso_pg3?.fotos || null }},
+  videos = {{ appsmith.store.caso_pg3?.videos || null }},
+  hipotesis = {{ appsmith.store.caso_pg3?.hipotesis || null }},
+  otro_hipotesis = {{ appsmith.store.caso_pg3?.otro_hipotesis || null }},
+  relato = {{ appsmith.store.caso_pg3?.relato || null }},
+  observaciones_hipotesis = {{ appsmith.store.caso_pg3?.observaciones_hipotesis || null }},
+  fecha_actualizacion = now() AT TIME ZONE 'America/Bogota',
+  modificado_por = {{ appsmith.store.usuarioActual || null }},
+	motivo_actu = {{ motivo_actu.text || null }}
+WHERE id = {{ appsmith.store.casoSeleccionado?.id }}
+RETURNING id, spoa_expediente;
+
+UPDATE public.personas
+SET expediente = {{ appsmith.store.caso_pg1?.spoa_expediente || null }}
+WHERE caso_id = {{ appsmith.store.casoSeleccionado?.id }};
+
+UPDATE public.vehiculos
+SET expediente = {{ appsmith.store.caso_pg1?.spoa_expediente || null }}
+WHERE caso_id = {{ appsmith.store.casoSeleccionado?.id }};

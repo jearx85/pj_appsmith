@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 38,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  appsmith.store.modo === \"edicion\"\n   ? (appsmith.store.casoSeleccionado?.tipo_via_2 ?? \"\")\n   : \"\" ))(tipo_via_2.options, tipo_via_2.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "nkx3znkz6v",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Tipo Vía 2",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 39,
+  "originalTopRow": 32,
+  "parentColumnSpace": 4.915435791015625,
+  "parentId": "j175j9n3um",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opcion",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 15,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  { \"name\": \"Via\", \"code\": \"VIA\" },\n  { \"name\": \"CL\", \"code\": \"CL\" },\n  { \"name\": \"CR\", \"code\": \"CR\" },\n  { \"name\": \"AV\", \"code\": \"AV\" },\n  { \"name\": \"DG\", \"code\": \"DG\" },\n  { \"name\": \"KM\", \"code\": \"KM\" },\n  { \"name\": \"VÍA\", \"code\": \"VÍA\" },\n  { \"name\": \"CIRCULAR\", \"code\": \"CIRCULAR\" },\n  { \"name\": \"TRANSV\", \"code\": \"TRANSV\" },\n  { \"name\": \"Otro\", \"code\": \"OTRO\" }\n]\n",
+  "topRow": 31,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "wz4v53gs39",
+  "widgetName": "tipo_via_2"
+}

@@ -1,0 +1,1 @@
+SELECT COUNT(*) from public.usuarios_autorizados where email ilike '%{{Table_users.searchText}}%';

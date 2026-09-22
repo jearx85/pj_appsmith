@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "691f694cc3e3b840f0861998_04af6aa3-4dbe-4aac-baa2-1b291149e196",
+  "id": "Formulario_Logger",
+  "unpublishedCollection": {
+    "name": "Logger",
+    "pageId": "Formulario",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "PAGINA_ACTUAL",
+        "value": "\"Formulario\""
+      }
+    ]
+  }
+}

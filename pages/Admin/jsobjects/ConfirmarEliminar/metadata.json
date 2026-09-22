@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "691f694cc3e3b840f0861998_60841259-b7df-4af8-9859-c88b18135a41",
+  "id": "Admin_ConfirmarEliminar",
+  "unpublishedCollection": {
+    "name": "ConfirmarEliminar",
+    "pageId": "Admin",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

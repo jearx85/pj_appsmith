@@ -1,0 +1,59 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 41,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ijbi8u5g72",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Validado",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 6.9375,
+  "parentId": "ifotpjdmhx",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opción",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 51,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Si\",\n    \"code\": \"SI\"\n  },\n  {\n    \"name\": \"No\",\n    \"code\": \"NO\"\n  }\n]",
+  "topRow": 34,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "hi7nztjcts",
+  "widgetName": "slt_validado"
+}

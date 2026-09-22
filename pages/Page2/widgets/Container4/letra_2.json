@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 38,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  appsmith.store.modo === \"edicion\"\n   ? (appsmith.store.casoSeleccionado?.letra_2 ?? \"\")\n   : \"\" ))(letra_2.options, letra_2.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "nkx3znkz6v",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Letra 2",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 34,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 36,
+  "originalTopRow": 29,
+  "parentColumnSpace": 17.087631225585938,
+  "parentId": "j175j9n3um",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opcion",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 47,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"A\",\n    \"code\": \"A\"\n  },\n  {\n    \"name\": \"AA\",\n    \"code\": \"AA\"\n  },\n  {\n    \"name\": \"AB\",\n    \"code\": \"AB\"\n  },\n  {\n    \"name\": \"B\",\n    \"code\": \"B\"\n  },\n  {\n    \"name\": \"BA\",\n    \"code\": \"BA\"\n  },\n  {\n    \"name\": \"C\",\n    \"code\": \"C\"\n  },\n  {\n    \"name\": \"D\",\n    \"code\": \"D\"\n  },\n  {\n    \"name\": \"DD\",\n    \"code\": \"DD\"\n  },\n  {\n    \"name\": \"E\",\n    \"code\": \"E\"\n  },\n  {\n    \"name\": \"EE\",\n    \"code\": \"EE\"\n  },\n\t{\n    \"name\": \"F\",\n    \"code\": \"F\"\n  },\n  {\n    \"name\": \"FF\",\n    \"code\": \"FF\"\n  },\n  {\n    \"name\": \"G\",\n    \"code\": \"G\"\n  },\n  {\n    \"name\": \"GG\",\n    \"code\": \"GG\"\n  }\n]",
+  "topRow": 31,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "mtd9m6viqx",
+  "widgetName": "letra_2"
+}

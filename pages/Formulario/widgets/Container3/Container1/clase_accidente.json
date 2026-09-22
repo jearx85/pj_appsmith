@@ -1,0 +1,71 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 52,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? appsmith.store.caso_pg1?.clase_accidente || \"\" : appsmith.store.casoSeleccionado.clase_accidente))(clase_accidente.options, clase_accidente.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "nkx3znkz6v",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "* Clase accidente",
+  "labelTextColor": "{{!clase_accidente.isValid ? \"#ef4444\" : \"#1f1f1f\"}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 48,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 41,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 52,
+  "originalTopRow": 45,
+  "parentColumnSpace": 17.96142578125,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opcion",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 30,
+  "serverSideFiltering": false,
+  "sourceData": "[\n\t{\n    \"name\": \"Atropello\",\n    \"code\": \"Atropello\"\n  },\n\t{\n    \"name\": \"Caída ocupante\",\n    \"code\": \"Caida ocupante\"\n  },\n\t{\n    \"name\": \"Pérdida de control\",\n    \"code\": \"Perdida de control\"\n  },\n  {\n    \"name\": \"Choque\",\n    \"code\": \"Choque\"\n  },\n\t{\n    \"name\": \"Incendio\",\n    \"code\": \"Incendio\"\n  },\n\t{\n    \"name\": \"Sumersión\",\n    \"code\": \"Sumersión\"\n  },\n  {\n    \"name\": \"Volcamiento\",\n    \"code\": \"Volcamiento\"\n  },\n\t{\n    \"name\": \"Otro\",\n    \"code\": \"Otro\"\n  },\n\t{\n    \"name\": \"Sin información\",\n    \"code\": \"Sin información\"\n  }\n]\n",
+  "topRow": 45,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "kzn7flv0rv",
+  "widgetName": "clase_accidente"
+}

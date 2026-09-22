@@ -1,0 +1,65 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 26,
+  "boxShadow": "none",
+  "defaultText": "{{ appsmith.store.modo === \"edicion\"\n   ? (appsmith.store.casoSeleccionado?.relato ?? \"\")\n   : \"\" }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "MULTI_LINE_TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "c85094n2v1",
+  "label": "Relato",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 23,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 16,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{InputUtils.upperRelato();}}",
+  "originalBottomRow": 26,
+  "originalTopRow": 16,
+  "parentColumnSpace": 18.503860473632812,
+  "parentId": "d4uonr2kj9",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 16,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "bmewy6ue4x",
+  "widgetName": "relato"
+}

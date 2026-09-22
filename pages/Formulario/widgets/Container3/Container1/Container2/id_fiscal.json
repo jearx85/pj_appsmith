@@ -1,0 +1,66 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultText": "{{ (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? appsmith.store.caso_pg1?.id_fiscal || \"\" : appsmith.store.casoSeleccionado.id_fiscal}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "jv6e8k5x58",
+  "label": "Identificación fiscal (#ID)\n",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 43,
+  "maxDynamicHeight": 9000,
+  "maxNum": "",
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 45,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onTextChanged": "",
+  "parentColumnSpace": 12.757339477539062,
+  "parentId": "fh96qu7hp0",
+  "parentRowSpace": 10,
+  "regex": "^[0-9]+$",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 3,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "2vxw1ozhhy",
+  "widgetName": "id_fiscal"
+}

@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "defaultText": "{{ (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? appsmith.store.caso_pg1?.nombre_fiscal || \"\" : appsmith.store.casoSeleccionado?.nombre_fiscal || \"\"}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "jv6e8k5x58",
+  "label": "Fiscal (Nombre)",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 22,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "onTextChanged": "",
+  "parentColumnSpace": 12.757339477539062,
+  "parentId": "fh96qu7hp0",
+  "parentRowSpace": 10,
+  "regex": "^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\\s]+$",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 42,
+  "showStepArrows": false,
+  "topRow": 3,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "w8zztsv224",
+  "widgetName": "nombre_fiscal"
+}

@@ -1,0 +1,60 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 28,
+  "boxShadow": "none",
+  "defaultText": "{{\nchk_nn.isChecked ? \"Por establecer\"\n  : \"\"\n}}\n",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "c85094n2v1",
+  "label": "* Número de documento",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 33,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "originalBottomRow": 28,
+  "originalTopRow": 21,
+  "parentColumnSpace": 20.519775390625,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 21,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "d4wrg3h23n",
+  "widgetName": "cedula"
+}

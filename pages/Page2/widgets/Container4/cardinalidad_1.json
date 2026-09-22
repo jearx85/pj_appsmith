@@ -1,0 +1,63 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 20,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  appsmith.store.modo === \"edicion\"\n   ? (appsmith.store.casoSeleccionado?.cardinalidad_1 ?? \"\")\n   : \"\" ))(cardinalidad_1.options, cardinalidad_1.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "nkx3znkz6v",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Cardinalidad Vía 1",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "",
+  "labelWidth": 5,
+  "leftColumn": 48,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 44,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 17.087631225585938,
+  "parentId": "j175j9n3um",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opcion",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Este\",\n    \"code\": \"Este\"\n  },\n  {\n    \"name\": \"Sur\",\n    \"code\": \"Sur\"\n  }\n]",
+  "topRow": 13,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "70fw7woaox",
+  "widgetName": "cardinalidad_1"
+}

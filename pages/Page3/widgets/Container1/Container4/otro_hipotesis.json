@@ -1,0 +1,74 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultText": "{{ appsmith.store.modo === \"edicion\"\n   ? (appsmith.store.casoSeleccionado?.otro_hipotesis ?? \"\")\n   : \"\" }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "errorMessage": "",
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isSpellCheck": false,
+  "isVisible": "{{\n  [\"157 OTRA\", \"217 OTRAS\", \"308 OTRAS\", \"411 OTRAS\", \"506 OTRA\"].includes(hipotesis.selectedOptionValue)\n}}",
+  "key": "c85094n2v1",
+  "label": "* Otro",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextColor": "{{!otro_hipotesis.text ? \"#ef4444\" : \"#1f1f1f\"}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 30,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 18.503860473632812,
+  "parentId": "d4uonr2kj9",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "showStepArrows": false,
+  "topRow": 7,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "wtzyl1v7cu",
+  "widgetName": "otro_hipotesis"
+}

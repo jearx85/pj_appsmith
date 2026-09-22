@@ -1,0 +1,74 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 42,
+  "boxShadow": "none",
+  "defaultText": "{{\nVehiclesHelper.vehiculo(Number(contador.text) - 1, \"placa\")\n}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "errorMessage": "",
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isSpellCheck": true,
+  "isVisible": true,
+  "key": "2zy4mfhfa9",
+  "label": "Placa",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxChars": "",
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{ placa.setValue(placa.text.toUpperCase()) }}\n",
+  "originalBottomRow": 42,
+  "originalTopRow": 35,
+  "parentColumnSpace": 20.154296875,
+  "parentId": "od7ph1n5fo",
+  "parentRowSpace": 10,
+  "regex": "",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 20,
+  "showStepArrows": false,
+  "topRow": 35,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "",
+  "version": 2,
+  "widgetId": "4kprv8ln9c",
+  "widgetName": "placa"
+}

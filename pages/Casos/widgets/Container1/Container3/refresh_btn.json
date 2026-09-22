@@ -1,0 +1,42 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "refresh",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 57,
+  "onClick": "{{resetWidget('filtro_oficio'); resetWidget('filtro_fecha'); RefreshQuery.run();}}",
+  "parentColumnSpace": 12.0703125,
+  "parentId": "1l9aocinj8",
+  "parentRowSpace": 10,
+  "rightColumn": 61,
+  "tooltip": "Resetea los filtros",
+  "topRow": 5,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "xp5u9a9nzq",
+  "widgetName": "refresh_btn"
+}

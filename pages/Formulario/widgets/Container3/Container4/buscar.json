@@ -1,0 +1,89 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "optionValue"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFilterUpdate"
+    },
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{ ValidateUser.esUsuarioAutorizado()\n}}",
+  "key": "gsdfst50jw",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Buscar",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onDropdownOpen": "{{Select_public_caso1.run()}}",
+  "onFilterUpdate": "{{\n            Select_public_caso1.run();\n            \n          }}",
+  "onOptionChange": "{{\n  buscar.selectedOptionValue\n    ? (storeValue(\"modo\", \"edicion\"), HandleCaso.cargarCaso(buscar.selectedOptionValue))\n    : (storeValue(\"modo\", \"nuevo\"), HandleCaso.cargarCaso(\"\"))\n}}",
+  "optionLabel": "spoa_expediente",
+  "optionValue": "spoa_expediente",
+  "originalBottomRow": 19,
+  "originalTopRow": 13,
+  "parentColumnSpace": 15.7021484375,
+  "parentId": "qgc2lpz0rn",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione expediente",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 20,
+  "serverSideFiltering": true,
+  "sourceData": "{{Select_public_caso1.data}}",
+  "topRow": 2,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "fedztlppzw",
+  "widgetName": "buscar"
+}

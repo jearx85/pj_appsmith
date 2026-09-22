@@ -1,0 +1,91 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 1481,
+  "boxShadow": "none",
+  "canEscapeKeyClose": true,
+  "canOutsideClickClose": true,
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 1420,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "kxtmk9z3j3",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 1390,
+      "minWidth": 450,
+      "mobileBottomRow": 240,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 378.4453125,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "uonnt74pi1",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 378.4453125,
+      "shouldScrollContents": false,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "4ctcg65er5",
+      "widgetName": "Canvas12"
+    }
+  ],
+  "detachFromLayout": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClose"
+    }
+  ],
+  "height": 1420,
+  "isCanvas": true,
+  "isLoading": false,
+  "key": "7kd3grsikv",
+  "leftColumn": 19,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 24,
+  "minHeight": 1420,
+  "mobileBottomRow": 85,
+  "mobileLeftColumn": 19,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 61,
+  "needsErrorInfo": false,
+  "onClose": "{{closeModal(DetailModal.name);}}",
+  "parentColumnSpace": 15.7685546875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 43,
+  "shouldScrollContents": true,
+  "topRow": 61,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "uonnt74pi1",
+  "widgetName": "DetailModal",
+  "width": 998
+}

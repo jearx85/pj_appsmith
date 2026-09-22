@@ -1,0 +1,70 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 39,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? appsmith.store.caso_pg1?.remitido ||\"\" : appsmith.store.casoSeleccionado.remitido))(remitido.options, remitido.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "nkx3znkz6v",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "* Remitido",
+  "labelTextColor": "{{!remitido.isValid ? \"#ef4444\" : \"#1f1f1f\" }}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 33,
+  "mobileRightColumn": 53,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 17.96142578125,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opcion",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 30,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Si\",\n    \"code\": \"Si\"\n  },\n  {\n    \"name\": \"No\",\n    \"code\": \"No\"\n  }\n]",
+  "topRow": 32,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "md7hfash50",
+  "widgetName": "remitido"
+}

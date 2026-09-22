@@ -1,0 +1,68 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 135,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "right",
+  "iconName": "arrow-right",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{\n  // Si es usuario autorizado y tiene motivo, solo valida los campos del formulario\n  // Si no es autorizado, siempre deshabilitado\n  (appsmith.store.modo === \"edicion\" && (!appsmith.store.esAutorizado|| !motivo_actu.text)) || (lugar_inspeccion.selectedOptionValue === 'OTRO' && !otro_lugar_inspeccion.isValid)\n  || !lugar_inspeccion.isValid\n|| !fecha_hora_levantamiento.isValid\n  || !integrantes.isValid\n  || ([\"157 OTRA\", \"217 OTRAS\", \"308 OTRAS\", \"411 OTRAS\", \"506 OTRA\"].includes(hipotesis.selectedOptionValue) && !otro_hipotesis.isValid)\n}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "eckvbfb6ei",
+  "leftColumn": 46,
+  "minWidth": 120,
+  "mobileBottomRow": 104,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 100,
+  "needsErrorInfo": false,
+  "onClick": "{{ Save_case.guardarCaso() }}",
+  "originalBottomRow": 135,
+  "originalTopRow": 131,
+  "parentColumnSpace": 19.42333984375,
+  "parentId": "4qcfomb74l",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 58,
+  "text": "{{ (!appsmith.store.caso_pg1.valor_buscar || appsmith.store.caso_pg1.valor_buscar == undefined) ? \"Crear caso\" : \"Actualizar caso\" }}\n",
+  "topRow": 131,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "z6loalt0ff",
+  "widgetName": "btn_pg4"
+}

@@ -1,0 +1,75 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 28,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  \nchk_nn.isChecked ? \"Por establecer\" :\n \"\" ))(tipo_documento.options, tipo_documento.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "jdi6a8fazo",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "* Tipo de documento",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 15,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 28,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 21,
+  "needsErrorInfo": false,
+  "onOptionChange": "",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 28,
+  "originalTopRow": 21,
+  "parentColumnSpace": 17.625,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opción",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 31,
+  "serverSideFiltering": false,
+  "sourceData": "{{TipoDocumento.tipoDocumento || \"Por establecer\"}}",
+  "topRow": 21,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "l2khts8y1f",
+  "widgetName": "tipo_documento"
+}

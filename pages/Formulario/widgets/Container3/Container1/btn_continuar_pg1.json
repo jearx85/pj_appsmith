@@ -1,0 +1,74 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 95,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "iconName"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "iconName"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "right",
+  "iconName": "{{ GetKey.data && GetKey.data.length > 0 && appsmith.store.newForm ? \"disable\" : \"arrow-right\" }}",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{\n  Validate_form.validate()\n  || (appsmith.store.modo === \"nuevo\" && GetKey.data?.length > 0 && GetKey.data[0]?.creado_por !== \"bot_whatsapp\")\n  || (appsmith.store.modo === \"edicion\" && !ValidateUser.esUsuarioAutorizado())\n}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "4gflepvblt",
+  "leftColumn": 49,
+  "minWidth": 120,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "onClick": "{{\nstoreValue('modo', buscar.selectedOptionValue ? 'edicion' : 'nuevo');\nstoreValue('casoSeleccionado', buscar.selectedOptionValue ? appsmith.store.casoSeleccionado : null);\nstoreValue('caso_pg1', {\n  expediente: expediente.text,\n\tspoa: spoa.text,\n\tspoa_expediente: spoa_expediente.text,\n  codigo_cct: codigo_cct.value,\n  buscar: buscar.selectedOptionValue,\n  valor_buscar: valor_buscar.text,\n  fecha_hora_hechos: fecha_hora_hechos.selectedDate,\n  oficio: oficio.value,\n  remitido: remitido.selectedOptionValue,\n  choque_con: choque_con.selectedOptionValue,\n  objeto_fijo: objeto_fijo.selectedOptionValue,\n  clase_accidente: clase_accidente.selectedOptionValue, \n  caso_fuga: caso_fuga.selectedOptionValue,\n  otro_clase_accidente: otro_clase_accidente.text,\n  tipo_fiscal: tipo_fiscal.selectedOptionValue,\n  nombre_fiscal: nombre_fiscal.text,\n  id_fiscal: id_fiscal.value,\n  creado_por: UserName.text\n});\nstoreValue('usuarioActual', UserName.text);\nnavigateTo('Page2');\n}}",
+  "originalBottomRow": 96,
+  "originalTopRow": 92,
+  "parentColumnSpace": 17.087631225585938,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 60,
+  "text": "{{\n  appsmith.store.modo === \"nuevo\" && GetKey.data && GetKey.data.length > 0 ? \"Caso ya registrado\"\n    : appsmith.store.modo === \"edicion\" && !ValidateUser.esUsuarioAutorizado() ? \"Sin permisos para editar\"\n      : appsmith.store.modo === \"edicion\" ? \"Continuar edición\" : \"Continuar\"\n}}",
+  "topRow": 91,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "8ejsj3v8o3",
+  "widgetName": "btn_continuar_pg1"
+}

@@ -1,0 +1,58 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 31,
+  "boxShadow": "none",
+  "defaultText": "{{ (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? appsmith.store.caso_pg1?.oficio || \"\" : appsmith.store.casoSeleccionado.oficio}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "jv6e8k5x58",
+  "label": "Oficio",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 31,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 34,
+  "mobileRightColumn": 54,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 13.941162109375,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 24,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "f6siyh7we9",
+  "widgetName": "oficio"
+}

@@ -1,0 +1,1 @@
+SELECT cedula FROM public.personas WHERE expediente = {{expediente.text}}

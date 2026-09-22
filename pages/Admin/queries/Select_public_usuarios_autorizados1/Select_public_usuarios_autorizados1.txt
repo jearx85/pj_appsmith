@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  public.usuarios_autorizados
+WHERE
+  "email" ilike '%{{Table_users.searchText}}%'
+ORDER BY
+  "{{Table_users.sortOrder.column || 'id'}}" {{Table_users.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{Table_users.pageSize}}
+OFFSET
+  {{Table_users.pageOffset}}

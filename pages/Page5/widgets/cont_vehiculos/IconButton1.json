@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 82,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "chevron-left",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": false,
+  "key": "fuf0ck3qku",
+  "leftColumn": 20,
+  "minWidth": 50,
+  "mobileBottomRow": 45,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 27,
+  "mobileTopRow": 41,
+  "needsErrorInfo": false,
+  "onClick": "{{Contador.decrementarContador()\nvalue_clean.setValue(\"false\")\n}}",
+  "originalBottomRow": 82,
+  "originalTopRow": 78,
+  "parentColumnSpace": 16.53125,
+  "parentId": "od7ph1n5fo",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 24,
+  "topRow": 78,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "436efzesm4",
+  "widgetName": "IconButton1"
+}

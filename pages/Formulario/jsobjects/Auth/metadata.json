@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "691f694cc3e3b840f0861998_054fdbb7-1a93-401e-a350-0c14e7e94971",
+  "id": "Formulario_Auth",
+  "unpublishedCollection": {
+    "name": "Auth",
+    "pageId": "Formulario",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "PIN_ADMIN",
+        "value": "\"1234\""
+      }
+    ]
+  }
+}

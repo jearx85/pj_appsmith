@@ -1,0 +1,1 @@
+SELECT DISTINCT usuario FROM public.logs_sistema ORDER BY usuario;

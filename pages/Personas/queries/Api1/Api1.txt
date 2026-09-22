@@ -1,0 +1,8 @@
+{{
+  CodaHelper.personaConCaso(
+    update_form.formData.nombres + " " + update_form.formData.apellidos,
+    update_form.formData.edad,
+    update_form.formData.sexo,
+    update_form.formData.condicion
+  )
+}}

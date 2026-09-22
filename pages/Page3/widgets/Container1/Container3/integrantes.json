@@ -1,0 +1,72 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "defaultText": "{{ appsmith.store.modo === \"edicion\"\n   ? (appsmith.store.casoSeleccionado?.integrantes ?? \"\")\n   : \"\" }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "validation"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "errorMessage": "Valor no valido, formato esperado (555-333)",
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "c85094n2v1",
+  "label": "Integrantes (Placas agentes), formato esperado (555-333)",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 43,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 7,
+  "needsErrorInfo": false,
+  "onTextChanged": "",
+  "parentColumnSpace": 18.503860473632812,
+  "parentId": "66pzssk333",
+  "parentRowSpace": 10,
+  "placeholderText": "Ej: 123-562",
+  "regex": "",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tooltip": "",
+  "topRow": 7,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "{{/^\\d+(-\\d+)+$/.test(integrantes.text)}}",
+  "version": 2,
+  "widgetId": "p6c2s0e34g",
+  "widgetName": "integrantes"
+}

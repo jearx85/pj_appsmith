@@ -1,0 +1,9 @@
+{{
+  CodaHelper.personaConCaso(
+    Number(contador.text) - 1,
+    nombres.text,
+    edad.text,
+    sexo.selectedOptionValue,
+    condicion.selectedOptionValue
+  )
+}}

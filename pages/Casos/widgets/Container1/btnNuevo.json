@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 20,
+  "boxShadow": "none",
+  "buttonColor": "#0A2A57",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "right",
+  "iconName": "",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "4gflepvblt",
+  "leftColumn": 53,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 52,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{\nFormFlow.iniciarNuevoCaso()\nnavigateTo(\"Formulario\")\n}}",
+  "originalBottomRow": 20,
+  "originalTopRow": 16,
+  "parentColumnSpace": 17.087631225585938,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "text": "+ Crear nuevo caso",
+  "topRow": 16,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "gbe7nk94uw",
+  "widgetName": "btnNuevo"
+}

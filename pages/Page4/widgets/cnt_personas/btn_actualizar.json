@@ -1,0 +1,62 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 93,
+  "boxShadow": "none",
+  "buttonColor": "#7e22ce",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "refresh",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{num_personas.text != 0 && value_clean.text == \"false\" ? false : true}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "5t6ozy73sb",
+  "leftColumn": 36,
+  "minWidth": 120,
+  "mobileBottomRow": 68,
+  "mobileLeftColumn": 27,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 64,
+  "needsErrorInfo": false,
+  "onClick": "{{\n(async () => {\n  await UpdatePersona.actualizarPersona();\n  await Load_Persona.run();\n  await LimpiarFormulario.limpiarFormulario();\n})();\n}}",
+  "originalBottomRow": 93,
+  "originalTopRow": 89,
+  "parentColumnSpace": 16.53125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 45,
+  "text": "Actualizar",
+  "topRow": 89,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "0o3hkhofk5",
+  "widgetName": "btn_actualizar"
+}

@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ypxhrtw7n5",
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 4,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "originalBottomRow": 5,
+  "originalTopRow": 0,
+  "overflow": "NONE",
+  "parentColumnSpace": 22.04443359375,
+  "parentId": "o0tfx6qur3",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 26,
+  "shouldTruncate": false,
+  "text": "El bot está prellenando casos automáticamente",
+  "textAlign": "LEFT",
+  "textColor": "#2b6cb0",
+  "topRow": 0,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "oxpegx9pwq",
+  "widgetName": "Text2"
+}

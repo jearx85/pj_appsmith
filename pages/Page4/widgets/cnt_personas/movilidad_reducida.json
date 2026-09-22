@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 74,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  PersonaHelper.persona(Number(contador.text) - 1, \"movilidad_reducida\") || \"No\" ))(movilidad_reducida.options, movilidad_reducida.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "cxyuekdos9",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Movilidad reducida",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 51,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 44,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 74,
+  "originalTopRow": 67,
+  "parentColumnSpace": 18.6923828125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opción",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 24,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Si\",\n    \"code\": \"Si\"\n  },\n  {\n    \"name\": \"No\",\n    \"code\": \"No\"\n  },\n  {\n    \"name\": \"Desconocido\",\n    \"code\": \"Desconocido\"\n  }\n]",
+  "topRow": 67,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "h0ljbo4jwz",
+  "widgetName": "movilidad_reducida"
+}

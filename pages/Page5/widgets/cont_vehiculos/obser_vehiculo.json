@@ -1,0 +1,66 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 54,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "MULTI_LINE_TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "o8dazf7e4a",
+  "label": "Observaciones",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextColor": "{{!obser_vehiculo.text ? \"red\" : \"#1f1f1f\"}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 38,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 41,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 60,
+  "mobileTopRow": 34,
+  "needsErrorInfo": false,
+  "originalBottomRow": 54,
+  "originalTopRow": 44,
+  "parentColumnSpace": 21.78125,
+  "parentId": "od7ph1n5fo",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 60,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 44,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "7wcaztzthr",
+  "widgetName": "obser_vehiculo"
+}

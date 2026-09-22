@@ -1,0 +1,25 @@
+UPDATE public.personas
+SET
+  expediente = {{ expediente.text || null }},
+	tipo_identificacion = {{tipo_documento.selectedOptionValue || null}},
+  cedula = {{ cedula.text || null }},
+  oficio = {{ oficio.text || null }},
+  nombres = {{ nombres.text || null }},
+  apellidos = {{ apellidos.text || null }},
+  nacionalidad = {{ nacionalidad.selectedOptionValue || null }},
+  fecha_nacimiento = {{ fecha_nacimiento.selectedDate || null }},
+  edad = {{ edad.text || null }},
+  sexo = {{ sexo.selectedOptionValue || null }},
+  vinculacion_caso = {{ vinculacion_caso.selectedOptionValue || null }},
+  condicion = {{ condicion.selectedOptionValue || null }},
+  movilidad_reducida = {{ movilidad_reducida.selectedOptionValue || null }},
+  habitante_calle = {{ habitante_calle.selectedOptionValue || null }},
+  familia = {{ familia.selectedOptionValue || null }},
+  nombre_familiar = {{ nombre_familiar.text || null }},
+  parentesco = {{ parentesco.selectedOptionValue || null }},
+  documento_familiar = {{ documento_familiar.text || null }},
+  telefono = {{ telefono.text || null }},
+  fecha_actualizacion = now() AT TIME ZONE 'America/Bogota',
+  modificado_por = {{ appsmith.store.usuarioActual || null }},
+	telefono_involucrado = {{telefono_indiciado.text || null}}
+WHERE id_persona = {{ Tbl_personas.selectedRow.id_persona }};

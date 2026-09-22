@@ -1,0 +1,62 @@
+{
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 93,
+  "boxShadow": "none",
+  "buttonColor": "#86efac",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "add",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{!cedula.text || value_clean.text === \"false\"  || !familia.isValid ? true : false}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "6conw7zl7o",
+  "leftColumn": 12,
+  "minWidth": 120,
+  "mobileBottomRow": 68,
+  "mobileLeftColumn": 44,
+  "mobileRightColumn": 60,
+  "mobileTopRow": 64,
+  "needsErrorInfo": false,
+  "onClick": "{{\nInsert_Persona.run(\n  () => {\n    showAlert(\"Persona guardada correctamente\", \"success\");\n    Load_Persona.run(() => {\n      LimpiarFormulario.limpiarFormulario();\n      value_clean.setValue(false);\n    });\n  },\n  async (err) => {\n    await Logger.error(\"INSERT_PERSONA\", err, {\n      cedula: cedula.text,\n      expediente: expediente.text\n    });\n    showAlert(\"Error al guardar persona: \" + (err.message || JSON.stringify(err)), \"error\");\n  }\n);\n}}",
+  "originalBottomRow": 93,
+  "originalTopRow": 89,
+  "parentColumnSpace": 18.6923828125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 23,
+  "text": "Agregar persona",
+  "topRow": 89,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "pfqwdwnb73",
+  "widgetName": "btn_add_person"
+}

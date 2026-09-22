@@ -1,0 +1,65 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 106,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "right",
+  "iconName": "arrow-right",
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{comuna.isValid ? false : true}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "eckvbfb6ei",
+  "leftColumn": 54,
+  "minWidth": 120,
+  "mobileBottomRow": 79,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 75,
+  "needsErrorInfo": false,
+  "onClick": "{{\nstoreValue('caso_pg2', {\n  tipo_via_1: tipo_via_1.selectedOptionValue,\n  numero_via_1: numero_via_1.text,\n  letra_1: letra_1.selectedOptionValue,\n  cardinalidad_1: cardinalidad_1.selectedOptionValue,\n  nombre_via_1: nombre_via_1.text,\n  tipo_via_2: tipo_via_2.selectedOptionValue,\n  numero_via_2: numero_via_2.text,\n  letra_2: letra_2.selectedOptionValue,\n  cardinalidad_2: cardinalidad_2.selectedOptionValue,\n  nombre_via_2: nombre_via_2.text,\n  puerta: puerta.text,\n  comuna: comuna.selectedOptionValue,\n  direccion_completa: direccion_completa.text,\n\tlatitud: latitud.text,\n\tlongitud: longitud.text,\n\tobserv_dir: observ_dir.text\n});\nnavigateTo('Page3');\n}}\n",
+  "originalBottomRow": 106,
+  "originalTopRow": 102,
+  "parentColumnSpace": 23.078125,
+  "parentId": "j175j9n3um",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 62,
+  "text": "Continuar",
+  "topRow": 102,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "h71ifa48pq",
+  "widgetName": "btn_continuar_pg2"
+}

@@ -1,0 +1,63 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 110,
+  "boxShadow": "none",
+  "defaultText": "1",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "maxNum"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": false,
+  "key": "ghvomblmtj",
+  "label": "",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 29,
+  "maxDynamicHeight": 9000,
+  "maxNum": "{{num_personas.text}}",
+  "minDynamicHeight": 4,
+  "minNum": "1",
+  "minWidth": 450,
+  "mobileBottomRow": 84,
+  "mobileLeftColumn": 19,
+  "mobileRightColumn": 39,
+  "mobileTopRow": 77,
+  "needsErrorInfo": false,
+  "originalBottomRow": 110,
+  "originalTopRow": 104,
+  "parentColumnSpace": 23.078125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 32,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 104,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "3whu8q7fx7",
+  "widgetName": "contador"
+}

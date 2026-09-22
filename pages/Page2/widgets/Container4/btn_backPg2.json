@@ -1,0 +1,59 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 107,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "arrow-left",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "eckvbfb6ei",
+  "leftColumn": 1,
+  "minWidth": 120,
+  "mobileBottomRow": 71,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
+  "mobileTopRow": 67,
+  "needsErrorInfo": false,
+  "onClick": "{{ \n\tnavigateTo('Formulario')\n\t\n}}",
+  "originalBottomRow": 107,
+  "originalTopRow": 103,
+  "parentColumnSpace": 23.078125,
+  "parentId": "j175j9n3um",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 12,
+  "text": "Volver",
+  "topRow": 103,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "80c5ng1mtk",
+  "widgetName": "btn_backPg2"
+}

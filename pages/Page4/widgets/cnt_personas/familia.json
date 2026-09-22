@@ -1,0 +1,71 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 74,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  PersonaHelper.persona(Number(contador.text) - 1, \"familia\") || \"\"))(familia.options, familia.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "cxyuekdos9",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "* Se encontró familia",
+  "labelTextColor": "{{!familia.selectedOptionValue ? \"#ef4444\" : \"#1f1f1f\"}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 44,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 51,
+  "mobileLeftColumn": 42,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 44,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 64,
+  "originalTopRow": 57,
+  "parentColumnSpace": 18.6923828125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opción",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Si\",\n    \"code\": \"Si\"\n  },\n  {\n    \"name\": \"No\",\n    \"code\": \"No\"\n  }\n]",
+  "topRow": 67,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "3j4212upvm",
+  "widgetName": "familia"
+}

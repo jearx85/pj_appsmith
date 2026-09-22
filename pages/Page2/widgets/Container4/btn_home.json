@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "home",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "93yxm44i0i",
+  "leftColumn": 1,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo(\"Formulario\")}}",
+  "parentColumnSpace": 19.5,
+  "parentId": "j175j9n3um",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 5,
+  "topRow": 1,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "abfekhdjrr",
+  "widgetName": "btn_home"
+}

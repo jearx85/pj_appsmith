@@ -1,0 +1,70 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultText": "{{ \n  (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? (appsmith.store.caso_pg1?.codigo_cct || \"\") : (appsmith.store.casoSeleccionado?.codigo_cct || \"\")\n}}\n",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "jv6e8k5x58",
+  "label": "Código CCT",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "maxNum": "",
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{\n  codigo_cct.setValue(\n    String(codigo_cct.text ?? '').replace(/\\D/g, '').slice(0, 8)\n  )\n}}\n",
+  "parentColumnSpace": 13.941162109375,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": false,
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 0,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "",
+  "version": 2,
+  "widgetId": "020j7uag7m",
+  "widgetName": "codigo_cct"
+}

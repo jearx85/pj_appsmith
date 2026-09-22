@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 55,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  PersonaHelper.persona(Number(contador.text) - 1, \"vinculacion_caso\") ))(vinculacion_caso.options, vinculacion_caso.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "cxyuekdos9",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Tipo de vinculación con el caso",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 35,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 55,
+  "originalTopRow": 48,
+  "parentColumnSpace": 18.6923828125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opción",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 31,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Indiciado (conductor)\",\n    \"code\":  \"Indiciado (conductor)\"\n  },\n  {\n    \"name\": \"Occiso\",\n    \"code\": \"Occiso\"\n  },\n  {\n    \"name\": \"Victima (Lesionado)\",\n    \"code\": \"Victima (Lesionado)\"\n  },\n\t{\n    \"name\": \"Testigo\",\n    \"code\": \"Testigo\"\n  }\n]",
+  "topRow": 48,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "vf53evvhym",
+  "widgetName": "vinculacion_caso"
+}

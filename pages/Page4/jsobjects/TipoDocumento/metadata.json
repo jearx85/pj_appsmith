@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "691f694cc3e3b840f0861998_9c194f81-96e3-4846-88c4-87fab312f941",
+  "id": "Page4_TipoDocumento",
+  "unpublishedCollection": {
+    "name": "TipoDocumento",
+    "pageId": "Page4",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "tipoDocumento",
+        "value": "[{\n  \"label\": \"CC-Cédula de Ciudadanía\",\n  \"value\": \"CC-Cedula de Ciudadania\"\n}, {\n  \"label\": \"TI-Tarjeta de identidad\",\n  \"value\": \"TI-Tarjeta de identidad\"\n}, {\n  \"label\": \"RC-Registro Civil\",\n  \"value\": \"RC-Registro Civil\"\n}, {\n  \"label\": \"CE-Cédula de Extranjería\",\n  \"value\": \"CE-Cedula de Extranjeria\"\n}, {\n  \"label\": \"PPT-Permiso por Protección Temporal\",\n  \"value\": \"PPT-Permiso por Proteccion Temporal\"\n}, {\n  \"label\": \"PA- Pasaporte\",\n  \"value\": \"PA- Pasaporte\"\n}, {\n  \"label\": \"PEP- Permiso Especial de Permanencia\",\n  \"value\": \"PEP-Permiso Especial de Permanencia\"\n}, {\n  \"label\": \"DE-Documento Extranjero\",\n  \"value\": \"DE-Documento Extranjero\"\n}, {\n  \"label\": \"SC-Salvo conducto para refugiado\",\n  \"value\": \"SC-Salvo conducto para refugiado\"\n}, {\n  \"label\": \"CD-Carnet Diplomático\",\n  \"value\": \"CD-Carnet Diplomatico\"\n}, {\n  \"label\": \"CN- Certificado de Nacido Vivo\",\n  \"value\": \"CN- Certificado de Nacido Vivo\"\n}, {\n  \"label\": \"DNI- País de Origen\",\n  \"value\": \"DNI- Pais de Origen\"\n}, {\n  \"label\": \"Por establecer\",\n  \"value\": \"Por establecer\"\n}]"
+      }
+    ]
+  }
+}

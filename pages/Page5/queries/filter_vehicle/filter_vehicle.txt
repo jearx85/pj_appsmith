@@ -1,0 +1,1 @@
+SELECT * FROM public."vehiculos" WHERE id_vehiculo = {{Table_vehicles.selectedRow.id_vehiculo}} AND expediente = {{Table_vehicles.selectedRow.expediente}}

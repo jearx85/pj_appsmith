@@ -1,0 +1,75 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 52,
+  "boxShadow": "none",
+  "defaultText": "{{ (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? appsmith.store.caso_pg1?.otro_clase_accidente || \"\" : appsmith.store.casoSeleccionado.otro_clase_accidente || \"\"}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": "{{ clase_accidente.selectedOptionValue === \"Otro\" }}",
+  "key": "jv6e8k5x58",
+  "label": "* Otro",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextColor": "{{!otro_clase_accidente.isValid ? \"#ef4444\" : \"#1f1f1f\"}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 31,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 50,
+  "mobileLeftColumn": 34,
+  "mobileRightColumn": 54,
+  "mobileTopRow": 43,
+  "needsErrorInfo": false,
+  "originalBottomRow": 52,
+  "originalTopRow": 45,
+  "parentColumnSpace": 13.941162109375,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldScrollContents": true,
+  "showStepArrows": false,
+  "topRow": 45,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "c6j6y1e9ok",
+  "widgetName": "otro_clase_accidente"
+}

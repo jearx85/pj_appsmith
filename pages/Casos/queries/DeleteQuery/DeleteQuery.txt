@@ -1,0 +1,2 @@
+DELETE FROM public.caso
+WHERE id = {{ appsmith.store.casoAEliminar?.id }};

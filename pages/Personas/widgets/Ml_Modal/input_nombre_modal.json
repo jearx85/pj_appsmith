@@ -1,0 +1,57 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 34,
+  "boxShadow": "none",
+  "defaultText": "{{data_table.selectedRow.nombres + \" \" + data_table.selectedRow.apellidos}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "6z07quid35",
+  "label": "Nombre",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 6.9375,
+  "parentId": "ifotpjdmhx",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 50,
+  "showStepArrows": false,
+  "topRow": 27,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "h7kpdnyf22",
+  "widgetName": "input_nombre_modal"
+}

@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 33,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \nVehiclesHelper.vehiculo(Number(contador.text) - 1, \"servicio\")\n))(servicio.options, servicio.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "ko1zpdc75u",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Servicio",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 21,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 21,
+  "mobileLeftColumn": 30,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 14,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 33,
+  "originalTopRow": 26,
+  "parentColumnSpace": 20.154296875,
+  "parentId": "od7ph1n5fo",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opción",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 37,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Oficial\",\n    \"code\": \"Oficial\"\n  },\n  {\n    \"name\": \"Particular\",\n    \"code\": \"Particular\"\n  },\n  {\n    \"name\": \"Público\",\n    \"code\": \"Público\"\n  },\n\t{\n    \"name\": \"Diplomatico\",\n    \"code\": \"Diplomatico\"\n  },\n\t{\n    \"name\": \"Desconocido\",\n    \"code\": \"Desconocido\"\n  }\n]",
+  "topRow": 26,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "cxupyn6mot",
+  "widgetName": "servicio"
+}

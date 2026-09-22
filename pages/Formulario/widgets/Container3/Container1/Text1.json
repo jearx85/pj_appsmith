@@ -1,0 +1,60 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 91,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "System Default",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": "{{ remitido.selectedOptionValue === \"\" || choque_con.selectedOptionValue === \"\" }}",
+  "key": "l50kdob9vl",
+  "leftColumn": 49,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 67,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 63,
+  "needsErrorInfo": false,
+  "originalBottomRow": 92,
+  "originalTopRow": 87,
+  "overflow": "NONE",
+  "parentColumnSpace": 17.96142578125,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "shouldTruncate": false,
+  "text": "* Faltan campos obligatorios",
+  "textAlign": "LEFT",
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
+  "topRow": 87,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "gt1amnig6i",
+  "widgetName": "Text1"
+}

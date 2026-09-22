@@ -1,0 +1,1 @@
+SELECT COUNT(*) from public.logs_sistema where usuario ilike '%{{logs_table.searchText}}%';

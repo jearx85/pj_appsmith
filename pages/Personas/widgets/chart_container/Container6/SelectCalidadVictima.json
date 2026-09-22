@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "eoriwj18pb",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Calidad de la victima",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 20,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 20,
+  "originalTopRow": 13,
+  "parentColumnSpace": 23.078125,
+  "parentId": "3iz6740gqv",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "serverSideFiltering": false,
+  "sourceData": "{{ChartData.getTiposVinculacion()}}",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "02v82diqix",
+  "widgetName": "SelectCalidadVictima"
+}

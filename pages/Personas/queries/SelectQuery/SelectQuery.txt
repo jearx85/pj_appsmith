@@ -1,0 +1,25 @@
+SELECT p.*, 
+       c.fecha_hora_hechos, 
+       c.fecha_hora_levantamiento, 
+       c.lugar_inspeccion, 
+       c.clase_accidente, 
+       c.hipotesis, 
+       c.relato,
+			 c.direccion_completa,
+			 c.creado_por AS caso_creado_por,
+       c.fecha_creacion AS fecha_creacion_caso,
+       v.clase_vehiculo
+FROM public."personas" p
+LEFT JOIN public."caso" c ON p.expediente = c.spoa_expediente
+LEFT JOIN public."vehiculos" v 
+       ON v.expediente = c.spoa_expediente
+      AND TRIM(v.num_documento_relacionado) = TRIM(p.cedula)
+WHERE (
+    p."cedula" ILIKE '%{{data_table.searchText || ""}}%'
+    OR p."expediente" ILIKE '%{{data_table.searchText || ""}}%'
+)
+AND c.fecha_hora_hechos::date >= COALESCE(NULLIF('{{DatePickerDesde.formattedDate || ""}}', '')::date, '1900-01-01'::date)
+AND c.fecha_hora_hechos::date <= COALESCE(NULLIF('{{DatePickerHasta.formattedDate || ""}}', '')::date, '2999-12-31'::date)
+ORDER BY c.fecha_hora_levantamiento DESC
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

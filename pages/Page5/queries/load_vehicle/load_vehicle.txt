@@ -1,0 +1,13 @@
+SELECT 
+    v.*,
+    CONCAT(p.nombres, ' ', p.apellidos) AS nombre_completo,
+    p.vinculacion_caso
+FROM public.vehiculos v
+LEFT JOIN public.personas p 
+    ON v.num_documento_relacionado = p.cedula 
+    AND v.caso_id = p.caso_id
+WHERE v.caso_id = {{appsmith.store.casoSeleccionado?.id}}
+ORDER BY v.placa ASC
+LIMIT 10
+OFFSET 0;
+

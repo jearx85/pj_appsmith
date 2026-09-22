@@ -1,0 +1,13 @@
+UPDATE public."vehiculos" SET
+		"placa" = '{{update_form.fieldState.placa.isVisible ? update_form.formData.placa : update_form.sourceData.placa}}',
+		"expediente" = '{{update_form.fieldState.expediente.isVisible ? update_form.formData.expediente : update_form.sourceData.expediente}}',
+    "placa_desconocida" = '{{update_form.fieldState.placa_desconocida.isVisible ? update_form.formData.placa_desconocida : update_form.sourceData.placa_desconocida}}',
+		"num_documento_relacionado" = '{{update_form.fieldState.num_documento_relacionado.isVisible ? update_form.formData.num_documento_relacionado : update_form.sourceData.num_documento_relacionado}}',
+		"clase_vehiculo" = '{{update_form.fieldState.clase_vehiculo.isVisible ? update_form.formData.clase_vehiculo : update_form.sourceData.clase_vehiculo}}',
+		"servicio" = '{{update_form.fieldState.servicio.isVisible ? update_form.formData.servicio : update_form.sourceData.servicio}}',
+		"empresa" = '{{update_form.fieldState.empresa.isVisible ? update_form.formData.empresa : update_form.sourceData.empresa}}',
+		"modelo" = '{{update_form.fieldState.modelo.isVisible ? update_form.formData.modelo : update_form.sourceData.modelo}}',
+		"observaciones" = '{{update_form.fieldState.observaciones.isVisible ? update_form.formData.observaciones : update_form.sourceData.observaciones}}',
+		"creado_por" = '{{update_form.fieldState.creado_por.isVisible ? update_form.formData.creado_por : update_form.sourceData.creado_por}}',
+		"modificado_por" = '{{update_form.fieldState.modificado_por.isVisible ? update_form.formData.modificado_por : update_form.sourceData.modificado_por}}'
+	WHERE "id_vehiculo" = {{data_table.selectedRow.id_vehiculo}};

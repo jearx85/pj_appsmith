@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 70,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? appsmith.store.caso_pg1?.caso_fuga || \"No\" : appsmith.store.casoSeleccionado.caso_fuga || \"No\"))(caso_fuga.options, caso_fuga.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "259o8pzrfz",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Caso con fuga",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 52,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 45,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 70,
+  "originalTopRow": 63,
+  "parentColumnSpace": 20.7880859375,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Si\",\n    \"code\": \"Si\"\n  },\n  {\n    \"name\": \"No\",\n    \"code\": \"No\"\n  }\n]",
+  "topRow": 63,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "8vtz2nie1t",
+  "widgetName": "caso_fuga"
+}

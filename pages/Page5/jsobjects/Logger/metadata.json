@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "691f694cc3e3b840f0861998_505fcb03-d0a0-4288-9336-5327a49a4b5e",
+  "id": "Page5_Logger",
+  "unpublishedCollection": {
+    "name": "Logger",
+    "pageId": "Page5",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "PAGINA_ACTUAL",
+        "value": "\"Page5\""
+      }
+    ]
+  }
+}

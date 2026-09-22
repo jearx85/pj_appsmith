@@ -1,0 +1,5 @@
+SELECT
+  CONCAT(nombres, ' ', apellidos) AS nombre_completo,
+	vinculacion_caso
+FROM public.personas
+WHERE cedula = {{ persona_relacionada.selectedOptionValue }};

@@ -1,0 +1,7 @@
+UPDATE public.usuarios_autorizados 
+SET "email"= '{{Table_users.updatedRow.email}}', 
+    "nombre"= '{{Table_users.updatedRow.nombre}}', 
+    "activo"= '{{Table_users.updatedRow.activo}}', 
+    "creado_en"= '{{Table_users.updatedRow.creado_en}}',
+    "placa"= '{{Table_users.updatedRow.placa}}'
+WHERE "id"= {{Table_users.updatedRow.id}};

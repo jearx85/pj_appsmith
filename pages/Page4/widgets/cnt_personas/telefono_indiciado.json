@@ -1,0 +1,71 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 63,
+  "boxShadow": "none",
+  "defaultText": "{{ PersonaHelper.persona(Number(contador.text) - 1, \"telefono_involucrado\") }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "label"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{vinculacion_caso.selectedOptionValue === \"Occiso\" || !vinculacion_caso.selectedOptionValue ? false : true}}",
+  "key": "c85094n2v1",
+  "label": "{{vinculacion_caso.selectedOptionValue != \"Occiso\" ? `Telefono ${vinculacion_caso.selectedOptionValue}` : \"\"}}",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 4,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 68,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 61,
+  "needsErrorInfo": false,
+  "originalBottomRow": 63,
+  "originalTopRow": 56,
+  "parentColumnSpace": 18.6923828125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 24,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 56,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "vkz475mc3d",
+  "widgetName": "telefono_indiciado"
+}

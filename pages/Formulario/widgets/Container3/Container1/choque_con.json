@@ -1,0 +1,71 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 63,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? appsmith.store.caso_pg1?.choque_con || \"\" : appsmith.store.casoSeleccionado.choque_con))(choque_con.options, choque_con.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "nkx3znkz6v",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Choque con",
+  "labelTextColor": "{{!choque_con.isValid ? \"#ef4444\" : \"#1f1f1f\"}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 63,
+  "originalTopRow": 56,
+  "parentColumnSpace": 17.96142578125,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opcion",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 30,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Vehiculo\",\n    \"code\": \"Vehículo\"\n  },\n  {\n    \"name\": \"Alimentador del metro\",\n    \"code\": \"Alimentador del metro\"\n  },\n  {\n    \"name\": \"Semoviente\",\n    \"code\": \"Semoviente\"\n  },\n\t{\n    \"name\": \"Bicicleta\",\n    \"code\": \"Bicicleta\"\n  },\n\t{\n    \"name\": \"Objeto fijo\",\n    \"code\": \"Objeto fijo\"\n  },\n\t{\n    \"name\": \"Sin información\",\n    \"code\": \"Sin informacion\"\n  }\n]",
+  "topRow": 56,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "9w18cofwpg",
+  "widgetName": "choque_con"
+}

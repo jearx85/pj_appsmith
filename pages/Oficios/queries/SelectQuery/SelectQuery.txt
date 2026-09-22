@@ -1,0 +1,16 @@
+SELECT 
+	oficio,
+	grupo,
+	fecha_hora_hechos,
+	agente_conoce_caso,
+	spoa_expediente,
+	direccion_completa,
+	lugar_inspeccion,
+	creado_por,
+	coordinador
+FROM public.caso
+WHERE "expediente" ILIKE '%{{data_table.searchText || ""}}%'
+  AND oficio IS NOT NULL
+ORDER BY 
+  EXTRACT(YEAR FROM fecha_hora_hechos) DESC,
+  oficio DESC

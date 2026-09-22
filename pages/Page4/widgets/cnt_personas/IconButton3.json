@@ -1,0 +1,51 @@
+{
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "home",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "28ghc03e3b",
+  "leftColumn": 1,
+  "minWidth": 50,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 5,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onClick": "{{\n\tnavigateTo(\"Formulario\")\n\tstoreValue(\n  'buscar', appsmith.store.caso_pg1.expediente\n)\n\tLoad_caso.run()\n}}",
+  "parentColumnSpace": 16.53125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 5,
+  "tooltip": "Volver al inicio",
+  "topRow": 1,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "1fvc1gda58",
+  "widgetName": "IconButton3"
+}

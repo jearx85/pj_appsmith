@@ -1,0 +1,2 @@
+DELETE FROM public.usuarios_autorizados
+WHERE id = {{ appsmith.store.usuarioAEliminar }};

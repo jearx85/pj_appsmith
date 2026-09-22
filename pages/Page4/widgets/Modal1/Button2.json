@@ -1,0 +1,51 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 24,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "0xuwspt9td",
+  "leftColumn": 47,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{delete_person.run().then(() => {\n  showAlert('Persona eliminada correctamente', 'success');\n  closeModal(Modal1.name);\n}).catch(() => {\n  showAlert('Error al eliminar persona', 'error');\n});\nLoad_Persona.run();}}",
+  "originalBottomRow": 22,
+  "originalTopRow": 18,
+  "parentId": "j9gd43m2s6",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Eliminar",
+  "topRow": 20,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "02su3u2d4s",
+  "widgetName": "Button2"
+}

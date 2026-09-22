@@ -1,0 +1,20 @@
+SELECT 
+	c.id,
+	c.expediente, 
+	c.spoa,
+	c.spoa_expediente,
+	c.oficio, 
+	c.fecha_hora_hechos, 
+	c.clase_accidente,
+	c.direccion_completa, 
+	c.comuna,
+	c.creado_por,
+	c.coordinador,
+	(SELECT COUNT(*) FROM public.personas p WHERE p.caso_id = c.id) AS cantidad_personas,
+	(SELECT COUNT(*) FROM public.personas p WHERE p.caso_id = c.id AND p.vinculacion_caso = 'Occiso') AS cantidad_occisos,
+	(SELECT COUNT(*) FROM public.personas p WHERE p.caso_id = c.id AND p.vinculacion_caso = 'Victima (Lesionado)') AS cantidad_heridos,
+	(SELECT COUNT(*) FROM public.vehiculos v WHERE v.caso_id = c.id) AS cantidad_vehiculos
+FROM public.caso c
+WHERE
+ oficio IS NOT NULL
+ORDER BY fecha_hora_hechos DESC;

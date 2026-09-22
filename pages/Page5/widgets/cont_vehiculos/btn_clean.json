@@ -1,0 +1,59 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "eraser",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "c2z201v8wt",
+  "leftColumn": 4,
+  "minWidth": 120,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 29,
+  "needsErrorInfo": false,
+  "onClick": "{{LimpiarFormulario.LimpiarFormulario()\nvalue_clean.setValue(\"true\")\n}}",
+  "originalBottomRow": 62,
+  "originalTopRow": 58,
+  "parentColumnSpace": 16.53125,
+  "parentId": "od7ph1n5fo",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 15,
+  "text": "Limpiar formulario",
+  "topRow": 2,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "z2mhy1ijsf",
+  "widgetName": "btn_clean"
+}

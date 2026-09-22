@@ -1,0 +1,2 @@
+DELETE FROM public."caso"
+  WHERE "expediente" = {{data_table.triggeredRow.expediente}};

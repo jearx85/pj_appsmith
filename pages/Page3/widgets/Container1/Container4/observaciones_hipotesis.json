@@ -1,0 +1,66 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 37,
+  "boxShadow": "none",
+  "defaultText": "{{ appsmith.store.modo === \"edicion\"\n   ? (appsmith.store.casoSeleccionado?.observaciones_hipotesis ?? \"\")\n   : \"\" }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "MULTI_LINE_TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "c85094n2v1",
+  "label": "Observaciones de la hipótesis",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 32,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 25,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{InputUtils.upperHipotesis();}}",
+  "originalBottomRow": 37,
+  "originalTopRow": 27,
+  "parentColumnSpace": 18.503860473632812,
+  "parentId": "d4uonr2kj9",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldAllowAutofill": false,
+  "shouldScrollContents": true,
+  "showStepArrows": false,
+  "topRow": 27,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "sr0zh6aj8y",
+  "widgetName": "observaciones_hipotesis"
+}

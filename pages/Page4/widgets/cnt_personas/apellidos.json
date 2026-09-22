@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 37,
+  "boxShadow": "none",
+  "defaultText": "{{ \nchk_nn.isChecked ? \"Por establecer\" :\n\"\" }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "c85094n2v1",
+  "label": "Apellidos",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 33,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 25,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 51,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{InputUtils.upperApellidos();}}",
+  "originalBottomRow": 37,
+  "originalTopRow": 30,
+  "parentColumnSpace": 18.6923828125,
+  "parentId": "6ut6qybce7",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "showStepArrows": false,
+  "topRow": 30,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "vs6pvwd8q2",
+  "widgetName": "apellidos"
+}

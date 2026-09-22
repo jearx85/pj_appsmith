@@ -1,0 +1,71 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 145,
+  "boxShadow": "none",
+  "defaultText": "{{ appsmith.store.modo === \"edicion\"\n   ? (appsmith.store.casoSeleccionado?.investigador_asignado ?? \"\")\n   : \"\" }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": false,
+  "key": "c85094n2v1",
+  "label": "Investigador asignado ",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 23,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 16,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{\n  investigador_asignado.setValue(\n    String(investigador_asignado.text || '').replace(/\\D/g, '')\n  )\n}}",
+  "originalBottomRow": 145,
+  "originalTopRow": 138,
+  "parentColumnSpace": 18.503860473632812,
+  "parentId": "4qcfomb74l",
+  "parentRowSpace": 10,
+  "placeholderText": "(Placa agente)",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 13,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 138,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "jrhqomg4ae",
+  "widgetName": "investigador_asignado"
+}

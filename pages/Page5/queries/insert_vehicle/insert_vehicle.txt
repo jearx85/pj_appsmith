@@ -1,0 +1,34 @@
+INSERT INTO public.vehiculos (
+  placa,
+  expediente,
+  caso_id,
+  num_documento_relacionado,
+  clase_vehiculo,
+  servicio,
+  empresa,
+  modelo,
+	marca,
+	color,
+	linea,
+	observaciones,
+  creado_por,
+  fecha_creacion,
+	fecha_actualizacion
+)
+VALUES (
+  {{ placa.text || null }},
+  {{ expediente.text }},
+  {{ appsmith.store.casoSeleccionado?.id || null }},
+  {{ persona_relacionada.selectedOptionValue }},
+  {{ clase_vehiculo.selectedOptionValue }},
+  {{ servicio.selectedOptionValue }},
+  {{ empresa.text }},
+  {{ modelo.text }},
+	{{ marca.text }},
+	{{ color.text }},
+	{{ linea.text }},
+	{{obser_vehiculo.text}},
+  {{ appsmith.store.usuarioActual || null }},
+  now() AT TIME ZONE 'America/Bogota',
+	NULL
+);

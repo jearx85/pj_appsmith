@@ -1,0 +1,26 @@
+INSERT INTO public."vehiculos" (
+	"placa",
+	"expediente",
+	"placa_desconocida",
+	"num_documento_relacionado",
+	"clase_vehiculo",
+	"servicio",
+	"empresa",
+	"modelo",
+	"observaciones",
+	"creado_por",
+	"modificado_por"
+)
+VALUES (
+	'{{insert_form.formData.placa}}',
+	'{{insert_form.formData.expediente}}',
+	'{{insert_form.formData.placa_desconocida}}',
+	'{{insert_form.formData.num_documento_relacionado}}',
+	'{{insert_form.formData.clase_vehiculo}}',
+	'{{insert_form.formData.servicio}}',
+	'{{insert_form.formData.empresa}}',
+	'{{insert_form.formData.modelo}}',
+	'{{insert_form.formData.observaciones}}',
+	'{{insert_form.formData.creado_por}}',
+	'{{insert_form.formData.modificado_por}}'
+);

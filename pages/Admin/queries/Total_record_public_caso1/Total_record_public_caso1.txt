@@ -1,0 +1,1 @@
+SELECT COUNT(*) from public.caso where spoa_expediente ilike '%{{logs_table.searchText}}%';

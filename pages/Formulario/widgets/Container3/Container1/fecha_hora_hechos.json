@@ -1,0 +1,86 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 31,
+  "boxShadow": "none",
+  "closeOnSelection": true,
+  "dateFormat": "YYYY-MM-DD HH:mm",
+  "datePickerType": "DATE_PICKER",
+  "defaultDate": "{{ (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? appsmith.store.caso_pg1?.fecha_hora_hechos || \"\" : appsmith.store.casoSeleccionado.fecha_hora_hechos}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultDate"
+    },
+    {
+      "key": "labelTextColor"
+    },
+    {
+      "key": "maxDate"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    },
+    {
+      "key": "labelTextColor"
+    },
+    {
+      "key": "onDateSelected"
+    },
+    {
+      "key": "maxDate"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ],
+  "firstDayOfWeek": 0,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "a312xv7x8n",
+  "label": "* Fecha y hora de los hechos",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextColor": "{{!fecha_hora_hechos.selectedDate ? \"#ef4444\" : \"#1f1f1f\"}}",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDate": "{{moment().add(100, \"years\").format(\"YYYY-MM-DDTHH:mm:ssZ\")}}",
+  "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "onDateSelected": "{{\n  moment(fecha_hora_hechos.selectedDate).isAfter(moment(), \"day\")\n    ? showAlert(\"La fecha y hora de los hechos no puede ser una fecha futura.\", \"error\").then(() => resetWidget(\"fecha_hora_hechos\", true))\n    : undefined\n}}",
+  "parentColumnSpace": 13.941162109375,
+  "parentId": "xxoex18p83",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 30,
+  "shortcuts": false,
+  "timePrecision": "minute",
+  "topRow": 24,
+  "type": "DATE_PICKER_WIDGET2",
+  "version": 2,
+  "widgetId": "v3o0s3j6di",
+  "widgetName": "fecha_hora_hechos"
+}

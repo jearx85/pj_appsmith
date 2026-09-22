@@ -1,0 +1,21 @@
+UPDATE public."personas" SET
+	"cedula" = '{{data_table.selectedRow.cedula}}',
+	"expediente" = '{{update_form1.fieldState.expediente?.isVisible ? update_form1.formData.expediente : update_form1.sourceData.expediente}}',
+	"oficio" = '{{update_form1.fieldState.oficio?.isVisible ? update_form1.formData.oficio : update_form1.sourceData.oficio}}',
+	"nombres" = '{{update_form1.fieldState.nombres?.isVisible ? update_form1.formData.nombres : update_form1.sourceData.nombres}}',
+	"apellidos" = '{{update_form1.fieldState.apellidos?.isVisible ? update_form1.formData.apellidos : update_form1.sourceData.apellidos}}',
+	"nacionalidad" = '{{update_form1.fieldState.nacionalidad?.isVisible ? update_form1.formData.nacionalidad : update_form1.sourceData.nacionalidad}}',
+	"fecha_nacimiento" = '{{update_form1.fieldState.fecha_nacimiento?.isVisible ? update_form1.formData.fecha_nacimiento : update_form1.sourceData.fecha_nacimiento}}',
+	"edad" = '{{update_form1.fieldState.edad?.isVisible ? update_form1.formData.edad : update_form1.sourceData.edad}}',
+	"sexo" = '{{update_form1.fieldState.sexo?.isVisible ? update_form1.formData.sexo : update_form1.sourceData.sexo}}',
+	"vinculacion_caso" = '{{update_form1.fieldState.vinculacion_caso?.isVisible ? update_form1.formData.vinculacion_caso : update_form1.sourceData.vinculacion_caso}}',
+	"condicion" = '{{update_form1.fieldState.condicion?.isVisible ? update_form1.formData.condicion : update_form1.sourceData.condicion}}',
+	"movilidad_reducida" = '{{update_form1.fieldState.movilidad_reducida?.isVisible ? update_form1.formData.movilidad_reducida : update_form1.sourceData.movilidad_reducida}}',
+	"habitante_calle" = '{{update_form1.fieldState.habitante_calle?.isVisible ? update_form1.formData.habitante_calle : update_form1.sourceData.habitante_calle}}',
+	"familia" = '{{update_form1.fieldState.familia?.isVisible ? update_form1.formData.familia : update_form1.sourceData.familia}}',
+	"nombre_familiar" = '{{update_form1.fieldState.nombre_familiar?.isVisible ? update_form1.formData.nombre_familiar : update_form1.sourceData.nombre_familiar}}',
+	"parentesco" = '{{update_form1.fieldState.parentesco?.isVisible ? update_form1.formData.parentesco : update_form1.sourceData.parentesco}}',
+	"email" = '{{update_form1.fieldState.email?.isVisible ? update_form1.formData.email : update_form1.sourceData.email}}',
+	"telefono" = '{{update_form1.fieldState.telefono?.isVisible ? update_form1.formData.telefono : update_form1.sourceData.telefono}}',
+	"modificado_por" = '{{appsmith.user.email}}'
+WHERE "cedula" = '{{data_table.selectedRow.cedula}}';

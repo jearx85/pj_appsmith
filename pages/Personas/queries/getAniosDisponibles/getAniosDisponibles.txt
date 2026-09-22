@@ -1,0 +1,6 @@
+SELECT DISTINCT to_char(date_trunc('year', c.fecha_hora_hechos), 'YYYY') AS anio
+FROM public.caso c
+JOIN public.personas p ON p.caso_id = c.id
+WHERE c.fecha_hora_hechos IS NOT NULL
+  AND p.vinculacion_caso IS NOT NULL
+ORDER BY 1;

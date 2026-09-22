@@ -1,0 +1,11 @@
+SELECT 
+  to_char(date_trunc('month', c.fecha_hora_hechos), 'YYYY-MM') AS mes,
+  p.vinculacion_caso,
+  COUNT(*) AS cantidad
+FROM public.personas p
+JOIN public.caso c ON p.caso_id = c.id
+WHERE c.fecha_hora_hechos IS NOT NULL
+  AND p.vinculacion_caso IS NOT NULL
+  AND c.remitido = {{ Switch_Remitido.isSwitchedOn ? 'Si' : 'No' }}
+GROUP BY 1, 2
+ORDER BY 1, 2;

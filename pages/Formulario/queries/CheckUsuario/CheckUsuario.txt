@@ -1,0 +1,4 @@
+SELECT email, nombre, placa 
+FROM public.usuarios_autorizados 
+WHERE LOWER(email) = LOWER({{appsmith.user.email}}) AND activo = true 
+LIMIT 1;

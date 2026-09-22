@@ -1,0 +1,7 @@
+INSERT INTO public.usuarios_autorizados (email, nombre, placa)
+VALUES (
+  LOWER({{ (Table_users.newRow || {}).email }}),
+  {{ (Table_users.newRow || {}).nombre }},
+  {{ (Table_users.newRow || {}).placa }}
+)
+ON CONFLICT (email) DO NOTHING;

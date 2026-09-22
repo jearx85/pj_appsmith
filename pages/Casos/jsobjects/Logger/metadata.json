@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "691f694cc3e3b840f0861998_49d0e681-f6b2-4881-94df-60f6be70ba12",
+  "id": "Casos_Logger",
+  "unpublishedCollection": {
+    "name": "Logger",
+    "pageId": "Casos",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "PAGINA_ACTUAL",
+        "value": "\"Casos\""
+      }
+    ]
+  }
+}

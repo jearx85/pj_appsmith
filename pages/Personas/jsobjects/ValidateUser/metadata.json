@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "691f694cc3e3b840f0861998_59ebb778-dcd5-4c5e-aa99-74f9c3620a4e",
+  "id": "Personas_ValidateUser",
+  "unpublishedCollection": {
+    "name": "ValidateUser",
+    "pageId": "Personas",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

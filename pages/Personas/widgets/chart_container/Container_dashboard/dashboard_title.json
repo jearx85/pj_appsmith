@@ -1,0 +1,39 @@
+{
+  "borderRadius": "0px",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "fontFamily"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1.5rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": "true",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 11.78515625,
+  "parentId": "yvjxi71w5u",
+  "parentRowSpace": 10,
+  "rightColumn": 24,
+  "text": "Visualización de datos",
+  "textAlign": "LEFT",
+  "textColor": "#ffffff",
+  "topRow": 2,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "w762599pjz",
+  "widgetName": "dashboard_title"
+}

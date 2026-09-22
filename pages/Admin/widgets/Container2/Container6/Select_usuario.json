@@ -1,0 +1,70 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "niewwf2ou3",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Usuario",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{ \nSelect_public_logs_sistema1.run() }}",
+  "optionLabel": "usuario",
+  "optionValue": "usuario",
+  "parentColumnSpace": 5.88671875,
+  "parentId": "3hft02v7sh",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 53,
+  "serverSideFiltering": false,
+  "sourceData": "{{list_usuarios.data}}",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "otpdtuqwp3",
+  "widgetName": "Select_usuario"
+}

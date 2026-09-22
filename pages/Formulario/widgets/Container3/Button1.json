@@ -1,0 +1,58 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "buttonColor": "#eaf6fb",
+  "buttonVariant": "TERTIARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{appsmith.user.email == \"smm.citra@gmail.com\" ? true : false}}",
+  "key": "4l8yazwqo7",
+  "leftColumn": 56,
+  "minWidth": 120,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(ModalAdmin.name)}}",
+  "parentColumnSpace": 23.078125,
+  "parentId": "xd5tgofr9c",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 62,
+  "text": "Admin",
+  "topRow": 3,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "5eugvh211x",
+  "widgetName": "Button1"
+}

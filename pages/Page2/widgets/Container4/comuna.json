@@ -1,0 +1,71 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 52,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  appsmith.store.modo === \"edicion\"\n   ? (appsmith.store.casoSeleccionado?.comuna ?? \"\")\n   : \"\" ))(comuna.options, comuna.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "nkx3znkz6v",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Comuna",
+  "labelTextColor": "{{comuna.isValid ? \"#1f1f1f\" : \"red\"}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 34,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 43,
+  "mobileLeftColumn": 33,
+  "mobileRightColumn": 53,
+  "mobileTopRow": 36,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 53,
+  "originalTopRow": 46,
+  "parentColumnSpace": 17.087631225585938,
+  "parentId": "j175j9n3um",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccione una opcion",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  { \"name\": \"01 - Popular\", \"code\": \"01- Popular\" },\n  { \"name\": \"02 - Santacruz\", \"code\": \"02- Santacruz\" },\n  { \"name\": \"03 - Manrrique\", \"code\": \"03- Manrrique\" },\n  { \"name\": \"04 - Aranjuez\", \"code\": \"04- Aranjuez\" },\n  { \"name\": \"05 - Castilla\", \"code\": \"05- Castilla\" },\n  { \"name\": \"06 - Doce de Octubre\", \"code\": \"06- Doce de Octubre\" },\n  { \"name\": \"07 - Robledo\", \"code\": \"07- Robledo\" },\n  { \"name\": \"08 - Villa Hermosa\", \"code\": \"08- Villa Hermosa\" },\n  { \"name\": \"09 - Buenos aires\", \"code\": \"09- Buenos aires\" },\n  { \"name\": \"10 - Candelaria\", \"code\": \"10- Candelaria\" },\n  { \"name\": \"11 - Laureles Estadio\", \"code\": \"11- Laureles Estadio\" },\n  { \"name\": \"12 - La América\", \"code\": \"12 - La America\" },\n  { \"name\": \"13 - San Javier\", \"code\": \"13- San Javier\" },\n  { \"name\": \"14 - Poblado\", \"code\": \"14- Poblado\" },\n  { \"name\": \"15 - Guayabal\", \"code\": \"15- Guayabal\" },\n  { \"name\": \"16 - Belén\", \"code\": \"16- Belen\" },\n  { \"name\": \"50 - Corregimiento de San Sebastián de Palmitas\", \"code\": \"50- Corregimiento de San Sebastian de Palmitas\" },\n  { \"name\": \"60 - Corregimiento de San Cristóbal\", \"code\": \"60- Corregimiento de San Cristobal\" },\n  { \"name\": \"70 - Corregimiento de Altavista\", \"code\": \"70- Corregimiento de Altavista\" },\n  { \"name\": \"80 - Corregimiento de San Antonio de Prado\", \"code\": \"80- Corregimiento de San Antonio de Prado\" },\n  { \"name\": \"90 - Corregimiento de Santa Elena\", \"code\": \"90- Corregimiento de Santa Elena\" },\n  { \"name\": \"No Aplica\", \"code\": \"NA\" }\n]\n",
+  "topRow": 45,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "10m8vb5et8",
+  "widgetName": "comuna"
+}

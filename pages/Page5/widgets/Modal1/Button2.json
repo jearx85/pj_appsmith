@@ -1,0 +1,51 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 22,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "0xuwspt9td",
+  "leftColumn": 47,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{delete_vehicle.run().then(() => {\n  showAlert('Vehículo elimando correctamente', 'success');\n}).catch(() => {\n  showAlert('Error al eliminar vehículo', 'error');\n});\nload_vehicle.run()}}",
+  "originalBottomRow": 24,
+  "originalTopRow": 20,
+  "parentId": "2l7e0bl07i",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 63,
+  "text": "Eliminar",
+  "topRow": 18,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "r7iqfvvqg4",
+  "widgetName": "Button2"
+}
