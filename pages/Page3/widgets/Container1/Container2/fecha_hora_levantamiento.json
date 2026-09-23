@@ -51,7 +51,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "i4ngp3fdh2",
-  "label": "Fecha y hora del levantamiento",
+  "label": "* Fecha y hora del levantamiento",
   "labelAlignment": "left",
   "labelPosition": "Auto",
   "labelTextColor": "{{!fecha_hora_levantamiento.selectedDate ? \"red\" : \"black\"}}",
