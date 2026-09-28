@@ -1,0 +1,155 @@
+{
+  "animateLoading": true,
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 49,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "cardData": {},
+  "childStylesheet": {
+    "footerAction": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 80,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": false,
+      "containerStyle": "none",
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isLoading": false,
+      "isVisible": true,
+      "key": "weprtea9j9",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 300,
+      "minWidth": 450,
+      "mobileBottomRow": 300,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 396.75,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "y53m45pj24",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 396.75,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "9uw826y4t0",
+      "widgetName": "Canvas13"
+    }
+  ],
+  "defaultExpanded": false,
+  "defaultSelected": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "selectedAccentColor"
+    },
+    {
+      "key": "footerActions.footerAction2.buttonColor"
+    },
+    {
+      "key": "subtitle"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "expandCollapseEnabled": false,
+  "flexVerticalAlignment": "stretch",
+  "footerActions": {
+    "footerAction2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonVariant": "PRIMARY",
+      "id": "footerAction2",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Action 2",
+      "widgetId": ""
+    }
+  },
+  "hoverElevation": false,
+  "isCanvas": true,
+  "isClickable": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "a23z0075na",
+  "leftColumn": 1,
+  "maxDynamicHeight": 17,
+  "mediaHeight": 140,
+  "mediaObjectFit": "cover",
+  "mediaPosition": "NONE",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "First menu item",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Second menu item",
+      "widgetId": ""
+    }
+  },
+  "minDynamicHeight": 15,
+  "minWidth": 450,
+  "mobileBottomRow": 110,
+  "mobileLeftColumn": 21,
+  "mobileRightColumn": 45,
+  "mobileTopRow": 80,
+  "needsErrorInfo": false,
+  "originalBottomRow": 49,
+  "originalTopRow": 35,
+  "parentColumnSpace": 16.53125,
+  "parentId": "z2wi863014",
+  "parentRowSpace": 10,
+  "positioning": "fixed",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 13,
+  "selectedAccentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "selectionEnabled": false,
+  "shouldScrollContents": false,
+  "showFooter": false,
+  "showFooterDivider": true,
+  "showHeader": true,
+  "showHeaderDivider": true,
+  "showMenu": false,
+  "subtitle": "{{Select_anio.selectedOptionValue}}",
+  "title": "Total Occisos por año",
+  "topRow": 35,
+  "type": "CARD_WIDGET",
+  "version": 1,
+  "widgetId": "y53m45pj24",
+  "widgetName": "Card1"
+}

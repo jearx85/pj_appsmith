@@ -5,8 +5,8 @@
   "borderColor": "#fff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 205,
-  "bottomRowBeforeCollapse": 205,
+  "bottomRow": 220,
+  "bottomRowBeforeCollapse": 220,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -466,8 +466,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{\n  Api1.run(\n    () => {\n      showAlert(\"¡Enviado correctamente!\", \"success\");\n\t\t\tconsole.log(\"Enviado correctamente\")\n    },\n    (err) => {\n      console.error(\"Coda API Error:\", JSON.stringify(err));\n      showAlert(\"Error al enviar: \" + err.message, \"error\");\n    }\n  );\n}}\n",
-  "originalBottomRow": 205,
-  "originalTopRow": 80,
+  "originalBottomRow": 220,
+  "originalTopRow": 95,
   "parentColumnSpace": 16.3125,
   "parentId": "z2wi863014",
   "parentRowSpace": 10,
@@ -1228,8 +1228,8 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "",
-  "topRow": 80,
-  "topRowBeforeCollapse": 80,
+  "topRow": 95,
+  "topRowBeforeCollapse": 95,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "y5cjzuxnb3",
