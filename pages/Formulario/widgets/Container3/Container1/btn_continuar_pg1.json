@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 95,
+  "bottomRow": 96,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -66,7 +66,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 60,
   "text": "{{\n  appsmith.store.modo === \"nuevo\" && GetKey.data && GetKey.data.length > 0 ? \"Caso ya registrado\"\n    : appsmith.store.modo === \"edicion\" && !ValidateUser.esUsuarioAutorizado() ? \"Sin permisos para editar\"\n      : appsmith.store.modo === \"edicion\" ? \"Continuar edición\" : \"Continuar\"\n}}",
-  "topRow": 91,
+  "topRow": 92,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "8ejsj3v8o3",
