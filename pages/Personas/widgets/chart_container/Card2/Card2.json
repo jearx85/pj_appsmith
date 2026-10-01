@@ -2,7 +2,7 @@
   "animateLoading": true,
   "avatarIcon": "",
   "backgroundColor": "#FFFFFF",
-  "badgeText": "{{({Todos: 'remitidos y no remitidos', Si: 'solo remitidos', No: 'solo no remitidos'})[Select_Remitido.selectedOptionValue]}}",
+  "badgeText": "{{({Todos: 'todos', Si: 'remitidos', No: 'no remitidos'})[Select_Remitido.selectedOptionValue || 'Todos']}}",
   "borderColor": "#E2E8F0",
   "borderRadius": "0.5rem",
   "borderWidth": "1",

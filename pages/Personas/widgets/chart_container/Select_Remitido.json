@@ -67,5 +67,6 @@
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "w2822h4ay3",
-  "widgetName": "Select_Remitido"
+  "widgetName": "Select_Remitido",
+  "isClearable": false
 }
