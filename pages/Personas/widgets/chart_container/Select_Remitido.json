@@ -2,63 +2,70 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 18,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "Todos",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "sourceData"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "isDisabled": false,
-  "isFilterable": true,
+  "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "eoriwj18pb",
+  "key": "kcu0b4c32p",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Calidad de la víctima",
+  "labelText": "Remitido",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 31,
+  "leftColumn": 29,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 7,
-  "mobileLeftColumn": 9,
-  "mobileRightColumn": 29,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onOptionChange": "",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 20,
-  "originalTopRow": 13,
+  "originalBottomRow": 18,
+  "originalTopRow": 12,
   "parentColumnSpace": 23.078125,
-  "parentId": "y2zvtyga3y",
+  "parentId": "z2wi863014",
   "parentRowSpace": 10,
-  "placeholderText": "Seleccionar calidad",
+  "placeholderText": "Seleccionar",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 60,
+  "rightColumn": 46,
   "serverSideFiltering": false,
-  "sourceData": "{{ChartData.getTiposVinculacion()}}",
-  "topRow": 2,
+  "sourceData": [
+    {
+      "label": "Todos",
+      "value": "Todos"
+    },
+    {
+      "label": "Sí",
+      "value": "Si"
+    },
+    {
+      "label": "No",
+      "value": "No"
+    }
+  ],
+  "topRow": 12,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "02v82diqix",
-  "widgetName": "SelectCalidadVictima"
+  "widgetId": "w2822h4ay3",
+  "widgetName": "Select_Remitido"
 }

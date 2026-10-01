@@ -214,7 +214,7 @@
   "rightColumn": 63,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{getInvolucradosPorMesRango.data}}",
+  "tableData": "{{ChartData.getTablaRango()}}",
   "textSize": "0.875rem",
   "topRow": 56,
   "totalRecordsCount": "100",

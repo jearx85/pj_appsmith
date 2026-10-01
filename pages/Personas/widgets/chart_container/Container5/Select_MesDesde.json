@@ -7,13 +7,16 @@
   "closeOnSelection": true,
   "dateFormat": "YYYY-MM-DD",
   "datePickerType": "DATE_PICKER",
-  "defaultDate": "2026-01-01T10:02:00.000-05:00",
+  "defaultDate": "{{moment().startOf('year').format()}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultDate"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -52,5 +55,10 @@
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "qjuzwii55u",
-  "widgetName": "Select_MesDesde"
+  "widgetName": "Select_MesDesde",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultDate"
+    }
+  ]
 }

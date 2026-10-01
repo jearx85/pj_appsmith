@@ -1,0 +1,4 @@
+SELECT DISTINCT p.vinculacion_caso
+FROM public.personas p
+WHERE p.vinculacion_caso IS NOT NULL
+ORDER BY 1;

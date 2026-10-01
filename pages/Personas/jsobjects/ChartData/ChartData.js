@@ -1,45 +1,38 @@
 export default {
-  getAnios: () => {
+	getAnios: () => {
 		const rows = getAniosDisponibles.data || [];
 		return rows.map(r => ({ label: r.anio, value: r.anio }));
 	},
-  getTiposVinculacion: () => {
-    const rows = getInvolucradosPorMes.data || [];
-    const tipos = [...new Set(rows.map(r => r.vinculacion_caso))].filter(Boolean).sort();
-    return tipos.map(t => ({ label: t, value: t }));
-  },
-  getMeses: () => {
-    const rows = getInvolucradosPorMes.data || [];
-    const anio = Select_anio.selectedOptionValue;
-    return [...new Set(
-      rows
-        .filter(r => !anio || r.mes.startsWith(anio))
-        .map(r => r.mes)
-    )].sort();
-  },
-  getSerie: () => {
-    const rows = getInvolucradosPorMes.data || [];
-    const tipo = SelectCalidadVictima.selectedOptionValue;
-    const meses = ChartData.getMeses();
-    return meses.map(mes => {
-      const filas = rows.filter(r => r.mes === mes && (!tipo || r.vinculacion_caso === tipo));
-      const total = filas.reduce((acc, f) => acc + Number(f.cantidad), 0);
-      return { x: mes, y: total };
-    });
-  },
-		getTablaAnio: () => {
-		const rows = getInvolucradosPorMes.data || [];
-		const anio = Select_anio.selectedOptionValue;
-		return rows.filter(r => !anio || r.mes.startsWith(anio));
+	getTiposVinculacion: () => {
+		const rows = getVinculaciones.data || [];
+		return rows.map(r => ({ label: r.vinculacion_caso, value: r.vinculacion_caso }));
 	},
-	getTablaRango() {
-		const rows = getInvolucradosPorMes.data || [];
+	// Filas del rango (la query ya filtra fechas y remitido) filtradas ademas por calidad de la victima.
+	getTablaRango: () => {
+		const rows = getInvolucradosPorMesRango.data || [];
+		const tipo = SelectCalidadVictima.selectedOptionValue;
+		return rows.filter(r => !tipo || r.vinculacion_caso === tipo);
+	},
+	// Todos los meses del rango (los meses sin datos salen en 0). Sin rango: solo los meses con datos.
+	getMeses: () => {
+		const rows = getInvolucradosPorMesRango.data || [];
 		const desde = Select_MesDesde.selectedDate;
 		const hasta = Select_MesHasta.selectedDate;
-		return rows.filter(r => {
-			if (desde && r.mes < desde) return false;
-			if (hasta && r.mes > hasta) return false;
-			return true;
-		});
+		if (desde && hasta) {
+			const fin = moment(hasta).startOf('month');
+			const meses = [];
+			for (let m = moment(desde).startOf('month'); !m.isAfter(fin) && meses.length < 240; m.add(1, 'month')) {
+				meses.push(m.format('YYYY-MM'));
+			}
+			return meses;
+		}
+		return [...new Set(rows.map(r => r.mes))].sort();
+	},
+	getSerie: () => {
+		const filas = ChartData.getTablaRango();
+		return ChartData.getMeses().map(mes => ({
+			x: mes,
+			y: filas.filter(r => r.mes === mes).reduce((acc, f) => acc + Number(f.cantidad), 0)
+		}));
 	}
 }

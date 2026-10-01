@@ -17,12 +17,18 @@
     },
     {
       "key": "defaultDate"
+    },
+    {
+      "key": "minDate"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "defaultDate"
+    },
+    {
+      "key": "minDate"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -40,7 +46,7 @@
   "leftColumn": 33,
   "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
-  "minDate": "1920-12-31T18:30:00.000Z",
+  "minDate": "{{Select_MesDesde.selectedDate || '1920-12-31T18:30:00.000Z'}}",
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 7,

@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 18,
   "boxShadow": "none",
-  "defaultOptionValue": "{{moment().year().toString()}}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,28 +14,15 @@
     },
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -44,19 +31,18 @@
   "key": "eoriwj18pb",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Año (atajo)",
+  "labelText": "Calidad de la víctima",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 47,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 6,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 21,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 29,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{(() => {\n  const y = Select_anio.selectedOptionValue;\n  if (!y) return;\n  const esActual = Number(y) === moment().year();\n  Select_MesDesde.setValue(moment(`${y}-01-01`).format());\n  Select_MesHasta.setValue(esActual ? moment().format() : moment(`${y}-12-31`).format());\n})()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 18,
@@ -64,16 +50,16 @@
   "parentColumnSpace": 23.078125,
   "parentId": "z2wi863014",
   "parentRowSpace": 10,
-  "placeholderText": "Seleccionar año",
+  "placeholderText": "Todas",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 63,
   "serverSideFiltering": false,
-  "sourceData": "{{ChartData.getAnios()}}",
+  "sourceData": "{{ChartData.getTiposVinculacion()}}",
   "topRow": 12,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "niur8hp8or",
-  "widgetName": "Select_anio",
-  "labelTooltip": "Rellena Fecha inicio y Fecha fin con el año elegido"
+  "widgetId": "02v82diqix",
+  "widgetName": "SelectCalidadVictima",
+  "isClearable": true
 }

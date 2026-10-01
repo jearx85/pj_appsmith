@@ -2,7 +2,7 @@
   "animateLoading": true,
   "avatarIcon": "",
   "backgroundColor": "#FFFFFF",
-  "badgeText": "remitidos y no remitidos",
+  "badgeText": "{{({Todos: 'remitidos y no remitidos', Si: 'solo remitidos', No: 'solo no remitidos'})[Select_Remitido.selectedOptionValue]}}",
   "borderColor": "#E2E8F0",
   "borderRadius": "0.5rem",
   "borderWidth": "1",
@@ -75,6 +75,9 @@
     },
     {
       "key": "subtitle"
+    },
+    {
+      "key": "badgeText"
     }
   ],
   "dynamicHeight": "FIXED",
