@@ -1,11 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": false,
-  "borderColor": "#E0DEDE",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderColor": "#E2E8F0",
+  "borderRadius": "0.5rem",
   "borderWidth": "1",
   "bottomRow": 102,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "0 1px 2px 0 rgba(15, 23, 42, 0.06)",
   "cachedTableData": {},
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -53,12 +53,6 @@
       "key": "accentColor"
     },
     {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
-    },
-    {
       "key": "tableData"
     },
     {
@@ -69,11 +63,23 @@
     },
     {
       "key": "primaryColumns.cantidad.computedValue"
+    },
+    {
+      "key": "primaryColumns.vinculacion_caso.cellBackground"
+    },
+    {
+      "key": "primaryColumns.vinculacion_caso.textColor"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.vinculacion_caso.cellBackground"
+    },
+    {
+      "key": "primaryColumns.vinculacion_caso.textColor"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -114,7 +120,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "cantidad",
       "index": 2,
       "isCellEditable": false,
@@ -125,7 +131,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "cantidad",
+      "label": "Cantidad",
       "notation": "standard",
       "originalId": "cantidad",
       "sticky": "",
@@ -133,7 +139,9 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 150,
+      "fontStyle": "BOLD",
+      "textColor": "#0b1e3a"
     },
     "mes": {
       "alias": "mes",
@@ -156,7 +164,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Año-mes",
+      "label": "Mes",
       "notation": "standard",
       "originalId": "mes",
       "sticky": "",
@@ -164,7 +172,8 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 150,
+      "textColor": "#475569"
     },
     "vinculacion_caso": {
       "alias": "vinculacion_caso",
@@ -187,7 +196,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "vinculacion_caso",
+      "label": "Vinculación",
       "notation": "standard",
       "originalId": "vinculacion_caso",
       "sticky": "",
@@ -195,7 +204,9 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 150,
+      "cellBackground": "{{Table1.processedTableData.map((currentRow) => { const v = String(currentRow.vinculacion_caso || '').toLowerCase(); return v.startsWith('occiso') ? '#FEE2E2' : v.startsWith('lesionado') ? '#FEF3C7' : '#F1F5F9'; })}}",
+      "textColor": "{{Table1.processedTableData.map((currentRow) => { const v = String(currentRow.vinculacion_caso || '').toLowerCase(); return v.startsWith('occiso') ? '#991B1B' : v.startsWith('lesionado') ? '#92400E' : '#334155'; })}}"
     }
   },
   "renderMode": "CANVAS",

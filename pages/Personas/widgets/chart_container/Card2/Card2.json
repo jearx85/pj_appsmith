@@ -3,11 +3,11 @@
   "avatarIcon": "",
   "backgroundColor": "#FFFFFF",
   "badgeText": "remitidos y no remitidos",
-  "borderColor": "#E0DEDE",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderColor": "#E2E8F0",
+  "borderRadius": "0.5rem",
   "borderWidth": "1",
   "bottomRow": 53,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px 0 rgba(15, 23, 42, 0.04)",
   "cardData": "",
   "childStylesheet": {
     "footerAction": {
@@ -61,12 +61,6 @@
   "defaultExpanded": false,
   "defaultSelected": false,
   "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
-    },
     {
       "key": "selectedAccentColor"
     },
@@ -136,7 +130,7 @@
       "widgetId": ""
     }
   },
-  "hoverElevation": true,
+  "hoverElevation": false,
   "isCanvas": true,
   "isClickable": false,
   "isDisabled": false,
