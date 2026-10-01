@@ -139,7 +139,7 @@
   "rightColumn": 13,
   "selectedAccentColor": "{{appsmith.theme.colors.primaryColor}}",
   "selectionEnabled": false,
-  "shouldScrollContents": false,
+  "shouldScrollContents": true,
   "showFooter": false,
   "showFooterDivider": true,
   "showHeader": true,
