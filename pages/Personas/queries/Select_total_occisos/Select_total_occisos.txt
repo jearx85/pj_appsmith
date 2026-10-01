@@ -1,8 +1,10 @@
-SELECT COUNT(*) AS total
+SELECT
+  COUNT(*) FILTER (WHERE c.remitido = 'Si') AS remitidos,
+  COUNT(*) FILTER (WHERE c.remitido = 'No') AS no_remitidos,
+  COUNT(*) AS total
 FROM public.personas p
 JOIN public.caso c
     ON c.id = p.caso_id
 WHERE p.vinculacion_caso = 'Occiso'
-  AND c.remitido = 'No'
   AND c.fecha_hora_hechos >= make_date({{Select_anio.selectedOptionValue}}::int, 1, 1)
   AND c.fecha_hora_hechos <  make_date({{Select_anio.selectedOptionValue}}::int + 1, 1, 1);

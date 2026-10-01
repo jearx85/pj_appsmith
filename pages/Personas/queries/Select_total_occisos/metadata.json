@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) AS total\nFROM public.personas p\nJOIN public.caso c\n    ON c.id = p.caso_id\nWHERE p.vinculacion_caso = 'Occiso'\n  AND c.remitido = 'No'\n  AND c.fecha_hora_hechos >= make_date({{Select_anio.selectedOptionValue}}::int, 1, 1)\n  AND c.fecha_hora_hechos <  make_date({{Select_anio.selectedOptionValue}}::int + 1, 1, 1);",
+      "body": "SELECT\n  COUNT(*) FILTER (WHERE c.remitido = 'Si') AS remitidos,\n  COUNT(*) FILTER (WHERE c.remitido = 'No') AS no_remitidos,\n  COUNT(*) AS total\nFROM public.personas p\nJOIN public.caso c\n    ON c.id = p.caso_id\nWHERE p.vinculacion_caso = 'Occiso'\n  AND c.fecha_hora_hechos >= make_date({{Select_anio.selectedOptionValue}}::int, 1, 1)\n  AND c.fecha_hora_hechos <  make_date({{Select_anio.selectedOptionValue}}::int + 1, 1, 1);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
