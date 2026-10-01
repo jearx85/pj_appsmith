@@ -89,334 +89,301 @@
   "displayName": "JSON Form",
   "dynamicBindingPathList": [
     {
-      "key": "schema.__root_schema__.defaultValue"
+      "key": "schema.__root_schema__.children.customField1.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField1.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField2.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField2.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField2.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.expediente.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.expediente.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.expediente.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.vinculacion_caso.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.vinculacion_caso.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.vinculacion_caso.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField3.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField3.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField3.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_nacimiento.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_nacimiento.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_nacimiento.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.creado_por.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.creado_por.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.creado_por.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_creacion.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_creacion.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_creacion.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.nacionalidad.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.nacionalidad.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.nacionalidad.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.nombres.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.nombres.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.nombres.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.hipotesis.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.hipotesis.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.hipotesis.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_hora_levantamiento.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_hora_levantamiento.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_hora_levantamiento.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.nombre_familiar.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.nombre_familiar.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.nombre_familiar.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.telefono.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.telefono.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.telefono.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.email.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.email.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.email.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_hora_hechos.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_hora_hechos.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_hora_hechos.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.apellidos.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.apellidos.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.apellidos.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.clase_accidente.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.clase_accidente.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.clase_accidente.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.modificado_por.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.modificado_por.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.modificado_por.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.lugar_inspeccion.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.lugar_inspeccion.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.lugar_inspeccion.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.relato.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.relato.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.relato.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_actualizacion.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_actualizacion.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.fecha_actualizacion.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.condicion.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.condicion.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.condicion.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.edad.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.edad.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.edad.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.oficio.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.oficio.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.oficio.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.id_persona.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.id_persona.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.id_persona.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.habitante_calle.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.habitante_calle.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.habitante_calle.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.parentesco.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.parentesco.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.parentesco.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.tipo_identificacion.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.tipo_identificacion.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.tipo_identificacion.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.sexo.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.sexo.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.sexo.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.familia.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.familia.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.familia.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.movilidad_reducida.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.movilidad_reducida.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.movilidad_reducida.borderRadius"
     },
     {
       "key": "isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.cellBorderRadius"
-    },
-    {
-      "key": "resetButtonStyles.buttonColor"
-    },
-    {
-      "key": "resetButtonStyles.borderRadius"
     },
     {
       "key": "borderRadius"
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "submitButtonStyles.borderRadius"
-    },
-    {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.expediente.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.expediente.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.expediente.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.oficio.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.oficio.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.oficio.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.nombres.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.nombres.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.nombres.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.apellidos.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.apellidos.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.apellidos.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.nacionalidad.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.nacionalidad.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.nacionalidad.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_nacimiento.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_nacimiento.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_nacimiento.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.edad.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.edad.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.edad.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.sexo.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.sexo.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.sexo.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.vinculacion_caso.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.vinculacion_caso.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.vinculacion_caso.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.condicion.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.condicion.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.condicion.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.movilidad_reducida.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.movilidad_reducida.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.movilidad_reducida.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.habitante_calle.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.habitante_calle.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.habitante_calle.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.familia.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.familia.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.familia.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.nombre_familiar.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.nombre_familiar.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.nombre_familiar.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.parentesco.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.parentesco.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.parentesco.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.email.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.email.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.email.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.telefono.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.telefono.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.telefono.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.creado_por.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.creado_por.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.creado_por.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.modificado_por.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.modificado_por.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.modificado_por.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_creacion.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_creacion.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_creacion.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_actualizacion.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_actualizacion.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_actualizacion.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.nombre_familiar.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.parentesco.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.email.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.telefono.isVisible"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_hora_hechos.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_hora_hechos.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_hora_hechos.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_hora_levantamiento.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_hora_levantamiento.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.fecha_hora_levantamiento.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.lugar_inspeccion.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.lugar_inspeccion.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.lugar_inspeccion.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.clase_accidente.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.clase_accidente.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.clase_accidente.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.hipotesis.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.hipotesis.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.hipotesis.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.relato.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.relato.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.relato.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.id_persona.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.id_persona.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.id_persona.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.tipo_identificacion.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.tipo_identificacion.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.tipo_identificacion.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField1.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField1.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField1.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField2.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField2.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField2.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField3.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField3.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.customField3.defaultValue"
     }
   ],
   "dynamicHeight": "FIXED",

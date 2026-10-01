@@ -10,16 +10,21 @@
   "defaultDate": "{{moment().startOf('year').format()}}",
   "dynamicBindingPathList": [
     {
+      "key": "defaultDate"
+    },
+    {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
     {
       "key": "defaultDate"
     }
   ],
-  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "firstDayOfWeek": 0,
   "isDisabled": false,
@@ -55,10 +60,5 @@
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "qjuzwii55u",
-  "widgetName": "Select_MesDesde",
-  "dynamicPropertyPathList": [
-    {
-      "key": "defaultDate"
-    }
-  ]
+  "widgetName": "Select_MesDesde"
 }

@@ -7,16 +7,13 @@
   "defaultOptionValue": "{{moment().year().toString()}}",
   "dynamicBindingPathList": [
     {
-      "key": "accentColor"
-    },
-    {
-      "key": "borderRadius"
-    },
-    {
       "key": "sourceData"
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -46,6 +43,7 @@
   "labelPosition": "Top",
   "labelText": "Año (atajo)",
   "labelTextSize": "0.875rem",
+  "labelTooltip": "Rellena Fecha inicio y Fecha fin con el año elegido",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -74,6 +72,5 @@
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "niur8hp8or",
-  "widgetName": "Select_anio",
-  "labelTooltip": "Rellena Fecha inicio y Fecha fin con el año elegido"
+  "widgetName": "Select_anio"
 }

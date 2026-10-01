@@ -10,10 +10,10 @@
   "defaultDate": "{{moment().format()}}",
   "dynamicBindingPathList": [
     {
-      "key": "accentColor"
+      "key": "defaultDate"
     },
     {
-      "key": "defaultDate"
+      "key": "accentColor"
     }
   ],
   "dynamicHeight": "FIXED",

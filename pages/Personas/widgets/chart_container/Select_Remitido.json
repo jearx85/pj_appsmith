@@ -7,15 +7,13 @@
   "defaultOptionValue": "Todos",
   "dynamicBindingPathList": [
     {
-      "key": "accentColor"
-    },
-    {
       "key": "borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
+  "isClearable": false,
   "isDisabled": false,
   "isFilterable": false,
   "isLoading": false,
@@ -67,6 +65,5 @@
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "w2822h4ay3",
-  "widgetName": "Select_Remitido",
-  "isClearable": false
+  "widgetName": "Select_Remitido"
 }

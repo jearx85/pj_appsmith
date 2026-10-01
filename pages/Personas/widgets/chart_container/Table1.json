@@ -50,25 +50,19 @@
   "delimiter": ",",
   "dynamicBindingPathList": [
     {
-      "key": "accentColor"
-    },
-    {
       "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.mes.computedValue"
     },
     {
       "key": "primaryColumns.vinculacion_caso.computedValue"
     },
     {
+      "key": "primaryColumns.mes.computedValue"
+    },
+    {
       "key": "primaryColumns.cantidad.computedValue"
     },
     {
-      "key": "primaryColumns.vinculacion_caso.cellBackground"
-    },
-    {
-      "key": "primaryColumns.vinculacion_caso.textColor"
+      "key": "accentColor"
     }
   ],
   "dynamicPropertyPathList": [

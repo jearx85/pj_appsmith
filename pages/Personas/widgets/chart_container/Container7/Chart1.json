@@ -64,22 +64,13 @@
   },
   "dynamicBindingPathList": [
     {
-      "key": "customEChartConfig"
-    },
-    {
-      "key": "accentColor"
-    },
-    {
-      "key": "fontFamily"
-    },
-    {
       "key": "chartData.yv7unnyh6a.data"
     },
     {
-      "key": "yAxisName"
+      "key": "chartData.yv7unnyh6a.seriesName"
     },
     {
-      "key": "chartData.yv7unnyh6a.seriesName"
+      "key": "yAxisName"
     }
   ],
   "dynamicTriggerPathList": [],

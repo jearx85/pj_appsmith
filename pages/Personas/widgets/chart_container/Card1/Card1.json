@@ -60,13 +60,10 @@
   "defaultSelected": false,
   "dynamicBindingPathList": [
     {
-      "key": "selectedAccentColor"
+      "key": "subtitle"
     },
     {
       "key": "footerActions.footerAction2.buttonColor"
-    },
-    {
-      "key": "subtitle"
     }
   ],
   "dynamicHeight": "FIXED",

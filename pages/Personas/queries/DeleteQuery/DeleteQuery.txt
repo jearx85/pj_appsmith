@@ -1,2 +1,2 @@
 DELETE FROM public."personas"
-  WHERE "cedula" = {{data_table.triggeredRow.cedula}};
+  WHERE "cedula" = {{data_table.triggeredRow?.cedula}};

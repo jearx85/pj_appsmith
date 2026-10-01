@@ -4,16 +4,10 @@
   "bottomRow": 8,
   "dynamicBindingPathList": [
     {
-      "key": "truncateButtonColor"
+      "key": "text"
     },
     {
       "key": "fontFamily"
-    },
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -33,7 +27,7 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "originalBottomRow": 8,
+  "originalBottomRow": 6,
   "originalTopRow": 2,
   "overflow": "NONE",
   "parentId": "9uw826y4t0",

@@ -113,139 +113,136 @@
   "displayName": "Table",
   "dynamicBindingPathList": [
     {
-      "key": "derivedColumns.customColumn1.buttonLabel"
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.expediente.computedValue"
+    },
+    {
+      "key": "primaryColumns.vinculacion_caso.computedValue"
+    },
+    {
+      "key": "primaryColumns.cedula.computedValue"
+    },
+    {
+      "key": "primaryColumns.fecha_nacimiento.computedValue"
+    },
+    {
+      "key": "primaryColumns.caso_creado_por.computedValue"
+    },
+    {
+      "key": "primaryColumns.creado_por.computedValue"
+    },
+    {
+      "key": "primaryColumns.fecha_creacion.computedValue"
+    },
+    {
+      "key": "primaryColumns.observaciones_medicina_legal.computedValue"
+    },
+    {
+      "key": "primaryColumns.validado_medicina_legal.computedValue"
+    },
+    {
+      "key": "primaryColumns.nacionalidad.computedValue"
+    },
+    {
+      "key": "primaryColumns.nombres.computedValue"
+    },
+    {
+      "key": "primaryColumns.hipotesis.computedValue"
+    },
+    {
+      "key": "primaryColumns.caso_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.fecha_hora_levantamiento.computedValue"
+    },
+    {
+      "key": "primaryColumns.nombre_familiar.computedValue"
+    },
+    {
+      "key": "primaryColumns.telefono.computedValue"
+    },
+    {
+      "key": "primaryColumns.clase_vehiculo.computedValue"
+    },
+    {
+      "key": "primaryColumns.fecha_hora_hechos.computedValue"
+    },
+    {
+      "key": "primaryColumns.apellidos.computedValue"
+    },
+    {
+      "key": "primaryColumns.clase_accidente.computedValue"
+    },
+    {
+      "key": "primaryColumns.modificado_por.computedValue"
+    },
+    {
+      "key": "primaryColumns.lugar_inspeccion.computedValue"
+    },
+    {
+      "key": "primaryColumns.documento_familiar.computedValue"
+    },
+    {
+      "key": "primaryColumns.fecha_creacion_caso.computedValue"
+    },
+    {
+      "key": "primaryColumns.relato.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.fecha_actualizacion.computedValue"
+    },
+    {
+      "key": "primaryColumns.telefono_involucrado.computedValue"
+    },
+    {
+      "key": "primaryColumns.condicion.computedValue"
+    },
+    {
+      "key": "primaryColumns.edad.computedValue"
+    },
+    {
+      "key": "primaryColumns.oficio.computedValue"
+    },
+    {
+      "key": "primaryColumns.id_persona.computedValue"
+    },
+    {
+      "key": "primaryColumns.habitante_calle.computedValue"
+    },
+    {
+      "key": "primaryColumns.parentesco.computedValue"
+    },
+    {
+      "key": "primaryColumns.tipo_identificacion.computedValue"
+    },
+    {
+      "key": "primaryColumns.direccion_completa.computedValue"
+    },
+    {
+      "key": "primaryColumns.sexo.computedValue"
+    },
+    {
+      "key": "primaryColumns.familia.computedValue"
+    },
+    {
+      "key": "primaryColumns.movilidad_reducida.computedValue"
     },
     {
       "key": "accentColor"
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.cedula.computedValue"
-    },
-    {
-      "key": "primaryColumns.expediente.computedValue"
-    },
-    {
-      "key": "primaryColumns.oficio.computedValue"
-    },
-    {
-      "key": "primaryColumns.nombres.computedValue"
-    },
-    {
-      "key": "primaryColumns.apellidos.computedValue"
-    },
-    {
-      "key": "primaryColumns.nacionalidad.computedValue"
-    },
-    {
-      "key": "primaryColumns.fecha_nacimiento.computedValue"
-    },
-    {
-      "key": "primaryColumns.edad.computedValue"
-    },
-    {
-      "key": "primaryColumns.sexo.computedValue"
-    },
-    {
-      "key": "primaryColumns.vinculacion_caso.computedValue"
-    },
-    {
-      "key": "primaryColumns.condicion.computedValue"
-    },
-    {
-      "key": "primaryColumns.movilidad_reducida.computedValue"
-    },
-    {
-      "key": "primaryColumns.habitante_calle.computedValue"
-    },
-    {
-      "key": "primaryColumns.familia.computedValue"
-    },
-    {
-      "key": "primaryColumns.nombre_familiar.computedValue"
-    },
-    {
-      "key": "primaryColumns.parentesco.computedValue"
-    },
-    {
-      "key": "primaryColumns.telefono.computedValue"
-    },
-    {
-      "key": "primaryColumns.creado_por.computedValue"
-    },
-    {
-      "key": "primaryColumns.modificado_por.computedValue"
-    },
-    {
-      "key": "primaryColumns.fecha_creacion.computedValue"
-    },
-    {
-      "key": "primaryColumns.fecha_actualizacion.computedValue"
-    },
-    {
-      "key": "primaryColumns.fecha_hora_hechos.computedValue"
-    },
-    {
-      "key": "primaryColumns.fecha_hora_levantamiento.computedValue"
-    },
-    {
-      "key": "primaryColumns.lugar_inspeccion.computedValue"
-    },
-    {
-      "key": "primaryColumns.clase_accidente.computedValue"
-    },
-    {
-      "key": "primaryColumns.hipotesis.computedValue"
-    },
-    {
-      "key": "primaryColumns.relato.computedValue"
-    },
-    {
-      "key": "primaryColumns.id_persona.computedValue"
-    },
-    {
-      "key": "primaryColumns.tipo_identificacion.computedValue"
-    },
-    {
-      "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.documento_familiar.computedValue"
-    },
-    {
-      "key": "primaryColumns.validado_medicina_legal.computedValue"
-    },
-    {
-      "key": "primaryColumns.observaciones_medicina_legal.computedValue"
-    },
-    {
-      "key": "primaryColumns.telefono_involucrado.computedValue"
-    },
-    {
-      "key": "primaryColumns.fecha_creacion_caso.computedValue"
-    },
-    {
-      "key": "primaryColumns.clase_vehiculo.computedValue"
-    },
-    {
-      "key": "primaryColumns.caso_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.direccion_completa.computedValue"
-    },
-    {
-      "key": "primaryColumns.caso_creado_por.computedValue"
-    },
-    {
-      "key": "primaryColumns.customColumn1.boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn1.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [

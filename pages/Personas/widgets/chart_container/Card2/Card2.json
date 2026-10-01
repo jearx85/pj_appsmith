@@ -62,22 +62,19 @@
   "defaultSelected": false,
   "dynamicBindingPathList": [
     {
-      "key": "selectedAccentColor"
+      "key": "subtitle"
+    },
+    {
+      "key": "badgeText"
     },
     {
       "key": "footerActions.footerAction1.buttonColor"
     },
     {
-      "key": "footerActions.footerAction2.buttonColor"
-    },
-    {
       "key": "footerActions.footerAction2.isDisabled"
     },
     {
-      "key": "subtitle"
-    },
-    {
-      "key": "badgeText"
+      "key": "footerActions.footerAction2.buttonColor"
     }
   ],
   "dynamicHeight": "FIXED",
