@@ -4,8 +4,11 @@ export default {
 		return rows.map(r => ({ label: r.anio, value: r.anio }));
 	},
 	getTiposVinculacion: () => {
+		// Si la query aun no corrio (o fallo) se usa una lista base, para que el select nunca quede con sourceData vacio.
+		const base = ['Occiso', 'Indiciado (conductor)', 'Indiciados', 'Testigo', 'Víctima (Lesionado)'];
 		const rows = getVinculaciones.data || [];
-		return rows.map(r => ({ label: r.vinculacion_caso, value: r.vinculacion_caso }));
+		const vals = rows.length ? rows.map(r => r.vinculacion_caso) : base;
+		return vals.map(v => ({ label: v, value: v }));
 	},
 	// Filas del rango (la query ya filtra fechas y remitido) filtradas ademas por calidad de la victima.
 	getTablaRango: () => {
