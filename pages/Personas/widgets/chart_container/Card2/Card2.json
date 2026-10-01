@@ -1,12 +1,14 @@
 {
   "animateLoading": true,
+  "avatarIcon": "",
   "backgroundColor": "#FFFFFF",
+  "badgeText": "remitidos y no remitidos",
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
   "bottomRow": 53,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "cardData": {},
+  "cardData": "",
   "childStylesheet": {
     "footerAction": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
@@ -15,7 +17,7 @@
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 120,
+      "bottomRow": 80,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -32,7 +34,7 @@
       "flexLayers": [],
       "isLoading": false,
       "isVisible": true,
-      "key": "weprtea9j9",
+      "key": "gd4l0sgrst",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
@@ -40,20 +42,20 @@
       "minWidth": 450,
       "mobileBottomRow": 300,
       "mobileLeftColumn": 0,
-      "mobileRightColumn": 396.75,
+      "mobileRightColumn": 297.5625,
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "y53m45pj24",
+      "parentId": "un541ahrur",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
-      "rightColumn": 396.75,
+      "rightColumn": 297.5625,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "9uw826y4t0",
-      "widgetName": "Canvas13"
+      "widgetId": "qmpryc3wcy",
+      "widgetName": "Canvas14"
     }
   ],
   "defaultExpanded": false,
@@ -69,37 +71,80 @@
       "key": "selectedAccentColor"
     },
     {
+      "key": "footerActions.footerAction1.buttonColor"
+    },
+    {
       "key": "footerActions.footerAction2.buttonColor"
+    },
+    {
+      "key": "footerActions.footerAction2.isDisabled"
     },
     {
       "key": "subtitle"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "cardData"
+    },
+    {
+      "key": "footerActions.footerAction1.onClick"
+    },
+    {
+      "key": "footerActions.footerAction2.onClick"
+    },
+    {
+      "key": "footerActions.footerAction2.isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "footerActions.footerAction1.onClick"
+    },
+    {
+      "key": "footerActions.footerAction2.onClick"
+    }
+  ],
   "expandCollapseEnabled": false,
   "flexVerticalAlignment": "stretch",
   "footerActions": {
-    "footerAction2": {
+    "footerAction1": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-      "buttonVariant": "PRIMARY",
-      "id": "footerAction2",
+      "buttonVariant": "TERTIARY",
+      "iconAlign": "left",
+      "iconName": "chevron-left",
+      "id": "footerAction1",
       "index": 0,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Action 2",
+      "label": "Anterior",
+      "onClick": "{{storeValue('mesOffset', appsmith.store.mesOffset - 1).then(() => Select_occisos_mes.run())}}",
+      "widgetId": ""
+    },
+    "footerAction2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonVariant": "TERTIARY",
+      "iconAlign": "right",
+      "iconName": "chevron-right",
+      "id": "footerAction2",
+      "index": 1,
+      "isDisabled": "{{appsmith.store.mesOffset >= 0}}",
+      "isVisible": true,
+      "label": "Siguiente",
+      "onClick": "{{storeValue('mesOffset', Math.min(appsmith.store.mesOffset + 1, 0)).then(() => Select_occisos_mes.run())}}",
       "widgetId": ""
     }
   },
-  "hoverElevation": false,
+  "hoverElevation": true,
   "isCanvas": true,
   "isClickable": false,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "a23z0075na",
-  "leftColumn": 1,
-  "maxDynamicHeight": 17,
+  "key": "pbtycaawzb",
+  "leftColumn": 14,
+  "maxDynamicHeight": 9000,
   "mediaHeight": 140,
   "mediaObjectFit": "cover",
   "mediaPosition": "NONE",
@@ -123,10 +168,10 @@
   },
   "minDynamicHeight": 15,
   "minWidth": 450,
-  "mobileBottomRow": 110,
-  "mobileLeftColumn": 21,
-  "mobileRightColumn": 45,
-  "mobileTopRow": 80,
+  "mobileBottomRow": 65,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 35,
   "needsErrorInfo": false,
   "originalBottomRow": 53,
   "originalTopRow": 35,
@@ -136,20 +181,20 @@
   "positioning": "fixed",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 13,
+  "rightColumn": 30,
   "selectedAccentColor": "{{appsmith.theme.colors.primaryColor}}",
   "selectionEnabled": false,
   "shouldScrollContents": false,
-  "showFooter": false,
+  "showFooter": true,
   "showFooterDivider": true,
   "showHeader": true,
   "showHeaderDivider": true,
   "showMenu": false,
-  "subtitle": "{{Select_anio.selectedOptionValue}}",
-  "title": "Total Occisos por año",
+  "subtitle": "{{\n  appsmith.store.mesOffset === 0\n    ? 'Mes en curso'\n    : moment().add(appsmith.store.mesOffset, 'months').format('MMMM YYYY')\n}}",
+  "title": "Occisos por mes",
   "topRow": 35,
   "type": "CARD_WIDGET",
   "version": 1,
-  "widgetId": "y53m45pj24",
-  "widgetName": "Card1"
+  "widgetId": "un541ahrur",
+  "widgetName": "Card2"
 }

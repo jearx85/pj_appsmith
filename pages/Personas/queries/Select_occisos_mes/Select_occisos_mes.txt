@@ -1,0 +1,7 @@
+SELECT COUNT(*) AS total
+FROM public.personas p
+JOIN public.caso c
+    ON c.id = p.caso_id
+WHERE p.vinculacion_caso = 'Occiso'
+  AND c.fecha_hora_hechos >= date_trunc('month', CURRENT_DATE) + ({{appsmith.store.mesOffset ?? 0}} || ' month')::interval
+  AND c.fecha_hora_hechos <  date_trunc('month', CURRENT_DATE) + ({{(appsmith.store.mesOffset ?? 0) + 1}} || ' month')::interval;
