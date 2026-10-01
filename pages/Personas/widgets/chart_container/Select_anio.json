@@ -54,7 +54,7 @@
   "placeholderText": "Seleccionar año",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 32,
+  "rightColumn": 28,
   "serverSideFiltering": false,
   "sourceData": "{{ChartData.getAnios()}}",
   "topRow": 12,
