@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "getVinculaciones",
     "pageId": "Personas",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }
