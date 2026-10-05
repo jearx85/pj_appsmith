@@ -1,8 +1,8 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "borderRadius": "0.375rem",
-  "bottomRow": 7,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
   "boxShadow": "none",
   "closeOnSelection": true,
   "dateFormat": "YYYY-MM-DD",
@@ -14,6 +14,9 @@
     },
     {
       "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -33,7 +36,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "r8ldvcdan3",
-  "label": "Fecha fin",
+  "label": "Fecha hasta",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelTextSize": "0.875rem",
@@ -49,8 +52,8 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 12,
   "needsErrorInfo": false,
-  "originalBottomRow": 19,
-  "originalTopRow": 12,
+  "originalBottomRow": 11,
+  "originalTopRow": 4,
   "parentColumnSpace": 15.7685546875,
   "parentId": "f793dfyr0a",
   "parentRowSpace": 10,
@@ -58,8 +61,8 @@
   "responsiveBehavior": "fill",
   "rightColumn": 22,
   "shortcuts": false,
-  "timePrecision": "minute",
-  "topRow": 0,
+  "timePrecision": "None",
+  "topRow": 4,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "akdncdby62",

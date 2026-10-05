@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 11,
   "boxShadow": "none",
   "defaultOptionValue": "TODOS",
   "dynamicBindingPathList": [
@@ -41,8 +41,8 @@
   "onOptionChange": "{{FiltrosPersonas.aplicar()}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 7,
-  "originalTopRow": 0,
+  "originalBottomRow": 11,
+  "originalTopRow": 4,
   "parentColumnSpace": 23.078125,
   "parentId": "f793dfyr0a",
   "parentRowSpace": 10,
@@ -65,7 +65,7 @@
       "value": "OTROS"
     }
   ],
-  "topRow": 0,
+  "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "o22xrv8c29",

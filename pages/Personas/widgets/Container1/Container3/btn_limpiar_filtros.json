@@ -1,15 +1,20 @@
 {
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 10,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "SECONDARY",
+  "buttonVariant": "PRIMARY",
   "dynamicBindingPathList": [
     {
       "key": "buttonColor"
     },
     {
       "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -22,20 +27,17 @@
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 57,
+  "leftColumn": 58,
   "onClick": "{{FiltrosPersonas.limpiar()}}",
   "parentColumnSpace": 12.0703125,
   "parentId": "f793dfyr0a",
   "parentRowSpace": 10,
-  "rightColumn": 63,
-  "topRow": 3,
+  "rightColumn": 62,
+  "tooltip": "Resetea los filtros",
+  "topRow": 5,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "ca4qrakh5y",
+  "widgetId": "mej4qvxe8m",
   "widgetName": "btn_limpiar_filtros",
-  "key": "h5z1z2v9w8",
-  "text": "Limpiar",
-  "originalTopRow": 3,
-  "originalBottomRow": 7,
-  "minWidth": 0
+  "key": "g3zu3gu6hb"
 }
