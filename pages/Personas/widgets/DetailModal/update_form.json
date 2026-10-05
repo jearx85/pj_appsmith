@@ -380,10 +380,10 @@
       "key": "isVisible"
     },
     {
-      "key": "borderRadius"
+      "key": "boxShadow"
     },
     {
-      "key": "boxShadow"
+      "key": "submitButtonStyles.buttonColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -393,9 +393,6 @@
     },
     {
       "key": "isVisible"
-    },
-    {
-      "key": "borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.fecha_nacimiento.defaultValue"
@@ -1189,10 +1186,10 @@
   "sourceData": "",
   "submitButtonLabel": "Enviar",
   "submitButtonStyles": {
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "0.375rem",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "buttonVariant": "PRIMARY"
+    "buttonVariant": "SECONDARY"
   },
   "title": "",
   "topRow": 6,
