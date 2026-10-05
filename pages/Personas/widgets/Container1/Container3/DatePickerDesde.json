@@ -14,7 +14,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ],
   "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
@@ -31,7 +35,7 @@
   "maxDynamicHeight": 9000,
   "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
-  "minWidth": 450,
+  "minWidth": 0,
   "mobileBottomRow": 16,
   "mobileLeftColumn": 2,
   "mobileRightColumn": 22,
@@ -44,12 +48,13 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 23,
+  "rightColumn": 11,
   "shortcuts": false,
   "timePrecision": "minute",
   "topRow": 0,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "sm2o7nonws",
-  "widgetName": "DatePickerDesde"
+  "widgetName": "DatePickerDesde",
+  "onDateSelected": "{{FiltrosPersonas.aplicar()}}"
 }

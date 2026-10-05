@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultOptionValue": "TODOS",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isClearable": false,
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "yshhevgavs",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Municipio",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 23,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 0,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{FiltrosPersonas.aplicar()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
+  "parentColumnSpace": 23.078125,
+  "parentId": "f793dfyr0a",
+  "parentRowSpace": 10,
+  "placeholderText": "Seleccionar",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 33,
+  "serverSideFiltering": false,
+  "sourceData": [
+    {
+      "label": "Todos",
+      "value": "TODOS"
+    },
+    {
+      "label": "Medellín",
+      "value": "MEDELLIN"
+    },
+    {
+      "label": "Otros municipios",
+      "value": "OTROS"
+    }
+  ],
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "o22xrv8c29",
+  "widgetName": "Select_Municipio"
+}

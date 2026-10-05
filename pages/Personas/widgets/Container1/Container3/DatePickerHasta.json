@@ -22,7 +22,11 @@
       "key": "defaultDate"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ],
   "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
@@ -34,12 +38,12 @@
   "labelPosition": "Top",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 24,
+  "leftColumn": 12,
   "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
   "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
-  "minWidth": 450,
+  "minWidth": 0,
   "mobileBottomRow": 19,
   "mobileLeftColumn": 21,
   "mobileRightColumn": 41,
@@ -52,12 +56,13 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 45,
+  "rightColumn": 22,
   "shortcuts": false,
   "timePrecision": "minute",
   "topRow": 0,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "akdncdby62",
-  "widgetName": "DatePickerHasta"
+  "widgetName": "DatePickerHasta",
+  "onDateSelected": "{{FiltrosPersonas.aplicar()}}"
 }
