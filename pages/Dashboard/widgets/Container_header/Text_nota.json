@@ -30,7 +30,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 34,
   "shouldTruncate": false,
-  "text": "Cuenta cada occiso con inspección técnica registrada (fecha de los hechos). Deja la fecha de inicio vacía para ver todo el histórico.",
+  "text": "Cuenta cada caso registrado en public.caso (fecha de los hechos). Deja la fecha de inicio vacía para ver todo el histórico.",
   "textAlign": "LEFT",
   "textColor": "#94A3B8",
   "topRow": 9,
