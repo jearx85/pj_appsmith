@@ -137,7 +137,7 @@
   "isVisible": true,
   "isVisibleDownload": true,
   "isVisibleFilters": true,
-  "isVisiblePagination": true,
+  "isVisiblePagination": false,
   "isVisibleSearch": true,
   "key": "zba5qel0au",
   "label": "Data",
