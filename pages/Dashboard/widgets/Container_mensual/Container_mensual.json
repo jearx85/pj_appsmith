@@ -4,7 +4,7 @@
   "borderColor": "#E2E8F0",
   "borderRadius": "0.5rem",
   "borderWidth": "1",
-  "bottomRow": 172,
+  "bottomRow": 74,
   "boxShadow": "0 1px 2px 0 rgba(15, 23, 42, 0.06)",
   "children": [
     {
@@ -26,7 +26,7 @@
       "flexLayers": [],
       "isLoading": false,
       "isVisible": true,
-      "key": "ktaf619hoy",
+      "key": "9217u441tb",
       "leftColumn": 0,
       "minHeight": 100,
       "minWidth": 450,
@@ -36,7 +36,7 @@
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "kzitqkmaju",
+      "parentId": "273movy44w",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
@@ -44,8 +44,8 @@
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "jqg6six27f",
-      "widgetName": "Canvas_Container_detalle"
+      "widgetId": "lbvyc9nd0o",
+      "widgetName": "Canvas_Container_mensual"
     }
   ],
   "containerStyle": "card",
@@ -55,16 +55,16 @@
   "isCanvas": true,
   "isLoading": false,
   "isVisible": true,
-  "key": "qkqae665cm",
+  "key": "ke9cw49lux",
   "leftColumn": 0,
   "minWidth": 450,
-  "mobileBottomRow": 172,
+  "mobileBottomRow": 74,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 64,
-  "mobileTopRow": 118,
+  "mobileTopRow": 34,
   "needsErrorInfo": false,
-  "originalBottomRow": 172,
-  "originalTopRow": 118,
+  "originalBottomRow": 74,
+  "originalTopRow": 34,
   "parentColumnSpace": 23.078125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -72,9 +72,9 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "shouldScrollContents": false,
-  "topRow": 118,
+  "topRow": 34,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "kzitqkmaju",
-  "widgetName": "Container_detalle"
+  "widgetId": "273movy44w",
+  "widgetName": "Container_mensual"
 }

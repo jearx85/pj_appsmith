@@ -54,5 +54,32 @@ export default {
 	// Serie del grafico: x = categoria, y = valor de la columna pedida.
 	serie: function (campo) {
 		return DashboardData.CATEGORIAS.map(c => ({ x: c, y: DashboardData.cat(c)[campo] }));
+	},
+
+	// Meses entre el primero y el ultimo con datos; los meses sin casos salen en 0.
+	meses: function () {
+		const rows = Select_dashboard_meses.data || [];
+		if (!rows.length) return [];
+		const ES = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+		const porMes = {};
+		rows.forEach(r => { porMes[r.mes] = r; });
+		const fin = moment(rows[rows.length - 1].mes + '-01', 'YYYY-MM-DD');
+		const out = [];
+		for (let m = moment(rows[0].mes + '-01', 'YYYY-MM-DD'); !m.isAfter(fin) && out.length < 240; m.add(1, 'month')) {
+			const r = porMes[m.format('YYYY-MM')] || {};
+			out.push({
+				label: ES[m.month()] + ' ' + m.format('YY'),
+				total: Number(r.total) || 0,
+				remitidos: Number(r.remitidos) || 0,
+				via_publica: Number(r.via_publica) || 0,
+				centros_asistenciales: Number(r.centros_asistenciales) || 0
+			});
+		}
+		return out;
+	},
+
+	// Serie del grafico de lineas: x = mes, y = valor de la columna pedida.
+	serieMes: function (campo) {
+		return DashboardData.meses().map(m => ({ x: m.label, y: m[campo] }));
 	}
 }

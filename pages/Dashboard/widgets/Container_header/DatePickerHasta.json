@@ -66,5 +66,5 @@
   "widgetId": "tez1w93a7b",
   "widgetName": "DatePickerHasta",
   "labelTextColor": "#FFFFFF",
-  "onDateSelected": "{{Select_dashboard_lugares.run()}}"
+  "onDateSelected": "{{Select_dashboard_lugares.run(); Select_dashboard_meses.run();}}"
 }

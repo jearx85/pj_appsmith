@@ -93,7 +93,7 @@
   "isVisibleFilters": false,
   "isVisiblePagination": false,
   "isVisibleSearch": true,
-  "key": "3shkmb3hb6",
+  "key": "t094bmmn2q",
   "label": "Data",
   "leftColumn": 1,
   "minWidth": 450,
@@ -105,7 +105,7 @@
   "originalBottomRow": 52,
   "originalTopRow": 5,
   "parentColumnSpace": 23.078125,
-  "parentId": "bjlalkvlui",
+  "parentId": "jqg6six27f",
   "parentRowSpace": 10,
   "primaryColumns": {
     "lugar": {
@@ -314,6 +314,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "7nd5607fpm",
+  "widgetId": "l9mm76qz0a",
   "widgetName": "Table_lugares"
 }

@@ -59,5 +59,5 @@
   "widgetId": "ifqp2yx5ru",
   "widgetName": "DatePickerDesde",
   "labelTextColor": "#FFFFFF",
-  "onDateSelected": "{{Select_dashboard_lugares.run()}}"
+  "onDateSelected": "{{Select_dashboard_lugares.run(); Select_dashboard_meses.run();}}"
 }

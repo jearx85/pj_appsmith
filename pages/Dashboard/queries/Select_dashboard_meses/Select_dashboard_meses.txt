@@ -1,0 +1,31 @@
+WITH base AS (
+  SELECT
+    c.remitido,
+    TO_CHAR(c.fecha_hora_hechos, 'YYYY-MM') AS mes,
+    TRANSLATE(UPPER(TRIM(COALESCE(c.lugar_inspeccion, ''))), 'ÁÉÍÓÚÜ', 'AEIOUU') AS lugar_norm
+  FROM public.caso c
+  WHERE c.fecha_hora_hechos IS NOT NULL
+    AND (NULLIF({{ DatePickerDesde.formattedDate }}, '')::timestamp IS NULL OR c.fecha_hora_hechos >= NULLIF({{ DatePickerDesde.formattedDate }}, '')::timestamp)
+    AND (NULLIF({{ DatePickerHasta.formattedDate }}, '')::date IS NULL OR c.fecha_hora_hechos < (NULLIF({{ DatePickerHasta.formattedDate }}, '')::date + INTERVAL '1 day'))
+),
+clasif AS (
+  SELECT
+    remitido,
+    mes,
+    CASE
+      WHEN lugar_norm = 'VIA PUBLICA' THEN 'Vía pública'
+      WHEN lugar_norm ~ '(CLINICA|HOSPITAL|\mIPS\M|I\.P\.S|UNIDAD INTERMEDIA|UNIDAD PRESTADORA|CENTRO ASISTENCIAL|TRAUMACENTRO|COOPERATIVA DE SALUD|\mSOMA\M|E\.S\.E|INSTITUTO NEUROLOGICO)'
+        THEN 'Centros asistenciales'
+      ELSE 'Otros lugares'
+    END AS categoria
+  FROM base
+)
+SELECT
+  mes,
+  COUNT(*) AS total,
+  COUNT(*) FILTER (WHERE remitido = 'Si') AS remitidos,
+  COUNT(*) FILTER (WHERE categoria = 'Vía pública') AS via_publica,
+  COUNT(*) FILTER (WHERE categoria = 'Centros asistenciales') AS centros_asistenciales
+FROM clasif
+GROUP BY mes
+ORDER BY mes;

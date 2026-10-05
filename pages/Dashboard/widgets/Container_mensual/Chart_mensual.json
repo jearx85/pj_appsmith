@@ -5,8 +5,30 @@
   "borderRadius": "0.5rem",
   "bottomRow": 38,
   "boxShadow": "none",
-  "chartName": "Inspecciones por lugar",
-  "chartType": "COLUMN_CHART",
+  "chartData": {
+    "ygpsyorpkz": {
+      "seriesName": "Total",
+      "color": "#0b1e3a",
+      "data": "{{DashboardData.serieMes('total')}}"
+    },
+    "vrcpyang8q": {
+      "seriesName": "Remitidos",
+      "color": "#2563eb",
+      "data": "{{DashboardData.serieMes('remitidos')}}"
+    },
+    "kl2bwacb17": {
+      "seriesName": "Vía pública",
+      "color": "#0f766e",
+      "data": "{{DashboardData.serieMes('via_publica')}}"
+    },
+    "3ciw8ilqan": {
+      "seriesName": "Centros asistenciales",
+      "color": "#7c3aed",
+      "data": "{{DashboardData.serieMes('centros_asistenciales')}}"
+    }
+  },
+  "chartName": "Inspecciones mes a mes",
+  "chartType": "LINE_CHART",
   "customEChartConfig": "{{\n{\n  \"dataset\": {\n    \"source\": [\n      [\n        \"Day\",\n        \"Baidu\",\n        \"Google\",\n        \"Bing\"\n      ],\n      [\n        \"Mon\",\n        620,\n        120,\n        60\n      ],\n      [\n        \"Tue\",\n        732,\n        132,\n        72\n      ],\n      [\n        \"Wed\",\n        701,\n        101,\n        71\n      ],\n      [\n        \"Thu\",\n        734,\n        134,\n        74\n      ],\n      [\n        \"Fri\",\n        1090,\n        290,\n        190\n      ],\n      [\n        \"Sat\",\n        1130,\n        230,\n        130\n      ],\n      [\n        \"Sun\",\n        1120,\n        220,\n        110\n      ]\n    ]\n  },\n  \"tooltip\": {\n    \"trigger\": \"axis\",\n    \"axisPointer\": {\n      \"type\": \"shadow\"\n    }\n  },\n  \"title\": {\n    \"text\": \"Search Engine Usage\",\n    \"left\": \"center\",\n    \"textStyle\": {\n      \"width\": 200,\n      \"overflow\": \"truncate\"\n    }\n  },\n  \"legend\": {\n    \"top\": 40,\n    \"type\": \"scroll\"\n  },\n  \"grid\": {\n    \"left\": 15,\n    \"right\": 15,\n    \"bottom\": 30,\n    \"top\": 100,\n    \"containLabel\": true\n  },\n  \"xAxis\": [\n    {\n      \"type\": \"category\"\n    }\n  ],\n  \"yAxis\": [\n    {\n      \"type\": \"value\"\n    }\n  ],\n  \"series\": [\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    },\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    },\n    {\n      \"type\": \"bar\",\n      \"stack\": \"Search Engine\"\n    }\n  ]\n}\n}}",
   "customFusionChartConfig": {
     "dataSource": {
@@ -57,10 +79,16 @@
   },
   "dynamicBindingPathList": [
     {
-      "key": "chartData.x8f82chmhl.data"
+      "key": "chartData.ygpsyorpkz.data"
     },
     {
-      "key": "chartData.u4t0fdshee.data"
+      "key": "chartData.vrcpyang8q.data"
+    },
+    {
+      "key": "chartData.kl2bwacb17.data"
+    },
+    {
+      "key": "chartData.3ciw8ilqan.data"
     },
     {
       "key": "accentColor"
@@ -74,7 +102,7 @@
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "isLoading": false,
   "isVisible": true,
-  "key": "bjlalkvlui",
+  "key": "jf6aom3kbp",
   "labelOrientation": "auto",
   "leftColumn": 1,
   "minWidth": 450,
@@ -86,30 +114,18 @@
   "originalBottomRow": 38,
   "originalTopRow": 5,
   "parentColumnSpace": 23.078125,
-  "parentId": "r68mhhfqxp",
+  "parentId": "lbvyc9nd0o",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "setAdaptiveYMin": false,
-  "showDataPointLabel": true,
+  "showDataPointLabel": false,
   "topRow": 5,
   "type": "CHART_WIDGET",
   "version": 1,
-  "widgetId": "pjskbpdu2a",
-  "widgetName": "Chart_categorias",
-  "xAxisName": "Lugar de inspección",
-  "yAxisName": "Inspecciones",
-  "chartData": {
-    "x8f82chmhl": {
-      "seriesName": "Remitidos",
-      "color": "#2563eb",
-      "data": "{{DashboardData.serie('remitidos')}}"
-    },
-    "u4t0fdshee": {
-      "seriesName": "No remitidos",
-      "color": "#94A3B8",
-      "data": "{{DashboardData.serie('no_remitidos')}}"
-    }
-  }
+  "widgetId": "ack48ne4xs",
+  "widgetName": "Chart_mensual",
+  "xAxisName": "Mes",
+  "yAxisName": "Inspecciones"
 }
