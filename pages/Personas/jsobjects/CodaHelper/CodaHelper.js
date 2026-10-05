@@ -171,6 +171,10 @@ export default {
 						{
               column: "enviado_desde",
               value: normalizeCentro("enviado_desde", "Enviado desde appsmith")
+            },
+						{
+              column: "oficio",
+              value: normalizeCentro("oficio", update_form.formData.oficio)
             }
           ]
         }
@@ -215,7 +219,8 @@ export default {
 			{ column: "Teléfono PA",                   value: update_form.formData.telefono || "" },
 			{ column: "telefono_v",                    value: update_form.formData.telefono_involucrado || "" },
 			{ column: "enviado_desde",                 value: "Enviado desde appsmith" || "" }, 
-			{ column: "Gravedad del siniestro",        value: "Homicidio" || ""}
+			{ column: "Gravedad del siniestro",        value: "Homicidio" || ""},
+			{column: "oficio",                         value: update_form.formData.oficio || ""}
 		];
 
 		base.rows[0].cells = base.rows[0].cells.concat(extraCells);
