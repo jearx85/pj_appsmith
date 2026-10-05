@@ -29,7 +29,7 @@
     ],
     "name": "Select_dashboard_lugares",
     "pageId": "Dashboard",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
