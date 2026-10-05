@@ -1,6 +1,15 @@
 export default {
   verificarAcceso: async () => {
-    const r = await CheckUsuario.run();
+    let r = [];
+    try {
+      r = await CheckUsuario.run();
+    } finally {
+      // Carga inicial de la tabla de casos. Se lanza desde aqui (con los widgets ya evaluados)
+      // para no depender del orden en que Appsmith ejecuta las consultas al abrir la pagina.
+      SelectQuery.run().catch((e) => {
+        showAlert("No se pudieron cargar los casos: " + (e && e.message ? e.message : e), "error");
+      });
+    }
     const autorizado = r.length > 0;
     await storeValue("esAutorizado", autorizado);
     await storeValue("placaActual", r[0]?.placa || null);
