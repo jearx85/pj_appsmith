@@ -71,6 +71,10 @@
       "isDefault": false
     },
     {
+      "id": "Dashboard",
+      "isDefault": false
+    },
+    {
       "id": "Admin",
       "isDefault": false
     }

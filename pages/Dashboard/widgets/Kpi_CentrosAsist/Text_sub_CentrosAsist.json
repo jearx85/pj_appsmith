@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 15,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
+    {
+      "key": "fontFamily"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.7rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "7an7ollkz9",
+  "leftColumn": 1,
+  "minWidth": 450,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "originalBottomRow": 15,
+  "originalTopRow": 10,
+  "overflow": "NONE",
+  "parentId": "nrm2ok0zd7",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "shouldTruncate": false,
+  "text": "{{DashboardData.cat('Centros asistenciales').remitidos}} remitidos · {{DashboardData.pct(DashboardData.cat('Centros asistenciales').total, DashboardData.totales().total)}}% del total",
+  "textAlign": "LEFT",
+  "textColor": "#64748B",
+  "topRow": 10,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "gi3oqakjaa",
+  "widgetName": "Text_sub_CentrosAsist"
+}

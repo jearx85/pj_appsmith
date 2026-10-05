@@ -1,0 +1,34 @@
+WITH base AS (
+  SELECT
+    c.remitido,
+    COALESCE(NULLIF(TRIM(c.lugar_inspeccion), ''), '(sin dato)') AS lugar,
+    TRANSLATE(UPPER(TRIM(COALESCE(c.lugar_inspeccion, ''))), 'ÁÉÍÓÚÜ', 'AEIOUU') AS lugar_norm
+  FROM public.personas p
+  JOIN public.caso c
+    ON c.id = p.caso_id
+  WHERE p.vinculacion_caso = 'Occiso'
+    AND ({{ DatePickerDesde.formattedDate || null }}::timestamp IS NULL OR c.fecha_hora_hechos >= {{ DatePickerDesde.formattedDate }}::timestamp)
+    AND ({{ DatePickerHasta.formattedDate || null }}::date IS NULL OR c.fecha_hora_hechos < ({{ DatePickerHasta.formattedDate }}::date + INTERVAL '1 day'))
+),
+clasif AS (
+  SELECT
+    remitido,
+    lugar,
+    CASE
+      WHEN lugar_norm = 'VIA PUBLICA' THEN 'Vía pública'
+      WHEN lugar_norm ~ '(CLINICA|HOSPITAL|\mIPS\M|I\.P\.S|UNIDAD INTERMEDIA|UNIDAD PRESTADORA|CENTRO ASISTENCIAL|TRAUMACENTRO|COOPERATIVA DE SALUD|\mSOMA\M|E\.S\.E|INSTITUTO NEUROLOGICO)'
+        THEN 'Centros asistenciales'
+      ELSE 'Otros lugares'
+    END AS categoria
+  FROM base
+)
+SELECT
+  lugar,
+  categoria,
+  COUNT(*) AS total,
+  COUNT(*) FILTER (WHERE remitido = 'Si') AS remitidos,
+  COUNT(*) FILTER (WHERE remitido = 'No') AS no_remitidos,
+  COUNT(*) FILTER (WHERE remitido IS NULL OR remitido NOT IN ('Si', 'No')) AS sin_dato
+FROM clasif
+GROUP BY lugar, categoria
+ORDER BY total DESC, lugar;

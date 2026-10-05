@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 9,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
+    {
+      "key": "fontFamily"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "xarlwcp2pn",
+  "leftColumn": 1,
+  "minWidth": 450,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 45,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "originalBottomRow": 9,
+  "originalTopRow": 6,
+  "overflow": "NONE",
+  "parentId": "hs8s20yoaj",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 45,
+  "shouldTruncate": false,
+  "text": "{{(DatePickerDesde.selectedDate ? 'Desde ' + moment(DatePickerDesde.selectedDate).format('DD/MM/YYYY') + ' ' : '') + (DatePickerHasta.selectedDate ? 'Corte al ' + moment(DatePickerHasta.selectedDate).format('DD/MM/YYYY') : 'Sin fecha de corte')}}",
+  "textAlign": "LEFT",
+  "textColor": "#CBD5E1",
+  "topRow": 6,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "tutrtkbbr8",
+  "widgetName": "Text_subtitle"
+}
