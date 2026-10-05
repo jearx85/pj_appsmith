@@ -15,15 +15,15 @@ LEFT JOIN public."vehiculos" v
        ON v.expediente = c.spoa_expediente
       AND TRIM(v.num_documento_relacionado) = TRIM(p.cedula)
 WHERE (
-    p."cedula" ILIKE '%{{FiltrosPersonas.busqueda()}}%'
-    OR p."expediente" ILIKE '%{{FiltrosPersonas.busqueda()}}%'
+    p."cedula" ILIKE '%{{FiltrosSQL.busqueda()}}%'
+    OR p."expediente" ILIKE '%{{FiltrosSQL.busqueda()}}%'
 )
 AND c.fecha_hora_hechos::date >= COALESCE(NULLIF('{{DatePickerDesde.formattedDate || ""}}', '')::date, '1900-01-01'::date)
 AND c.fecha_hora_hechos::date <= COALESCE(NULLIF('{{DatePickerHasta.formattedDate || ""}}', '')::date, '2999-12-31'::date)
 AND ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'TODOS'
      OR ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'MEDELLIN' AND (LEFT(TRIM(COALESCE(p.expediente, '')), 5) = '05001' OR LEFT(TRIM(COALESCE(p.expediente, '')), 4) = '5001'))
      OR ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'OTROS' AND NOT (LEFT(TRIM(COALESCE(p.expediente, '')), 5) = '05001' OR LEFT(TRIM(COALESCE(p.expediente, '')), 4) = '5001')))
-AND ('{{FiltrosPersonas.vinculacion()}}' = 'TODOS' OR LOWER(TRANSLATE(TRIM(p.vinculacion_caso), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) = LOWER(TRANSLATE(TRIM('{{FiltrosPersonas.vinculacion()}}'), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')))
+AND ('{{FiltrosSQL.vinculacion()}}' = 'TODOS' OR LOWER(TRANSLATE(TRIM(p.vinculacion_caso), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) = LOWER(TRANSLATE(TRIM('{{FiltrosSQL.vinculacion()}}'), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')))
 AND ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'TODOS'
      OR ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'SI' AND LOWER(TRANSLATE(TRIM(COALESCE(p.familia, '')), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) = 'si')
      OR ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'NO' AND LOWER(TRANSLATE(TRIM(COALESCE(p.familia, '')), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) = 'no')

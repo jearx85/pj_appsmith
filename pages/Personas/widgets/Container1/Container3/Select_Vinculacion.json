@@ -54,7 +54,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 46,
   "serverSideFiltering": false,
-  "sourceData": "{{FiltrosPersonas.opcionesVinculacion()}}",
+  "sourceData": "{{[{ label: 'Todas', value: 'TODOS' }].concat(ChartData.getTiposVinculacion())}}",
   "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,
