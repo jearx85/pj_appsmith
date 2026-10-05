@@ -24,10 +24,11 @@ WHERE
     OR c.oficio::TEXT ILIKE '%{{Filtros.limpiar(filtro_oficio.text)}}%'
   )
   AND (
-    '{{filtro_fecha.formattedDate || ""}}' = ''
-    OR (
-      c.fecha_hora_hechos >= '{{filtro_fecha.formattedDate || "1900-01-01"}}'::date
-      AND c.fecha_hora_hechos < ('{{filtro_fecha.formattedDate || "1900-01-01"}}'::date + interval '1 day')
-    )
+    '{{filtro_fecha_desde.formattedDate || ""}}' = ''
+    OR c.fecha_hora_hechos >= '{{filtro_fecha_desde.formattedDate || "1900-01-01"}}'::date
+  )
+  AND (
+    '{{filtro_fecha_hasta.formattedDate || ""}}' = ''
+    OR c.fecha_hora_hechos < ('{{filtro_fecha_hasta.formattedDate || "1900-01-01"}}'::date + interval '1 day')
   )
 ORDER BY c.fecha_hora_hechos DESC;

@@ -1,12 +1,13 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 11,
   "bottomRowBeforeCollapse": 17,
   "boxShadow": "none",
-  "defaultText": "",
+  "closeOnSelection": true,
+  "dateFormat": "YYYY-MM-DD",
+  "datePickerType": "DATE_PICKER",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,55 +17,53 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
   "dynamicTriggerPathList": [
     {
-      "key": "onTextChanged"
+      "key": "onDateSelected"
     }
   ],
-  "iconAlign": "left",
-  "inputType": "TEXT",
+  "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "w2ocezhnot",
-  "label": "Oficio",
+  "key": "j96arb5lm6",
+  "label": "Fecha hasta",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 1,
+  "leftColumn": 40,
+  "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
+  "minDate": "1920-12-31T18:30:00.000Z",
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 46,
-  "mobileLeftColumn": 2,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 39,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onTextChanged": "{{Debounce.buscarOficio()}}",
   "originalBottomRow": 17,
   "originalTopRow": 10,
   "parentColumnSpace": 16.53125,
   "parentId": "1l9aocinj8",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "resetOnSubmit": false,
   "responsiveBehavior": "fill",
-  "rightColumn": 20,
-  "showStepArrows": false,
+  "rightColumn": 56,
+  "shortcuts": false,
+  "timePrecision": "None",
   "topRow": 4,
   "topRowBeforeCollapse": 10,
-  "type": "INPUT_WIDGET_V2",
+  "type": "DATE_PICKER_WIDGET2",
   "version": 2,
-  "widgetId": "760tcgdoa2",
-  "widgetName": "filtro_oficio",
-  "placeholderText": "Ej. 326",
-  "iconName": "search"
+  "widgetId": "qumpmhs49p",
+  "widgetName": "filtro_fecha_hasta",
+  "onDateSelected": "{{SelectQuery.run()}}",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ]
 }

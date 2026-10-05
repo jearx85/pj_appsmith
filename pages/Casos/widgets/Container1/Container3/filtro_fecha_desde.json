@@ -17,19 +17,23 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ],
   "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
   "key": "sccwrbq6ug",
-  "label": "Fecha",
+  "label": "Fecha desde",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 30,
+  "leftColumn": 22,
   "maxDate": "2121-12-31T18:29:00.000Z",
   "maxDynamicHeight": 9000,
   "minDate": "1920-12-31T18:30:00.000Z",
@@ -47,13 +51,19 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 54,
+  "rightColumn": 38,
   "shortcuts": false,
-  "timePrecision": "minute",
+  "timePrecision": "None",
   "topRow": 4,
   "topRowBeforeCollapse": 10,
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "t52kuxhie7",
-  "widgetName": "filtro_fecha"
+  "widgetName": "filtro_fecha_desde",
+  "onDateSelected": "{{SelectQuery.run()}}",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ]
 }
