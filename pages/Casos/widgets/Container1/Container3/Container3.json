@@ -4,7 +4,7 @@
   "borderColor": "#E2E8F0",
   "borderRadius": "0.75rem",
   "borderWidth": "1",
-  "bottomRow": 24,
+  "bottomRow": 25,
   "boxShadow": "0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px 0 rgba(15, 23, 42, 0.04)",
   "children": [
     {
@@ -51,14 +51,7 @@
     }
   ],
   "containerStyle": "card",
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
-    }
-  ],
+  "dynamicBindingPathList": [],
   "dynamicHeight": "AUTO_HEIGHT",
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
@@ -83,7 +76,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 47,
   "shouldScrollContents": true,
-  "topRow": 11,
+  "topRow": 12,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "p6dj7f5fj9",

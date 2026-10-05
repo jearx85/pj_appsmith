@@ -18,11 +18,14 @@
   "fontSize": "0.875rem",
   "fontStyle": "",
   "isLoading": false,
-  "isVisible": "true",
+  "isVisible": false,
+  "key": "b4kj4hbi6j",
   "labelTextSize": "0.875rem",
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "mobileBottomRow": 9,
+  "mobileTopRow": 6,
   "originalBottomRow": 9,
   "originalTopRow": 6,
   "overflow": "NONE",
@@ -37,8 +40,5 @@
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "0ibyyurl65",
-  "widgetName": "Text_subtitulo",
-  "key": "b4kj4hbi6j",
-  "mobileTopRow": 6,
-  "mobileBottomRow": 9
+  "widgetName": "Text_subtitulo"
 }

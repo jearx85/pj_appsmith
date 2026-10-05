@@ -2,9 +2,10 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "allowAddNewRow": false,
   "animateLoading": false,
+  "borderColor": "#E2E8F0",
   "borderRadius": "0.75rem",
   "borderWidth": "1",
-  "bottomRow": 161,
+  "bottomRow": 162,
   "boxShadow": "0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px 0 rgba(15, 23, 42, 0.04)",
   "childStylesheet": {
     "button": {
@@ -52,24 +53,24 @@
   },
   "columnUpdatedAt": 1790103219200,
   "columnWidthMap": {
-    "customColumn1": 80,
-    "fecha_creacion": 191,
-    "fecha_hora_hechos": 160,
-    "oficio": 90,
-    "spoa_expediente": 238,
-    "spoa": 190,
-    "expediente": 130,
-    "clase_accidente": 170,
-    "comuna": 190,
-    "direccion_completa": 280,
-    "coordinador": 120,
-    "creado_por": 240,
-    "cantidad_personas": 90,
     "cantidad_heridos": 90,
     "cantidad_occisos": 90,
+    "cantidad_personas": 90,
     "cantidad_vehiculos": 100,
+    "clase_accidente": 170,
+    "comuna": 190,
+    "coordinador": 120,
+    "creado_por": 240,
+    "customColumn1": 80,
+    "direccion_completa": 280,
+    "expediente": 130,
+    "fecha_creacion": 191,
+    "fecha_hora_hechos": 160,
     "latitud": 110,
-    "longitud": 110
+    "longitud": 110,
+    "oficio": 90,
+    "spoa": 190,
+    "spoa_expediente": 238
   },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
@@ -105,76 +106,37 @@
       "key": "tableData"
     },
     {
-      "key": "derivedColumns.customColumn1.buttonLabel"
-    },
-    {
-      "key": "accentColor"
-    },
-    {
-      "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.expediente.computedValue"
-    },
-    {
-      "key": "primaryColumns.fecha_hora_hechos.computedValue"
-    },
-    {
-      "key": "primaryColumns.oficio.computedValue"
-    },
-    {
-      "key": "primaryColumns.spoa_expediente.computedValue"
-    },
-    {
-      "key": "primaryColumns.clase_accidente.computedValue"
-    },
-    {
-      "key": "primaryColumns.comuna.computedValue"
-    },
-    {
-      "key": "primaryColumns.direccion_completa.computedValue"
-    },
-    {
-      "key": "primaryColumns.creado_por.computedValue"
-    },
-    {
-      "key": "primaryColumns.spoa.computedValue"
-    },
-    {
-      "key": "primaryColumns.customColumn1.menuColor"
-    },
-    {
-      "key": "primaryColumns.customColumn1.isDisabled"
-    },
-    {
-      "key": "primaryColumns.spoa_expediente.cellBackground"
-    },
-    {
-      "key": "primaryColumns.id.computedValue"
-    },
-    {
       "key": "primaryColumns.cantidad_personas.computedValue"
-    },
-    {
-      "key": "primaryColumns.cantidad_heridos.computedValue"
-    },
-    {
-      "key": "primaryColumns.cantidad_vehiculos.computedValue"
-    },
-    {
-      "key": "primaryColumns.cantidad_occisos.computedValue"
-    },
-    {
-      "key": "primaryColumns.coordinador.computedValue"
-    },
-    {
-      "key": "primaryColumns.customColumn1.isCellVisible"
     },
     {
       "key": "primaryColumns.latitud.computedValue"
     },
     {
-      "key": "primaryColumns.longitud.computedValue"
+      "key": "primaryColumns.clase_accidente.computedValue"
+    },
+    {
+      "key": "primaryColumns.expediente.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.customColumn1.isDisabled"
+    },
+    {
+      "key": "primaryColumns.creado_por.computedValue"
+    },
+    {
+      "key": "primaryColumns.spoa_expediente.computedValue"
+    },
+    {
+      "key": "primaryColumns.spoa_expediente.cellBackground"
+    },
+    {
+      "key": "primaryColumns.oficio.computedValue"
+    },
+    {
+      "key": "primaryColumns.cantidad_occisos.computedValue"
     },
     {
       "key": "primaryColumns.cantidad_occisos.cellBackground"
@@ -183,10 +145,40 @@
       "key": "primaryColumns.cantidad_occisos.textColor"
     },
     {
+      "key": "primaryColumns.coordinador.computedValue"
+    },
+    {
+      "key": "primaryColumns.longitud.computedValue"
+    },
+    {
+      "key": "primaryColumns.cantidad_heridos.computedValue"
+    },
+    {
       "key": "primaryColumns.cantidad_heridos.cellBackground"
     },
     {
       "key": "primaryColumns.cantidad_heridos.textColor"
+    },
+    {
+      "key": "primaryColumns.comuna.computedValue"
+    },
+    {
+      "key": "primaryColumns.direccion_completa.computedValue"
+    },
+    {
+      "key": "primaryColumns.spoa.computedValue"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.cantidad_vehiculos.computedValue"
+    },
+    {
+      "key": "primaryColumns.fecha_hora_hechos.computedValue"
+    },
+    {
+      "key": "accentColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -198,9 +190,6 @@
     },
     {
       "key": "primaryColumns.spoa_expediente.cellBackground"
-    },
-    {
-      "key": "onRowSelected"
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
@@ -233,9 +222,6 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
-    },
-    {
-      "key": "onRowSelected"
     }
   ],
   "enableClientSideSearch": true,
@@ -256,7 +242,7 @@
   "labelTextSize": "0.875rem",
   "leftColumn": 1,
   "onPageChange": "{{SelectQuery.run()}}",
-  "onRowSelected": "{{// \n  // storeValue(\"modo\", \"edicion\").then(() =>\n    // HandleCaso.cargarCaso(data_table.selectedRow.spoa_expediente).then(() =>\n      // navigateTo(\"Formulario\")\n    // )\n  // )\n// }}",
+  "onRowSelected": "",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
   "originalBottomRow": 161,
@@ -894,12 +880,11 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{\n  SelectQuery.data\n}}",
   "textSize": "0.875rem",
-  "topRow": 25,
+  "topRow": 26,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",
   "widgetId": "hpy3pb4xft",
-  "widgetName": "data_table",
-  "borderColor": "#E2E8F0"
+  "widgetName": "data_table"
 }
