@@ -17,7 +17,7 @@
   "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
-  "key": "nrgkfeo2im",
+  "key": "hj32tnktmw",
   "leftColumn": 1,
   "minWidth": 450,
   "mobileBottomRow": 15,
@@ -28,7 +28,7 @@
   "originalBottomRow": 15,
   "originalTopRow": 10,
   "overflow": "NONE",
-  "parentId": "mouxsa0m64",
+  "parentId": "mb6la7tm00",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 62,
@@ -40,6 +40,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "6ll0lt5t0r",
+  "widgetId": "dyro946rtx",
   "widgetName": "Text_sub_ViaPublica"
 }

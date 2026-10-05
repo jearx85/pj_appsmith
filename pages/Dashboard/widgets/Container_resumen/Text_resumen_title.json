@@ -14,7 +14,7 @@
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "bjlalkvlui",
+  "key": "f8ym4yqthl",
   "leftColumn": 1,
   "minWidth": 450,
   "mobileBottomRow": 4,
@@ -25,7 +25,7 @@
   "originalBottomRow": 4,
   "originalTopRow": 1,
   "overflow": "NONE",
-  "parentId": "f8ym4yqthl",
+  "parentId": "3ciw8ilqan",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 62,
@@ -37,6 +37,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "pjskbpdu2a",
+  "widgetId": "kkvn6yvl8j",
   "widgetName": "Text_resumen_title"
 }

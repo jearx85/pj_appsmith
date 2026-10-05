@@ -17,7 +17,7 @@
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "mb6la7tm00",
+  "key": "bshnpd1bi1",
   "leftColumn": 1,
   "minWidth": 450,
   "mobileBottomRow": 10,
@@ -28,7 +28,7 @@
   "originalBottomRow": 10,
   "originalTopRow": 4,
   "overflow": "NONE",
-  "parentId": "ij4trd7he4",
+  "parentId": "noc7mry48u",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 62,
@@ -40,6 +40,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "lycnnc39xm",
+  "widgetId": "zamghnqsav",
   "widgetName": "Text_val_Remitidos"
 }

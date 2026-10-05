@@ -14,7 +14,7 @@
   "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
-  "key": "bzmlxzn14f",
+  "key": "nrm2ok0zd7",
   "leftColumn": 1,
   "minWidth": 450,
   "mobileBottomRow": 4,
@@ -25,7 +25,7 @@
   "originalBottomRow": 4,
   "originalTopRow": 1,
   "overflow": "NONE",
-  "parentId": "nrm2ok0zd7",
+  "parentId": "gmi1ybfpay",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 62,
@@ -37,6 +37,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "rspfxxe4fk",
+  "widgetId": "movd19zitr",
   "widgetName": "Text_lbl_CentrosAsist"
 }

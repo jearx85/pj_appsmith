@@ -57,10 +57,10 @@
   },
   "dynamicBindingPathList": [
     {
-      "key": "chartData.3m0j65pafv.data"
+      "key": "chartData.ygpsyorpkz.data"
     },
     {
-      "key": "chartData.r68mhhfqxp.data"
+      "key": "chartData.vrcpyang8q.data"
     },
     {
       "key": "accentColor"
@@ -74,7 +74,7 @@
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "isLoading": false,
   "isVisible": true,
-  "key": "3ciw8ilqan",
+  "key": "jf6aom3kbp",
   "labelOrientation": "auto",
   "leftColumn": 1,
   "minWidth": 450,
@@ -86,7 +86,7 @@
   "originalBottomRow": 38,
   "originalTopRow": 5,
   "parentColumnSpace": 23.078125,
-  "parentId": "2v98b0q7xr",
+  "parentId": "lbvyc9nd0o",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -96,17 +96,17 @@
   "topRow": 5,
   "type": "CHART_WIDGET",
   "version": 1,
-  "widgetId": "kl2bwacb17",
+  "widgetId": "ack48ne4xs",
   "widgetName": "Chart_categorias",
   "xAxisName": "Lugar de inspección",
   "yAxisName": "Inspecciones",
   "chartData": {
-    "3m0j65pafv": {
+    "ygpsyorpkz": {
       "seriesName": "Remitidos",
       "color": "#2563eb",
       "data": "{{DashboardData.serie('remitidos')}}"
     },
-    "r68mhhfqxp": {
+    "vrcpyang8q": {
       "seriesName": "No remitidos",
       "color": "#94A3B8",
       "data": "{{DashboardData.serie('no_remitidos')}}"

@@ -7,8 +7,8 @@ WITH base AS (
   JOIN public.caso c
     ON c.id = p.caso_id
   WHERE p.vinculacion_caso = 'Occiso'
-    AND ({{ DatePickerDesde.formattedDate || null }}::timestamp IS NULL OR c.fecha_hora_hechos >= {{ DatePickerDesde.formattedDate }}::timestamp)
-    AND ({{ DatePickerHasta.formattedDate || null }}::date IS NULL OR c.fecha_hora_hechos < ({{ DatePickerHasta.formattedDate }}::date + INTERVAL '1 day'))
+    AND (NULLIF({{ DatePickerDesde.formattedDate }}, '')::timestamp IS NULL OR c.fecha_hora_hechos >= NULLIF({{ DatePickerDesde.formattedDate }}, '')::timestamp)
+    AND (NULLIF({{ DatePickerHasta.formattedDate }}, '')::date IS NULL OR c.fecha_hora_hechos < (NULLIF({{ DatePickerHasta.formattedDate }}, '')::date + INTERVAL '1 day'))
 ),
 clasif AS (
   SELECT

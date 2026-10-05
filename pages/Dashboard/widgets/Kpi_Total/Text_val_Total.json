@@ -17,7 +17,7 @@
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "noc7mry48u",
+  "key": "851m0mh7gi",
   "leftColumn": 1,
   "minWidth": 450,
   "mobileBottomRow": 10,
@@ -28,7 +28,7 @@
   "originalBottomRow": 10,
   "originalTopRow": 4,
   "overflow": "NONE",
-  "parentId": "59za6tam8y",
+  "parentId": "y33859j30u",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 62,
@@ -40,6 +40,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "turypsxqhi",
+  "widgetId": "cobb5f2dnq",
   "widgetName": "Text_val_Total"
 }

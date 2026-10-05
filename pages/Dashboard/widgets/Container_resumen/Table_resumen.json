@@ -85,7 +85,7 @@
   "isVisibleFilters": false,
   "isVisiblePagination": false,
   "isVisibleSearch": false,
-  "key": "u4t0fdshee",
+  "key": "jquthrx4sm",
   "label": "Data",
   "leftColumn": 1,
   "minWidth": 450,
@@ -97,7 +97,7 @@
   "originalBottomRow": 38,
   "originalTopRow": 5,
   "parentColumnSpace": 23.078125,
-  "parentId": "f8ym4yqthl",
+  "parentId": "3ciw8ilqan",
   "parentRowSpace": 10,
   "primaryColumns": {
     "categoria": {
@@ -242,6 +242,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "x8f82chmhl",
+  "widgetId": "409bw7768p",
   "widgetName": "Table_resumen"
 }

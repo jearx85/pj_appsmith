@@ -14,7 +14,7 @@
   "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
-  "key": "injv1vksw3",
+  "key": "ij4trd7he4",
   "leftColumn": 1,
   "minWidth": 450,
   "mobileBottomRow": 4,
@@ -25,7 +25,7 @@
   "originalBottomRow": 4,
   "originalTopRow": 1,
   "overflow": "NONE",
-  "parentId": "ij4trd7he4",
+  "parentId": "noc7mry48u",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 62,
@@ -37,6 +37,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "dwl3y9f36y",
+  "widgetId": "9ji7jfje8q",
   "widgetName": "Text_lbl_Remitidos"
 }

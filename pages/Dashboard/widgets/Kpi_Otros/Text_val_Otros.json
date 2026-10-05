@@ -17,7 +17,7 @@
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "lbvyc9nd0o",
+  "key": "dkzzkkeemo",
   "leftColumn": 1,
   "minWidth": 450,
   "mobileBottomRow": 10,
@@ -28,7 +28,7 @@
   "originalBottomRow": 10,
   "originalTopRow": 4,
   "overflow": "NONE",
-  "parentId": "xozn3safw1",
+  "parentId": "kdpxjkl7de",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 62,
@@ -40,6 +40,6 @@
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "273movy44w",
+  "widgetId": "0a1q64z13l",
   "widgetName": "Text_val_Otros"
 }
