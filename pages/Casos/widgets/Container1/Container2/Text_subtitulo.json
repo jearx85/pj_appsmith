@@ -1,42 +1,44 @@
 {
   "backgroundColor": "",
   "borderRadius": "0px",
-  "bottomRow": 6,
+  "bottomRow": 9,
   "boxShadow": "none",
   "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
     {
       "key": "fontFamily"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "fontSize"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1.5rem",
-  "fontStyle": "BOLD",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "originalBottomRow": 14,
-  "originalTopRow": 10,
+  "originalBottomRow": 9,
+  "originalTopRow": 6,
   "overflow": "NONE",
   "parentColumnSpace": 11.78515625,
   "parentId": "v83irurtnu",
   "parentRowSpace": 10,
-  "rightColumn": 40,
-  "text": "Casos",
+  "rightColumn": 50,
+  "text": "{{(SelectQuery.data || []).length + ' casos ' + ((filtro_oficio.text || filtro_fecha_desde.formattedDate || filtro_fecha_hasta.formattedDate) ? '(filtrados)' : 'registrados')}}",
   "textAlign": "LEFT",
-  "textColor": "#ffffff",
-  "topRow": 1,
+  "textColor": "#CBD5E1",
+  "topRow": 6,
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "urzv99hdc8",
-  "widgetName": "Text16"
+  "widgetId": "0ibyyurl65",
+  "widgetName": "Text_subtitulo",
+  "key": "b4kj4hbi6j",
+  "mobileTopRow": 6,
+  "mobileBottomRow": 9
 }

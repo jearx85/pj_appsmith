@@ -2,10 +2,10 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "allowAddNewRow": false,
   "animateLoading": false,
-  "borderRadius": "0.375rem",
-  "borderWidth": "5",
+  "borderRadius": "0.75rem",
+  "borderWidth": "1",
   "bottomRow": 161,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px 0 rgba(15, 23, 42, 0.04)",
   "childStylesheet": {
     "button": {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
@@ -52,11 +52,24 @@
   },
   "columnUpdatedAt": 1790103219200,
   "columnWidthMap": {
-    "customColumn1": 100,
+    "customColumn1": 80,
     "fecha_creacion": 191,
-    "fecha_hora_hechos": 220,
-    "oficio": 100,
-    "spoa_expediente": 238
+    "fecha_hora_hechos": 160,
+    "oficio": 90,
+    "spoa_expediente": 238,
+    "spoa": 190,
+    "expediente": 130,
+    "clase_accidente": 170,
+    "comuna": 190,
+    "direccion_completa": 280,
+    "coordinador": 120,
+    "creado_por": 240,
+    "cantidad_personas": 90,
+    "cantidad_heridos": 90,
+    "cantidad_occisos": 90,
+    "cantidad_vehiculos": 100,
+    "latitud": 110,
+    "longitud": 110
   },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
@@ -162,6 +175,18 @@
     },
     {
       "key": "primaryColumns.longitud.computedValue"
+    },
+    {
+      "key": "primaryColumns.cantidad_occisos.cellBackground"
+    },
+    {
+      "key": "primaryColumns.cantidad_occisos.textColor"
+    },
+    {
+      "key": "primaryColumns.cantidad_heridos.cellBackground"
+    },
+    {
+      "key": "primaryColumns.cantidad_heridos.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -182,6 +207,18 @@
     },
     {
       "key": "primaryColumns.customColumn1.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.cantidad_occisos.cellBackground"
+    },
+    {
+      "key": "primaryColumns.cantidad_occisos.textColor"
+    },
+    {
+      "key": "primaryColumns.cantidad_heridos.cellBackground"
+    },
+    {
+      "key": "primaryColumns.cantidad_heridos.textColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -223,7 +260,7 @@
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
   "originalBottomRow": 161,
-  "originalTopRow": 24,
+  "originalTopRow": 25,
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -237,15 +274,15 @@
       "alias": "cantidad_heridos",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (Number(currentRow[\"cantidad_heridos\"]) > 0 ? \"#FEF3C7\" : \"\")) : \"\" })()}}",
       "columnType": "number",
       "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"cantidad_heridos\"])) : cantidad_heridos })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
       "id": "cantidad_heridos",
       "index": 12,
       "isCellEditable": false,
@@ -256,30 +293,30 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "cantidad_heridos",
+      "label": "Heridos",
       "notation": "standard",
       "originalId": "cantidad_heridos",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (Number(currentRow[\"cantidad_heridos\"]) > 0 ? \"#B45309\" : \"\")) : \"\" })()}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 90
     },
     "cantidad_occisos": {
       "alias": "cantidad_occisos",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (Number(currentRow[\"cantidad_occisos\"]) > 0 ? \"#FEE2E2\" : \"\")) : \"\" })()}}",
       "columnType": "number",
       "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"cantidad_occisos\"])) : cantidad_occisos })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
       "id": "cantidad_occisos",
       "index": 11,
       "isCellEditable": false,
@@ -290,16 +327,16 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "cantidad_occisos",
+      "label": "Occisos",
       "notation": "standard",
       "originalId": "cantidad_occisos",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (Number(currentRow[\"cantidad_occisos\"]) > 0 ? \"#B91C1C\" : \"\")) : \"\" })()}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 90
     },
     "cantidad_personas": {
       "alias": "cantidad_personas",
@@ -313,7 +350,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "cantidad_personas",
       "index": 10,
       "isCellEditable": false,
@@ -324,7 +361,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "cantidad_personas",
+      "label": "Personas",
       "notation": "standard",
       "originalId": "cantidad_personas",
       "sticky": "",
@@ -333,7 +370,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 90
     },
     "cantidad_vehiculos": {
       "alias": "cantidad_vehiculos",
@@ -347,7 +384,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "cantidad_vehiculos",
       "index": 13,
       "isCellEditable": false,
@@ -358,7 +395,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "cantidad_vehiculos",
+      "label": "Vehículos",
       "notation": "standard",
       "originalId": "cantidad_vehiculos",
       "sticky": "",
@@ -367,7 +404,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 100
     },
     "clase_accidente": {
       "alias": "clase_accidente",
@@ -392,7 +429,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "clase_accidente",
+      "label": "Clase de accidente",
       "notation": "standard",
       "originalId": "clase_accidente",
       "sticky": "",
@@ -401,7 +438,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 170
     },
     "comuna": {
       "alias": "comuna",
@@ -426,7 +463,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "comuna",
+      "label": "Comuna",
       "notation": "standard",
       "originalId": "comuna",
       "sticky": "",
@@ -435,7 +472,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 190
     },
     "coordinador": {
       "alias": "coordinador",
@@ -449,7 +486,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "coordinador",
       "index": 10,
       "isCellEditable": false,
@@ -460,7 +497,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "coordinador",
+      "label": "Coordinador",
       "notation": "standard",
       "originalId": "coordinador",
       "sticky": "",
@@ -469,7 +506,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 120
     },
     "creado_por": {
       "alias": "creado_por",
@@ -494,7 +531,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "creado_por",
+      "label": "Creado por",
       "notation": "standard",
       "originalId": "creado_por",
       "sticky": "",
@@ -503,7 +540,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 240
     },
     "customColumn1": {
       "alias": "Borrar",
@@ -519,7 +556,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "iconName": "trash",
       "id": "customColumn1",
       "index": 10,
@@ -542,7 +579,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 80
     },
     "direccion_completa": {
       "alias": "direccion_completa",
@@ -567,7 +604,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "direccion_completa",
+      "label": "Dirección",
       "notation": "standard",
       "originalId": "direccion_completa",
       "sticky": "",
@@ -576,7 +613,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 280
     },
     "expediente": {
       "alias": "expediente",
@@ -601,7 +638,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "expediente",
+      "label": "Expediente",
       "notation": "standard",
       "originalId": "expediente",
       "sticky": "",
@@ -610,15 +647,15 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 130
     },
     "fecha_hora_hechos": {
       "alias": "fecha_hora_hechos",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "date",
-      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"fecha_hora_hechos\"])) : fecha_hora_hechos })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"fecha_hora_hechos\"] ? moment(currentRow[\"fecha_hora_hechos\"]).format(\"DD/MM/YYYY HH:mm\") : \"\")) : \"\" })()}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -635,7 +672,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "fecha_hora_hechos",
+      "label": "Fecha de los hechos",
       "notation": "standard",
       "originalId": "fecha_hora_hechos",
       "sticky": "",
@@ -644,7 +681,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 160
     },
     "id": {
       "alias": "id",
@@ -703,7 +740,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "latitud",
+      "label": "Latitud",
       "notation": "standard",
       "originalId": "latitud",
       "sticky": "",
@@ -712,7 +749,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 110
     },
     "longitud": {
       "alias": "longitud",
@@ -737,7 +774,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "longitud",
+      "label": "Longitud",
       "notation": "standard",
       "originalId": "longitud",
       "sticky": "",
@@ -746,7 +783,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 110
     },
     "oficio": {
       "alias": "oficio",
@@ -759,8 +796,8 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
       "id": "oficio",
       "index": 3,
       "isCellEditable": false,
@@ -771,16 +808,16 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "oficio",
+      "label": "Oficio",
       "notation": "standard",
       "originalId": "oficio",
       "sticky": "",
-      "textColor": "",
+      "textColor": "#0b1e3a",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 90
     },
     "spoa": {
       "alias": "spoa",
@@ -805,7 +842,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "spoa",
+      "label": "SPOA",
       "notation": "standard",
       "originalId": "spoa",
       "sticky": "",
@@ -814,7 +851,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 190
     },
     "spoa_expediente": {
       "alias": "spoa_expediente",
@@ -857,11 +894,12 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{\n  SelectQuery.data\n}}",
   "textSize": "0.875rem",
-  "topRow": 24,
+  "topRow": 25,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",
   "widgetId": "hpy3pb4xft",
-  "widgetName": "data_table"
+  "widgetName": "data_table",
+  "borderColor": "#E2E8F0"
 }
