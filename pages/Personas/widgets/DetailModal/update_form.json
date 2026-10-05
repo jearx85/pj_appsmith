@@ -384,6 +384,12 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "submitButtonStyles.buttonColor"
+    },
+    {
+      "key": "submitButtonStyles.borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -1192,7 +1198,7 @@
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "buttonVariant": "PRIMARY"
+    "buttonVariant": "SECONDARY"
   },
   "title": "",
   "topRow": 6,
