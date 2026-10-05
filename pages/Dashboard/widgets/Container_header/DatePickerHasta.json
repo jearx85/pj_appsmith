@@ -25,7 +25,11 @@
       "key": "defaultDate"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ],
   "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
@@ -61,5 +65,6 @@
   "version": 2,
   "widgetId": "tez1w93a7b",
   "widgetName": "DatePickerHasta",
-  "labelTextColor": "#FFFFFF"
+  "labelTextColor": "#FFFFFF",
+  "onDateSelected": "{{Select_dashboard_lugares.run()}}"
 }

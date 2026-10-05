@@ -18,7 +18,11 @@
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onDateSelected"
+    }
+  ],
   "firstDayOfWeek": 0,
   "isDisabled": false,
   "isLoading": false,
@@ -54,5 +58,6 @@
   "version": 2,
   "widgetId": "ifqp2yx5ru",
   "widgetName": "DatePickerDesde",
-  "labelTextColor": "#FFFFFF"
+  "labelTextColor": "#FFFFFF",
+  "onDateSelected": "{{Select_dashboard_lugares.run()}}"
 }
