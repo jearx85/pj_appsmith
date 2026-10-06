@@ -1,4 +1,5 @@
 SELECT p.*, 
+       COUNT(*) OVER() AS total_filas,
        c.fecha_hora_hechos, 
        c.fecha_hora_levantamiento, 
        c.lugar_inspeccion, 
@@ -33,4 +34,6 @@ AND ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'TODOS'
      OR ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'SI' AND LOWER(TRANSLATE(TRIM(COALESCE(p.familia, '')), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) = 'si')
      OR ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'NO' AND LOWER(TRANSLATE(TRIM(COALESCE(p.familia, '')), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) = 'no')
      OR ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'SIN_DATO' AND LOWER(TRANSLATE(TRIM(COALESCE(p.familia, '')), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) NOT IN ('si', 'no')))
-ORDER BY c.fecha_hora_levantamiento DESC, p.id_persona DESC;
+ORDER BY c.fecha_hora_levantamiento DESC, p.id_persona DESC
+LIMIT {{data_table.pageSize}}
+OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};

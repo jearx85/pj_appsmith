@@ -241,6 +241,9 @@
     },
     {
       "key": "accentColor"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -279,7 +282,7 @@
   "isVisible": "true",
   "isVisibleDownload": false,
   "isVisibleFilters": false,
-  "isVisiblePagination": false,
+  "isVisiblePagination": true,
   "isVisibleSearch": false,
   "key": "zba5qel0au",
   "label": "Data",
@@ -1637,11 +1640,11 @@
   "renderMode": "CANVAS",
   "rightColumn": 64,
   "searchKey": "",
-  "serverSidePaginationEnabled": false,
+  "serverSidePaginationEnabled": true,
   "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
   "topRow": 35,
-  "totalRecordsCount": 0,
+  "totalRecordsCount": "{{SelectQuery.data[0]?.total_filas || 0}}",
   "type": "TABLE_WIDGET_V2",
   "version": 3,
   "verticalAlignment": "CENTER",

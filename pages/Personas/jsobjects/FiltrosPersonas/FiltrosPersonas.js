@@ -13,9 +13,9 @@ export default {
 		clearTimeout(FiltrosPersonas.timerTexto);
 		FiltrosPersonas.timerTexto = setTimeout(() => FiltrosPersonas.aplicar(), 400);
 	},
-	// Un filtro cambio: vuelve a consultar. La tabla carga todos los resultados y hace scroll
-	// por si sola (sin paginacion), asi que cada consulta reemplaza por completo lo que se ve.
+	// Un filtro cambio: vuelve a la pagina 1 y consulta.
 	aplicar: async () => {
+		try { await resetWidget('data_table', false); } catch (e) { /* sin estado que reiniciar */ }
 		return SelectQuery.run();
 	},
 	limpiar: async () => {
