@@ -20,6 +20,7 @@ WHERE (
 )
 AND c.fecha_hora_hechos::date >= COALESCE(NULLIF('{{DatePickerDesde.formattedDate || ""}}', '')::date, '1900-01-01'::date)
 AND c.fecha_hora_hechos::date <= COALESCE(NULLIF('{{DatePickerHasta.formattedDate || ""}}', '')::date, '2999-12-31'::date)
+AND ('{{FiltrosSQL.oficio()}}' = '' OR p.oficio::TEXT ILIKE '%{{FiltrosSQL.oficio()}}%')
 AND ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'TODOS'
      OR ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'MEDELLIN' AND (LEFT(TRIM(COALESCE(p.expediente, '')), 5) = '05001' OR LEFT(TRIM(COALESCE(p.expediente, '')), 4) = '5001'))
      OR ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'OTROS' AND NOT (LEFT(TRIM(COALESCE(p.expediente, '')), 5) = '05001' OR LEFT(TRIM(COALESCE(p.expediente, '')), 4) = '5001')))
@@ -28,6 +29,6 @@ AND ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'TODOS'
      OR ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'SI' AND LOWER(TRANSLATE(TRIM(COALESCE(p.familia, '')), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) = 'si')
      OR ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'NO' AND LOWER(TRANSLATE(TRIM(COALESCE(p.familia, '')), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) = 'no')
      OR ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'SIN_DATO' AND LOWER(TRANSLATE(TRIM(COALESCE(p.familia, '')), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) NOT IN ('si', 'no')))
-ORDER BY c.fecha_hora_levantamiento DESC
+ORDER BY c.fecha_hora_levantamiento DESC, p.id_persona DESC
 LIMIT {{data_table.pageSize}}
 OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};
