@@ -2,6 +2,7 @@
   "backgroundColor": "",
   "borderRadius": "0px",
   "bottomRow": 9,
+  "bottomRowBeforeCollapse": 9,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -37,6 +38,7 @@
   "textAlign": "LEFT",
   "textColor": "#CBD5E1",
   "topRow": 6,
+  "topRowBeforeCollapse": 6,
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "0ibyyurl65",
