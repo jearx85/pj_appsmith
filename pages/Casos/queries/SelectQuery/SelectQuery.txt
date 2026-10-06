@@ -5,18 +5,84 @@ SELECT
 	c.spoa_expediente,
 	c.oficio, 
 	c.fecha_hora_hechos, 
+	c.fecha_hora_levantamiento,
 	c.clase_accidente,
+	c.otro_clase_accidente,
+	c.caso_fuga,
+	c.choque_con,
+	c.objeto_fijo,
+	c.remitido,
 	c.direccion_completa, 
+	c.observaciones_direccion,
 	c.comuna,
 	c.latitud,
 	c.longitud,
-	c.creado_por,
+	c.lugar_inspeccion,
+	c.hipotesis,
+	c.observaciones_hipotesis,
+	c.relato,
+	c.tipo_fiscal,
+	c.nombre_fiscal,
+	c.grupo,
 	c.coordinador,
-	(SELECT COUNT(*) FROM public.personas p WHERE p.caso_id = c.id) AS cantidad_personas,
-	(SELECT COUNT(*) FROM public.personas p WHERE p.caso_id = c.id AND p.vinculacion_caso = 'Occiso') AS cantidad_occisos,
-	(SELECT COUNT(*) FROM public.personas p WHERE p.caso_id = c.id AND p.vinculacion_caso = 'Victima (Lesionado)') AS cantidad_heridos,
-	(SELECT COUNT(*) FROM public.vehiculos v WHERE v.caso_id = c.id) AS cantidad_vehiculos
+	c.integrantes,
+	c.investigador_asignado,
+	c.agente_conoce_caso,
+	c.creado_por,
+	c.modificado_por,
+	c.fecha_creacion,
+	c.fecha_actualizacion,
+	pe.cantidad_personas,
+	pe.cantidad_occisos,
+	pe.cantidad_heridos,
+	ve.cantidad_vehiculos,
+	pe.personas,
+	ve.vehiculos
 FROM public.caso c
+-- Personas del caso: una sola fila por caso, con la lista en JSON (evita duplicar filas)
+LEFT JOIN LATERAL (
+	SELECT 
+		COUNT(*) AS cantidad_personas,
+		COUNT(*) FILTER (WHERE p.vinculacion_caso = 'Occiso') AS cantidad_occisos,
+		COUNT(*) FILTER (WHERE p.vinculacion_caso = 'Victima (Lesionado)') AS cantidad_heridos,
+		COALESCE(JSONB_AGG(JSONB_BUILD_OBJECT(
+			'id_persona', p.id_persona,
+			'tipo_identificacion', p.tipo_identificacion,
+			'cedula', p.cedula,
+			'nombres', p.nombres,
+			'apellidos', p.apellidos,
+			'sexo', p.sexo,
+			'edad', p.edad,
+			'nacionalidad', p.nacionalidad,
+			'vinculacion_caso', p.vinculacion_caso,
+			'condicion', p.condicion,
+			'telefono', p.telefono,
+			'familia', p.familia,
+			'nombre_familiar', p.nombre_familiar,
+			'parentesco', p.parentesco
+		) ORDER BY p.vinculacion_caso, p.id_persona), '[]'::jsonb) AS personas
+	FROM public.personas p
+	WHERE p.caso_id = c.id
+) pe ON TRUE
+-- Vehiculos del caso
+LEFT JOIN LATERAL (
+	SELECT 
+		COUNT(*) AS cantidad_vehiculos,
+		COALESCE(JSONB_AGG(JSONB_BUILD_OBJECT(
+			'placa', v.placa,
+			'clase_vehiculo', v.clase_vehiculo,
+			'servicio', v.servicio,
+			'empresa', v.empresa,
+			'marca', v.marca,
+			'linea', v.linea,
+			'modelo', v.modelo,
+			'color', v.color,
+			'num_documento_relacionado', v.num_documento_relacionado,
+			'observaciones', v.observaciones
+		) ORDER BY v.placa), '[]'::jsonb) AS vehiculos
+	FROM public.vehiculos v
+	WHERE v.caso_id = c.id
+) ve ON TRUE
 WHERE 
   c.oficio IS NOT NULL
   AND (
