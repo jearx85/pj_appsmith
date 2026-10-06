@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 14,
+  "dynamicBindingPathList": [
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "NORMAL",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "qip98q1zxo",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "overflow": "NONE",
+  "parentId": "cbfno6b9m8",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 57,
+  "shouldTruncate": false,
+  "text": "{{(() => { const r = data_table.triggeredRow || {}; const f = (v) => v ? moment(v).format('DD/MM/YYYY HH:mm') : '-'; return 'Expediente: ' + (r.spoa_expediente || r.expediente || '-') + '   |   Hechos: ' + f(r.fecha_hora_hechos) + '   |   Clase: ' + (r.clase_accidente || '-') + '\\nComuna: ' + (r.comuna || '-') + '   |   Direccion: ' + (r.direccion_completa || '-'); })()}}",
+  "textAlign": "LEFT",
+  "textColor": "#475569",
+  "topRow": 6,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "zrenun5z3j",
+  "widgetName": "Detalle_Resumen"
+}
