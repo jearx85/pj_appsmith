@@ -44,8 +44,9 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "originalBottomRow": 11,
-  "originalTopRow": 4,
+  "onDateSelected": "{{FiltrosPersonas.aplicar()}}",
+  "originalBottomRow": 13,
+  "originalTopRow": 6,
   "parentColumnSpace": 15.4560546875,
   "parentId": "f793dfyr0a",
   "parentRowSpace": 10,
@@ -58,6 +59,5 @@
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "sm2o7nonws",
-  "widgetName": "DatePickerDesde",
-  "onDateSelected": "{{FiltrosPersonas.aplicar()}}"
+  "widgetName": "DatePickerDesde"
 }

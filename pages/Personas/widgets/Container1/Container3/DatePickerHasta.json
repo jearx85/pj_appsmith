@@ -52,8 +52,9 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 12,
   "needsErrorInfo": false,
-  "originalBottomRow": 11,
-  "originalTopRow": 4,
+  "onDateSelected": "{{FiltrosPersonas.aplicar()}}",
+  "originalBottomRow": 13,
+  "originalTopRow": 6,
   "parentColumnSpace": 15.7685546875,
   "parentId": "f793dfyr0a",
   "parentRowSpace": 10,
@@ -66,6 +67,5 @@
   "type": "DATE_PICKER_WIDGET2",
   "version": 2,
   "widgetId": "akdncdby62",
-  "widgetName": "DatePickerHasta",
-  "onDateSelected": "{{FiltrosPersonas.aplicar()}}"
+  "widgetName": "DatePickerHasta"
 }

@@ -3,18 +3,21 @@
   "bottomRow": 10,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
+      "key": "borderRadius"
     },
     {
-      "key": "borderRadius"
+      "key": "buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "onClick"
+    },
+    {
+      "key": "buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -26,6 +29,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": "true",
+  "key": "g3zu3gu6hb",
   "labelTextSize": "0.875rem",
   "leftColumn": 58,
   "onClick": "{{FiltrosPersonas.limpiar()}}",
@@ -38,6 +42,5 @@
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "mej4qvxe8m",
-  "widgetName": "btn_limpiar_filtros",
-  "key": "g3zu3gu6hb"
+  "widgetName": "btn_limpiar_filtros"
 }

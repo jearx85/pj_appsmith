@@ -2,6 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "allowAddNewRow": false,
   "animateLoading": true,
+  "borderColor": "#E2E8F0",
   "borderRadius": "0.75rem",
   "borderWidth": "1",
   "bottomRow": 138,
@@ -240,9 +241,6 @@
     },
     {
       "key": "accentColor"
-    },
-    {
-      "key": "boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
@@ -291,8 +289,8 @@
   "onRowSelected": "",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
-  "originalBottomRow": 138,
-  "originalTopRow": 26,
+  "originalBottomRow": 140,
+  "originalTopRow": 28,
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -1644,6 +1642,5 @@
   "version": 3,
   "verticalAlignment": "CENTER",
   "widgetId": "hpy3pb4xft",
-  "widgetName": "data_table",
-  "borderColor": "#E2E8F0"
+  "widgetName": "data_table"
 }

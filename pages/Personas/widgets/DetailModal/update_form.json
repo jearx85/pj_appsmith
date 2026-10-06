@@ -384,12 +384,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
-      "key": "submitButtonStyles.borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",

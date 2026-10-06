@@ -51,12 +51,13 @@
     }
   ],
   "containerStyle": "card",
-  "dynamicBindingPathList": [
+  "dynamicBindingPathList": [],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
     {
-      "key": "boxShadow"
+      "key": "backgroundColor"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,

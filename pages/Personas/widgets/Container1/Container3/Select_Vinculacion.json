@@ -7,10 +7,10 @@
   "defaultOptionValue": "TODOS",
   "dynamicBindingPathList": [
     {
-      "key": "borderRadius"
+      "key": "sourceData"
     },
     {
-      "key": "sourceData"
+      "key": "borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
