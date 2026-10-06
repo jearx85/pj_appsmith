@@ -14,8 +14,11 @@ export default {
 		FiltrosPersonas.timerOficio = setTimeout(() => FiltrosPersonas.aplicar(), 400);
 	},
 	// Un filtro cambio: vuelve a la pagina 1 y consulta.
+	// Con scroll infinito la tabla acumula filas: se vacia la data anterior y se reinicia la tabla
+	// ANTES de consultar, para que no queden filas del listado sin filtrar.
 	aplicar: async () => {
-		try { await resetWidget('data_table', false); } catch (e) { /* sin estado que reiniciar */ }
+		try { await SelectQuery.clear(); } catch (e) { /* ya estaba vacia */ }
+		try { await resetWidget('data_table', true); } catch (e) { /* sin estado que reiniciar */ }
 		return SelectQuery.run();
 	},
 	limpiar: async () => {
