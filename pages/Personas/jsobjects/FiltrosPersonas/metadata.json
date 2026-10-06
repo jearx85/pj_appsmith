@@ -6,6 +6,11 @@
     "pageId": "Personas",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "timerTexto",
+        "value": "null"
+      }
+    ]
   }
 }
