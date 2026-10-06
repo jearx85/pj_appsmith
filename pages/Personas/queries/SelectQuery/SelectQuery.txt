@@ -26,8 +26,8 @@ AND c.fecha_hora_hechos::date <= COALESCE(NULLIF('{{DatePickerHasta.formattedDat
 AND ('{{FiltrosSQL.oficio()}}' = '' OR p.oficio::TEXT ILIKE '%{{FiltrosSQL.oficio()}}%')
 AND ('{{FiltrosSQL.expediente()}}' = '' OR p.expediente ILIKE '%{{FiltrosSQL.expediente()}}%')
 AND ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'TODOS'
-     OR ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'MEDELLIN' AND (LEFT(TRIM(COALESCE(p.expediente, '')), 5) = '05001' OR LEFT(TRIM(COALESCE(p.expediente, '')), 4) = '5001'))
-     OR ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'OTROS' AND NOT (LEFT(TRIM(COALESCE(p.expediente, '')), 5) = '05001' OR LEFT(TRIM(COALESCE(p.expediente, '')), 4) = '5001')))
+     OR ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'MEDELLIN' AND TRIM(COALESCE(c.comuna, '')) <> '' AND UPPER(TRIM(c.comuna)) NOT IN ('NA', 'NO APLICA'))
+     OR ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'OTROS' AND UPPER(TRIM(COALESCE(c.comuna, ''))) IN ('NA', 'NO APLICA')))
 AND ('{{FiltrosSQL.vinculacion()}}' = 'TODOS' OR LOWER(TRANSLATE(TRIM(p.vinculacion_caso), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) = LOWER(TRANSLATE(TRIM('{{FiltrosSQL.vinculacion()}}'), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')))
 AND ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'TODOS'
      OR ('{{Select_Familia.selectedOptionValue || "TODOS"}}' = 'SI' AND LOWER(TRANSLATE(TRIM(COALESCE(p.familia, '')), 'ÁÉÍÓÚáéíóú', 'AEIOUaeiou')) = 'si')
