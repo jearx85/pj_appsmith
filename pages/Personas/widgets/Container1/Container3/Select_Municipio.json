@@ -29,7 +29,7 @@
   "labelText": "Municipio",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 23,
+  "leftColumn": 27,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 0,
@@ -49,7 +49,7 @@
   "placeholderText": "Seleccionar",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 33,
+  "rightColumn": 36,
   "serverSideFiltering": false,
   "sourceData": [
     {
