@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11,
+  "bottomRow": 20,
   "boxShadow": "none",
   "defaultOptionValue": "TODOS",
   "dynamicBindingPathList": [
@@ -29,7 +29,7 @@
   "labelText": "Municipio",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 27,
+  "leftColumn": 28,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 0,
@@ -49,7 +49,7 @@
   "placeholderText": "Seleccionar",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 36,
+  "rightColumn": 38,
   "serverSideFiltering": false,
   "sourceData": [
     {
@@ -65,7 +65,7 @@
       "value": "OTROS"
     }
   ],
-  "topRow": 4,
+  "topRow": 13,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "o22xrv8c29",
