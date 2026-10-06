@@ -97,4 +97,4 @@ WHERE
     NULLIF(NULLIF('{{filtro_fecha_hasta.formattedDate || ""}}', ''), 'null') IS NULL
     OR c.fecha_hora_hechos < (NULLIF(NULLIF('{{filtro_fecha_hasta.formattedDate || ""}}', ''), 'null')::date + interval '1 day')
   )
-ORDER BY c.fecha_hora_hechos DESC;
+ORDER BY c.fecha_hora_levantamiento DESC;
