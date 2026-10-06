@@ -11,9 +11,12 @@ SELECT p.*,
        v.clase_vehiculo
 FROM public."personas" p
 LEFT JOIN public."caso" c ON p.expediente = c.spoa_expediente
-LEFT JOIN public."vehiculos" v 
-       ON v.expediente = c.spoa_expediente
-      AND TRIM(v.num_documento_relacionado) = TRIM(p.cedula)
+LEFT JOIN LATERAL (
+    SELECT STRING_AGG(DISTINCT v0.clase_vehiculo, ', ') AS clase_vehiculo
+    FROM public."vehiculos" v0
+    WHERE v0.expediente = c.spoa_expediente
+      AND TRIM(v0.num_documento_relacionado) = TRIM(p.cedula)
+) v ON TRUE
 WHERE (
     p."cedula" ILIKE '%{{FiltrosSQL.busqueda()}}%'
     OR p."expediente" ILIKE '%{{FiltrosSQL.busqueda()}}%'
