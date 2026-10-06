@@ -90,11 +90,11 @@ WHERE
     OR c.oficio::TEXT ILIKE '%{{Filtros.limpiar(filtro_oficio.text)}}%'
   )
   AND (
-    '{{filtro_fecha_desde.formattedDate || ""}}' = ''
-    OR c.fecha_hora_hechos >= '{{filtro_fecha_desde.formattedDate || "1900-01-01"}}'::date
+    NULLIF(NULLIF('{{filtro_fecha_desde.formattedDate || ""}}', ''), 'null') IS NULL
+    OR c.fecha_hora_hechos >= NULLIF(NULLIF('{{filtro_fecha_desde.formattedDate || ""}}', ''), 'null')::date
   )
   AND (
-    '{{filtro_fecha_hasta.formattedDate || ""}}' = ''
-    OR c.fecha_hora_hechos < ('{{filtro_fecha_hasta.formattedDate || "1900-01-01"}}'::date + interval '1 day')
+    NULLIF(NULLIF('{{filtro_fecha_hasta.formattedDate || ""}}', ''), 'null') IS NULL
+    OR c.fecha_hora_hechos < (NULLIF(NULLIF('{{filtro_fecha_hasta.formattedDate || ""}}', ''), 'null')::date + interval '1 day')
   )
 ORDER BY c.fecha_hora_hechos DESC;
