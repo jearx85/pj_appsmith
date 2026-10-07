@@ -22,8 +22,8 @@ WHERE (
     p."cedula" ILIKE '%{{FiltrosSQL.busqueda()}}%'
     OR p."expediente" ILIKE '%{{FiltrosSQL.busqueda()}}%'
 )
-AND c.fecha_hora_hechos::date >= COALESCE(NULLIF('{{DatePickerDesde.formattedDate || ""}}', '')::date, '1900-01-01'::date)
-AND c.fecha_hora_hechos::date <= COALESCE(NULLIF('{{DatePickerHasta.formattedDate || ""}}', '')::date, '2999-12-31'::date)
+AND c.fecha_hora_levantamiento::date >= COALESCE(NULLIF('{{DatePickerDesde.formattedDate || ""}}', '')::date, '1900-01-01'::date)
+AND c.fecha_hora_levantamiento::date <= COALESCE(NULLIF('{{DatePickerHasta.formattedDate || ""}}', '')::date, '2999-12-31'::date)
 AND ('{{FiltrosSQL.oficio()}}' = '' OR p.oficio::TEXT ILIKE '%{{FiltrosSQL.oficio()}}%')
 AND ('{{FiltrosSQL.expediente()}}' = '' OR p.expediente ILIKE '%{{FiltrosSQL.expediente()}}%')
 AND ('{{Select_Municipio.selectedOptionValue || "TODOS"}}' = 'TODOS'
