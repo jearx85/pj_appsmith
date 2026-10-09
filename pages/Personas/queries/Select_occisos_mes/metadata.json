@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) AS total\nFROM public.personas p\nJOIN public.caso c\n    ON c.id = p.caso_id\nWHERE p.vinculacion_caso = 'Occiso'\n  AND COALESCE(c.remitido::text, '') LIKE {{ !Select_Remitido.selectedOptionValue || Select_Remitido.selectedOptionValue === 'Todos' ? '%' : Select_Remitido.selectedOptionValue }}\n  AND c.fecha_hora_hechos >= date_trunc('month', CURRENT_DATE) + ({{appsmith.store.mesOffset ?? 0}} || ' month')::interval\n  AND c.fecha_hora_hechos <  date_trunc('month', CURRENT_DATE) + ({{(appsmith.store.mesOffset ?? 0) + 1}} || ' month')::interval;",
+      "body": "SELECT COUNT(*) AS total\nFROM public.personas p\nJOIN public.caso c\n    ON c.id = p.caso_id\nWHERE p.vinculacion_caso = 'Occiso'\n  AND COALESCE(c.remitido::text, '') LIKE {{ !Select_Remitido.selectedOptionValue || Select_Remitido.selectedOptionValue === 'Todos' ? '%' : Select_Remitido.selectedOptionValue }}\n  AND c.fecha_hora_levantamiento >= date_trunc('month', CURRENT_DATE) + ({{appsmith.store.mesOffset ?? 0}} || ' month')::interval\n  AND c.fecha_hora_levantamiento <  date_trunc('month', CURRENT_DATE) + ({{(appsmith.store.mesOffset ?? 0) + 1}} || ' month')::interval;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

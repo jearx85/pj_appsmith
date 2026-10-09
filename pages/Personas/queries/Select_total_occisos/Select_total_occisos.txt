@@ -6,5 +6,5 @@ FROM public.personas p
 JOIN public.caso c
     ON c.id = p.caso_id
 WHERE p.vinculacion_caso = 'Occiso'
-  AND ({{ Select_MesDesde.formattedDate || null }}::timestamp IS NULL OR c.fecha_hora_hechos >= {{ Select_MesDesde.formattedDate }}::timestamp)
-  AND ({{ Select_MesHasta.formattedDate || null }}::date IS NULL OR c.fecha_hora_hechos < ({{ Select_MesHasta.formattedDate }}::date + INTERVAL '1 day'));
+  AND ({{ Select_MesDesde.formattedDate || null }}::timestamp IS NULL OR c.fecha_hora_levantamiento >= {{ Select_MesDesde.formattedDate }}::timestamp)
+  AND ({{ Select_MesHasta.formattedDate || null }}::date IS NULL OR c.fecha_hora_levantamiento < ({{ Select_MesHasta.formattedDate }}::date + INTERVAL '1 day'));

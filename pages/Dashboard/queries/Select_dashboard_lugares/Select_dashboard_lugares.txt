@@ -4,8 +4,8 @@ WITH base AS (
     COALESCE(NULLIF(TRIM(c.lugar_inspeccion), ''), '(sin dato)') AS lugar,
     TRANSLATE(UPPER(TRIM(COALESCE(c.lugar_inspeccion, ''))), 'ÁÉÍÓÚÜ', 'AEIOUU') AS lugar_norm
   FROM public.caso c
-  WHERE (NULLIF({{ DatePickerDesde.formattedDate }}, '')::timestamp IS NULL OR c.fecha_hora_hechos >= NULLIF({{ DatePickerDesde.formattedDate }}, '')::timestamp)
-    AND (NULLIF({{ DatePickerHasta.formattedDate }}, '')::date IS NULL OR c.fecha_hora_hechos < (NULLIF({{ DatePickerHasta.formattedDate }}, '')::date + INTERVAL '1 day'))
+  WHERE (NULLIF({{ DatePickerDesde.formattedDate }}, '')::timestamp IS NULL OR c.fecha_hora_levantamiento >= NULLIF({{ DatePickerDesde.formattedDate }}, '')::timestamp)
+    AND (NULLIF({{ DatePickerHasta.formattedDate }}, '')::date IS NULL OR c.fecha_hora_levantamiento < (NULLIF({{ DatePickerHasta.formattedDate }}, '')::date + INTERVAL '1 day'))
 ),
 clasif AS (
   SELECT

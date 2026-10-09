@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT to_char(date_trunc('year', c.fecha_hora_hechos), 'YYYY') AS anio\nFROM public.caso c\nJOIN public.personas p ON p.caso_id = c.id\nWHERE c.fecha_hora_hechos IS NOT NULL\n  AND p.vinculacion_caso IS NOT NULL\nORDER BY 1;",
+      "body": "SELECT DISTINCT to_char(date_trunc('year', c.fecha_hora_levantamiento), 'YYYY') AS anio\nFROM public.caso c\nJOIN public.personas p ON p.caso_id = c.id\nWHERE c.fecha_hora_levantamiento IS NOT NULL\n  AND p.vinculacion_caso IS NOT NULL\nORDER BY 1;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
