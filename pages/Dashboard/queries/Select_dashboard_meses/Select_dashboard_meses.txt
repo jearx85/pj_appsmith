@@ -4,7 +4,7 @@ WITH base AS (
     TO_CHAR(c.fecha_hora_levantamiento, 'YYYY-MM') AS mes,
     TRANSLATE(UPPER(TRIM(COALESCE(c.lugar_inspeccion, ''))), 'ÁÉÍÓÚÜ', 'AEIOUU') AS lugar_norm
   FROM public.caso c
-  WHERE c.fecha_hora_hechos IS NOT NULL
+  WHERE c.fecha_hora_levantamiento IS NOT NULL
     AND (NULLIF({{ DatePickerDesde.formattedDate }}, '')::timestamp IS NULL OR c.fecha_hora_levantamiento >= NULLIF({{ DatePickerDesde.formattedDate }}, '')::timestamp)
     AND (NULLIF({{ DatePickerHasta.formattedDate }}, '')::date IS NULL OR c.fecha_hora_levantamiento < (NULLIF({{ DatePickerHasta.formattedDate }}, '')::date + INTERVAL '1 day'))
 ),

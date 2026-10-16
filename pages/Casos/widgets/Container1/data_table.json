@@ -1,7 +1,7 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "allowAddNewRow": false,
-  "animateLoading": false,
+  "animateLoading": true,
   "borderColor": "#E2E8F0",
   "borderRadius": "0.75rem",
   "borderWidth": "1",
@@ -96,6 +96,8 @@
     "spoa": 190,
     "spoa_expediente": 238
   },
+  "customIsLoading": true,
+  "customIsLoadingValue": "true",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
