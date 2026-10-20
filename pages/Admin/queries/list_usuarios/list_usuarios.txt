@@ -1,1 +1,1 @@
-SELECT DISTINCT usuario FROM public.logs_sistema ORDER BY usuario;
+SELECT DISTINCT usuario FROM public.logs_sistema WHERE usuario IS DISTINCT FROM 'postgres' ORDER BY usuario;

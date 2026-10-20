@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT usuario FROM public.logs_sistema ORDER BY usuario;",
+      "body": "SELECT DISTINCT usuario FROM public.logs_sistema WHERE usuario IS DISTINCT FROM 'postgres' ORDER BY usuario;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
