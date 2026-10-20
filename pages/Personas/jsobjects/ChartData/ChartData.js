@@ -5,7 +5,7 @@ export default {
 	},
 	getTiposVinculacion: () => {
 		// Si la query aun no corrio (o fallo) se usa una lista base, para que el select nunca quede con sourceData vacio.
-		const base = ['Occiso', 'Indiciado (conductor)', 'Indiciados', 'Testigo', 'Víctima (Lesionado)'];
+		const base = ['Occiso', 'Indiciado (conductor)', 'Indiciados', 'Testigo', 'Victima (Lesionado)'];
 		const rows = getVinculaciones.data || [];
 		const vals = rows.length ? rows.map(r => r.vinculacion_caso) : base;
 		return vals.map(v => ({ label: v, value: v }));
