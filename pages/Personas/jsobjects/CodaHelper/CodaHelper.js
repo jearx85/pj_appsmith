@@ -102,11 +102,18 @@ export default {
 
   centroVictimasRow() {
 
+    // data_table.triggeredRow devuelve las fechas ya formateadas como "DD/MM/YYYY HH:mm"
+    // (computedValue de la tabla), así que new Date() las interpreta mal (MM/DD) o las rechaza.
+    // Se parsean con formato explícito; también acepta ISO por si llega el valor crudo.
+    const parseFecha = (val) => {
+			if (!val) return "";
+			const m = moment(val, ["DD/MM/YYYY HH:mm", "DD/MM/YYYY", moment.ISO_8601], true);
+			return m.isValid() ? m.toISOString() : "";
+		};
+
     const normalizeCentro = (columnName, rawValue) => {
 			if (columnName === "Fecha Ocurrencia" || columnName === "Fecha de fallecimiento") {
-				if (!rawValue) return "";
-				const d = new Date(rawValue);
-				return isNaN(d.getTime()) ? "" : d.toISOString();
+				return parseFecha(rawValue);
 			}
 			if (rawValue === null || rawValue === undefined) return "";
 			return rawValue;
@@ -194,10 +201,13 @@ export default {
 			condicionFallback
 		);
 
+		// data_table.triggeredRow devuelve las fechas ya formateadas como "DD/MM/YYYY HH:mm"
+		// (computedValue de la tabla), así que new Date() las interpreta mal (MM/DD) o las rechaza.
+		// Se parsean con formato explícito; también acepta ISO por si llega el valor crudo.
 		const toISO = (val) => {
 			if (!val) return "";
-			const d = new Date(val);
-			return isNaN(d.getTime()) ? "" : d.toISOString();
+			const m = moment(val, ["DD/MM/YYYY HH:mm", "DD/MM/YYYY", moment.ISO_8601], true);
+			return m.isValid() ? m.toISOString() : "";
 		};
 
 		const extraCells = [
