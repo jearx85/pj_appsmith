@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 25,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  \nchk_nn.isChecked ? \"Por establecer\" :\n \"\" ))(tipo_documento.options, tipo_documento.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -67,7 +67,7 @@
   "rightColumn": 31,
   "serverSideFiltering": false,
   "sourceData": "{{TipoDocumento.tipoDocumento || \"Por establecer\"}}",
-  "topRow": 21,
+  "topRow": 18,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "l2khts8y1f",

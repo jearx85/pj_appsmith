@@ -64,14 +64,15 @@
     "fecha_creacion_caso",
     "caso_id",
     "caso_creado_por",
-    "total_filas"
+    "total_filas",
+    "tipo_documento_familiar"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1791313987866,
+  "columnUpdatedAt": 1793133416371,
   "columnWidthMap": {
     "caso_creado_por": 227,
     "customColumn1": 127,
@@ -248,6 +249,9 @@
     },
     {
       "key": "primaryColumns.total_filas.computedValue"
+    },
+    {
+      "key": "primaryColumns.tipo_documento_familiar.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -1526,6 +1530,40 @@
       "label": "Teléfono involucrado",
       "notation": "standard",
       "originalId": "telefono_involucrado",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "tipo_documento_familiar": {
+      "alias": "tipo_documento_familiar",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = data_table.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"tipo_documento_familiar\"])) : tipo_documento_familiar })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "tipo_documento_familiar",
+      "index": 28,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "tipo_documento_familiar",
+      "notation": "standard",
+      "originalId": "tipo_documento_familiar",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

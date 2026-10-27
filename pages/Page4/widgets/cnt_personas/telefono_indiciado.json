@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 63,
+  "bottomRow": 53,
   "boxShadow": "none",
   "defaultText": "{{ PersonaHelper.persona(Number(contador.text) - 1, \"telefono_involucrado\") }}",
   "dynamicBindingPathList": [
@@ -63,7 +63,7 @@
   "rightColumn": 24,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 56,
+  "topRow": 46,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "vkz475mc3d",

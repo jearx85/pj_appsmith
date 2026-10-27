@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 25,
   "boxShadow": "none",
   "defaultText": "{{ appsmith.store.caso_pg1?.oficio || appsmith.store.casoSeleccionado?.oficio || \"\" }}",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 14,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 21,
+  "topRow": 18,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ls2xaaljw0",

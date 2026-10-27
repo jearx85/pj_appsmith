@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 55,
+  "bottomRow": 46,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => (  PersonaHelper.persona(Number(contador.text) - 1, \"vinculacion_caso\") ))(vinculacion_caso.options, vinculacion_caso.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -56,7 +56,7 @@
   "rightColumn": 31,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"Indiciado (conductor)\",\n    \"code\":  \"Indiciado (conductor)\"\n  },\n  {\n    \"name\": \"Occiso\",\n    \"code\": \"Occiso\"\n  },\n  {\n    \"name\": \"Victima (Lesionado)\",\n    \"code\": \"Victima (Lesionado)\"\n  },\n\t{\n    \"name\": \"Testigo\",\n    \"code\": \"Testigo\"\n  }\n]",
-  "topRow": 48,
+  "topRow": 39,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "vf53evvhym",

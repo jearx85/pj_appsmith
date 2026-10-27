@@ -21,5 +21,6 @@ SET
   telefono = {{ telefono.text || null }},
   fecha_actualizacion = now() AT TIME ZONE 'America/Bogota',
   modificado_por = {{ appsmith.store.usuarioActual || null }},
-	telefono_involucrado = {{telefono_indiciado.text || null}}
+	telefono_involucrado = {{telefono_indiciado.text || null}},
+	tipo_documento_familiar = {{tipo_doc_familiar.selectedOptionValue.text || null}}
 WHERE id_persona = {{ Tbl_personas.selectedRow.id_persona }};

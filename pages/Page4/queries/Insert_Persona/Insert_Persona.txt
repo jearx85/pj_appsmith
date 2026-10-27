@@ -23,7 +23,8 @@ INSERT INTO public.personas (
   modificado_por,
 	fecha_creacion,
 	fecha_actualizacion,
-	telefono_involucrado
+	telefono_involucrado,
+	tipo_documento_familiar
 )
 VALUES (
 	{{tipo_documento.selectedOptionValue || null}},
@@ -50,5 +51,6 @@ VALUES (
   NULL,
 	now() AT TIME ZONE 'America/Bogota',
 	NULL,
-	{{telefono_indiciado.text || null}}
+	{{telefono_indiciado.text || null}},
+	{{tipo_doc_familiar.selectedOptionValue || null}}
 );
