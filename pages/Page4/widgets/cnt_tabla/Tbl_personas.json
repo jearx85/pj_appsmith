@@ -49,6 +49,7 @@
     "movilidad_reducida",
     "habitante_calle",
     "familia",
+    "tipo_documento_familiar",
     "documento_familiar",
     "nombre_familiar",
     "parentesco",
@@ -63,7 +64,7 @@
     "telefono_involucrado",
     "caso_id"
   ],
-  "columnUpdatedAt": 1785939855273,
+  "columnUpdatedAt": 1793190438628,
   "columnWidthMap": {
     "expediente": 272
   },
@@ -177,6 +178,9 @@
     },
     {
       "key": "primaryColumns.caso_id.computedValue"
+    },
+    {
+      "key": "primaryColumns.tipo_documento_familiar.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -278,7 +282,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "caso_id",
       "notation": "standard",
       "originalId": "caso_id",
@@ -1137,6 +1141,40 @@
       "label": "telefono_involucrado",
       "notation": "standard",
       "originalId": "telefono_involucrado",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "tipo_documento_familiar": {
+      "alias": "tipo_documento_familiar",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = Tbl_personas.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"tipo_documento_familiar\"])) : tipo_documento_familiar })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "tipo_documento_familiar",
+      "index": 28,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "tipo_documento_familiar",
+      "notation": "standard",
+      "originalId": "tipo_documento_familiar",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

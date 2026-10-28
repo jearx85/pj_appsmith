@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 46,
+  "bottomRow": 39,
   "boxShadow": "none",
   "defaultText": "{{ GetAge.calcularEdad(fecha_nacimiento.selectedDate) }}\n",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 44,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 39,
+  "topRow": 32,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "jdpojgstk4",

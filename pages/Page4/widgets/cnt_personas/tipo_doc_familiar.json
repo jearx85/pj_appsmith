@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 82,
+  "bottomRow": 69,
   "boxShadow": "none",
   "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
@@ -60,7 +60,7 @@
   "rightColumn": 24,
   "serverSideFiltering": false,
   "sourceData": "{{TipoDocumento.tipoDocumento\n}}",
-  "topRow": 75,
+  "topRow": 62,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "e7t1v67w97",

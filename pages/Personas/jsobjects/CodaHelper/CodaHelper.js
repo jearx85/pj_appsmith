@@ -225,7 +225,7 @@ export default {
 			{ column: "Lugar inspeccion",              value: update_form.formData.lugar_inspeccion || "" },
 			{ column: "Nombre_PA",                     value: update_form.formData.nombre_familiar || "" },
 			{ column: "Parentesco_PA",                 value: update_form.formData.parentesco || "" },
-			{ column: "TI PA",                         value: data_table.triggeredRow?.tipo_documento_familiar || "" },
+			{ column: "TI PA",                         value: update_form.formData.tipo_documento_familiar || "" },
 			{ column: "NI PA",                         value: update_form.formData.documento_familiar || "" },
 			{ column: "Teléfono PA",                   value: update_form.formData.telefono || "" },
 			{ column: "telefono_v",                    value: update_form.formData.telefono_involucrado || "" },

@@ -384,6 +384,24 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "schema.__root_schema__.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField4.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField4.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.customField4.defaultValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -496,7 +514,7 @@
           "label": "Clase Accidente",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "clase_accidente",
-          "position": 28,
+          "position": 29,
           "sourceData": "Choque"
         },
         "condicion": {
@@ -540,7 +558,7 @@
           "label": "Creado Por",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "creado_por",
-          "position": 21,
+          "position": 22,
           "sourceData": "jearx@hotmail.com"
         },
         "customField1": {
@@ -609,6 +627,28 @@
           "position": 12,
           "sourceData": ""
         },
+        "customField4": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "tipo_documento_familiar",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (data_table.triggeredRow.tipo_documento_familiar))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "customField4",
+          "isCustomField": true,
+          "isDisabled": true,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Tipo de documento del familiar",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "customField4",
+          "position": 19,
+          "sourceData": ""
+        },
         "edad": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "edad",
@@ -650,7 +690,7 @@
           "label": "Documento del familiar",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "email",
-          "position": 19
+          "position": 20
         },
         "expediente": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -716,7 +756,7 @@
           "label": "Fecha Actualizacion",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "fecha_actualizacion",
-          "position": 24,
+          "position": 25,
           "sourceData": "2025-11-25T19:18:15Z"
         },
         "fecha_creacion": {
@@ -738,7 +778,7 @@
           "label": "Fecha Creacion",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "fecha_creacion",
-          "position": 23,
+          "position": 24,
           "sourceData": "2025-11-25T19:18:15Z"
         },
         "fecha_hora_hechos": {
@@ -760,7 +800,7 @@
           "label": "Fecha Hora Hechos",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "fecha_hora_hechos",
-          "position": 25,
+          "position": 26,
           "sourceData": "2025-10-26T05:00:00Z"
         },
         "fecha_hora_levantamiento": {
@@ -782,7 +822,7 @@
           "label": "Fecha Hora Levantamiento",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "fecha_hora_levantamiento",
-          "position": 26,
+          "position": 27,
           "sourceData": "2025-10-26T18:00:00Z"
         },
         "fecha_nacimiento": {
@@ -854,7 +894,7 @@
           "label": "Hipotesis",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "hipotesis",
-          "position": 29,
+          "position": 30,
           "sourceData": "090 TRANSPORTAR OTRA PERSONA O COSAS"
         },
         "id_persona": {
@@ -876,7 +916,7 @@
           "label": "Id Persona",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id_persona",
-          "position": 31,
+          "position": 32,
           "sourceData": 1
         },
         "lugar_inspeccion": {
@@ -898,7 +938,7 @@
           "label": "Lugar Inspeccion",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "lugar_inspeccion",
-          "position": 27,
+          "position": 28,
           "sourceData": "VÍA PÚBLICA"
         },
         "modificado_por": {
@@ -920,7 +960,7 @@
           "label": "Modificado Por",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "modificado_por",
-          "position": 22,
+          "position": 23,
           "sourceData": "jearx@hotmail.com"
         },
         "movilidad_reducida": {
@@ -1073,7 +1113,7 @@
           "label": "Relato",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "relato",
-          "position": 30,
+          "position": 31,
           "sourceData": "hola"
         },
         "sexo": {
@@ -1117,7 +1157,7 @@
           "label": "Telefono_familiar",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "telefono",
-          "position": 20
+          "position": 21
         },
         "tipo_identificacion": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
