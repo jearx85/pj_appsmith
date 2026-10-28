@@ -28,6 +28,7 @@ export default {
     nombre_familiar.setValue(persona.nombre_familiar ?? "");
     parentesco.setSelectedOption(persona.parentesco ?? undefined);
 
+    tipo_doc_familiar.setSelectedOption(persona.tipo_documento_familiar ?? undefined);
     documento_familiar.setValue(persona.documento_familiar ?? "");
     telefono.setValue(persona.telefono ?? "");
   }
