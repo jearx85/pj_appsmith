@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "defaultText": "{{ (() => {\n\tif (!appsmith.store.buscar || appsmith.store.buscar === \"\") {\n\t\treturn \"A00\";\n\t} else if (remitido.selectedOptionValue === \"Si\") {\n\t\treturn \"A00REMITIDO\";\n\t} else {\n\t\treturn appsmith.store.casoSeleccionado?.expediente || \"\";\n\t}\n})() }}",
+  "defaultText": "{{ (!appsmith.store.buscar || appsmith.store.buscar === \"\") ? \"A00\" : appsmith.store.casoSeleccionado?.expediente || \"\" }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
