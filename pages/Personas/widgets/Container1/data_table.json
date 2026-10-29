@@ -46,6 +46,7 @@
     "movilidad_reducida",
     "habitante_calle",
     "familia",
+    "tipo_documento_familiar",
     "documento_familiar",
     "nombre_familiar",
     "parentesco",
@@ -64,15 +65,14 @@
     "fecha_creacion_caso",
     "caso_id",
     "caso_creado_por",
-    "total_filas",
-    "tipo_documento_familiar"
+    "total_filas"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1793133416371,
+  "columnUpdatedAt": 1793283734363,
   "columnWidthMap": {
     "caso_creado_por": 227,
     "customColumn1": 127,
@@ -1628,7 +1628,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "total_filas",
       "notation": "standard",
       "originalId": "total_filas",
