@@ -8,6 +8,6 @@ LEFT JOIN public.personas p
     AND v.caso_id = p.caso_id
 WHERE v.caso_id = {{appsmith.store.casoSeleccionado?.id}}
 ORDER BY v.placa ASC
-LIMIT 10
+LIMIT 100
 OFFSET 0;
 

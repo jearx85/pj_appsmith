@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n    v.*,\n    CONCAT(p.nombres, ' ', p.apellidos) AS nombre_completo,\n    p.vinculacion_caso\nFROM public.vehiculos v\nLEFT JOIN public.personas p \n    ON v.num_documento_relacionado = p.cedula \n    AND v.caso_id = p.caso_id\nWHERE v.caso_id = {{appsmith.store.casoSeleccionado?.id}}\nORDER BY v.placa ASC\nLIMIT 10\nOFFSET 0;\n\n",
+      "body": "SELECT \n    v.*,\n    CONCAT(p.nombres, ' ', p.apellidos) AS nombre_completo,\n    p.vinculacion_caso\nFROM public.vehiculos v\nLEFT JOIN public.personas p \n    ON v.num_documento_relacionado = p.cedula \n    AND v.caso_id = p.caso_id\nWHERE v.caso_id = {{appsmith.store.casoSeleccionado?.id}}\nORDER BY v.placa ASC\nLIMIT 100\nOFFSET 0;\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
